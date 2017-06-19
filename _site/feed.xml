@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ELSE</title>
+    <description>A simple yet classy theme for your Jekyll website or blog.
+</description>
+    <link>http://ctripfe.com//centrarium/</link>
+    <atom:link href="http://ctripfe.com//centrarium/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 19 Jun 2017 17:21:34 +0800</pubDate>
+    <lastBuildDate>Mon, 19 Jun 2017 17:21:34 +0800</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>ELSE 技术周刊(2017.06.19期)</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;eslint-v400-releasedhttpeslintorgblog201706eslint-v400-released&quot;&gt;&lt;a href=&quot;http://eslint.org/blog/2017/06/eslint-v4.0.0-released&quot;&gt;ESLint v4.0.0 released&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;ESLint 主版本升级，4.0.0 中有几个突破性的变化，参考这份 迁移指南 来完成升级。&lt;/p&gt;
+
+&lt;h4 id=&quot;v8-release-beta-versionhttpsv8projectblogspothk201706v8-release-60html&quot;&gt;&lt;a href=&quot;https://v8project.blogspot.hk/2017/06/v8-release-60.html&quot;&gt;v8 release beta version&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;V8 JavaScript Engine release 6.0，see more in newest branch V8 version 6.0。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;前端技术&lt;/h2&gt;
+
+&lt;h4 id=&quot;how-to-use-webpacks-new-magic-comment-feature-with-react-universal-component--ssrhttpsmediumcomwebpackhow-to-use-webpacks-new-magic-comment-feature-with-react-universal-component-ssr-a38fd3e296a&quot;&gt;&lt;a href=&quot;https://medium.com/webpack/how-to-use-webpacks-new-magic-comment-feature-with-react-universal-component-ssr-a38fd3e296a&quot;&gt;How to use Webpack’s new “magic comment” feature with React Universal Component + SSR&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;如何开始使用在 webpack 2.4.0 提供的魔术注释特性。&lt;/p&gt;
+
+&lt;h4 id=&quot;es6-modules-httpszhuanlanzhihucomp27276672&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/27276672&quot;&gt;ES6 modules 即将到来，现在该考虑新的打包方案了嘛？&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本文展示了 ESM 的到来，浏览器对其的支持，及前端打包方案的新的考虑。&lt;/p&gt;
+
+&lt;h4 id=&quot;what-is-webkithttpsdocsgooglecompresentationd1zriqbukw9tf077odch66orrwrivnlvinhlm2gif0embedstartfalseslideidp&quot;&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/1ZRIQbUKw9Tf077odCh66OrrwRIVNLvI_nhLm2Gi__F0/embed?start=false&amp;amp;slide=id.p&quot;&gt;What is WebKit?&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;WebKit is not a brower, a science project, or the solution to every problem. What is WebKit? This official doc may refresh our understanding of WebKit a little deeper.&lt;/p&gt;
+
+&lt;h4 id=&quot;node-stream-httpwwwbarretleecomblog20170606dive-to-nodejs-at-stream-module&quot;&gt;&lt;a href=&quot;http://www.barretlee.com/blog/2017/06/06/dive-to-nodejs-at-stream-module/&quot;&gt;深入理解 Node Stream 内部机制&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;关于请求、响应、文件流的底层node stream， 文章详细的介绍了 Node Stream 内部机制。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;实用技巧&lt;/h2&gt;
+
+&lt;h4 id=&quot;solid-httpwwwjianshucomp2cd98d697adc&quot;&gt;&lt;a href=&quot;http://www.jianshu.com/p/2cd98d697adc&quot;&gt;代码审查关注什么：SOLID 原则&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;这篇文章介绍在代码审查时很重要的一点，讨论代码本身的设计，遵循一种良好的面向对象设计实践：SOLID 原则。如果在代码审查中看到复杂的代码，可能会发现应用这些原则之一会找到一个更简单，更易于理解的解决方案。&lt;/p&gt;
+
+&lt;h4 id=&quot;upgrading-from-node-6-to-node-8-a-real-world-performance-comparisonhttpshackernooncomupgrading-from-node-6-to-node-8-a-real-world-performance-comparison-3dfe1fbc92a3&quot;&gt;&lt;a href=&quot;https://hackernoon.com/upgrading-from-node-6-to-node-8-a-real-world-performance-comparison-3dfe1fbc92a3&quot;&gt;Upgrading from Node 6 to Node 8: a real-world performance comparison&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;node8很快，但是你不知道它在各个方面的表现具体数字有了多少的提升，文章从node不同使用场景对node6和8进行了性能数据的可视化对比，以及node_modules下载速度在两个npm版本和yarn的对比。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpslinuxcnarticle-8544-1html&quot;&gt;&lt;a href=&quot;https://linux.cn/article-8544-1.html&quot;&gt;见鬼了么？好玩的整蛊恶作剧脚本&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;这是一个 bash shell 脚本，其中有若干可以整蛊（结仇）你的同事的小技巧。主要由一些别名、函数、环境变量定义组织而成，执行该脚本后，你的 shell 环境就变成了一个光怪陆离的世界。&lt;/p&gt;
+
+&lt;h4 id=&quot;css-shapescsshttpwwwcnblogscomcoco1sp6992177html&quot;&gt;&lt;a href=&quot;http://www.cnblogs.com/coco1s/p/6992177.html&quot;&gt;奇妙的 CSS shapes(CSS图形)&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;利用CSS shapes来做一些简单的几何图形样式。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;tabhttpsstackoverflowblog20170615developers-use-spaces-make-money-use-tabs&quot;&gt;&lt;a href=&quot;https://stackoverflow.blog/2017/06/15/developers-use-spaces-make-money-use-tabs/&quot;&gt;用空格的程序员比用Tab的程序员工资高&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;作者用数据可视化做了调查和对比。 从此文可以感受到一种标准的西方程序员的极客精神 — 总能在生活中找到一些特殊的视角，然后用前端技术加以调侃。现在或将来，数据可视化的热潮并没有任何减退的理由；作为一个前端工程师，能从生活和社会中找到一些即使是小小的问题，用技术和业余空闲时间做出调查、展示和总结，在社区里分享出来，不仅能提高自己还能给别人带来思考和快乐，这才是我眼中的有机的、健康的开源精神。&lt;/p&gt;
+
+&lt;h4 id=&quot;sofishhttpsmpweixinqqcomsbizmziwnjqwmzuwmqmid2247485261idx1snff78ab4af5ca3681ce0349367fed20b6chksm9723658fa054ec99c9ef17447b6e6b905215f455b54cb208c86cc0db2e0d7c9b9cbaa88af127rd&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzIwNjQwMzUwMQ==&amp;amp;mid=2247485261&amp;amp;idx=1&amp;amp;sn=ff78ab4af5ca3681ce0349367fed20b6&amp;amp;chksm=9723658fa054ec99c9ef17447b6e6b905215f455b54cb208c86cc0db2e0d7c9b9cbaa88af127#rd&quot;&gt;十问sofish：帮你理清前端工程师及大前端团队的成长问题&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本文是前端之巅向 sofish 的约稿《什么样的人可以称为架构师？》、采访《饿了么大前端团队究竟是如何落地和管理的?》以及 sofish 做客大咖说直播节目的总结和整理，希望能帮助各位淀粉更清晰地理解 sofish 的观点。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;tcphttpjmtaobaoorg2017060820170608&quot;&gt;&lt;a href=&quot;http://jm.taobao.org/2017/06/08/20170608/&quot;&gt;就是要你懂 TCP&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;对TCP讲解的文章很多，本文更为言简意赅，以实际案例讲述TCP原理，包含三次握手，四次挥手及可靠传输的实现原理。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot;&gt;IFT小组&lt;/a&gt; 出品，汇聚一周好文章，&lt;a href=&quot;https://zhuanlan.zhihu.com/p/27208396&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@CurtisCBS&lt;/a&gt; 中年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工, 不安分于前端开发的搬砖工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot;&gt;@Steven&lt;/a&gt; 从 C++ 走来，一路虐过 C#, Java, Python, Go, 现在写 Javascript&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 程序圈的间谍，我的梦想在浩瀚宇宙，我的征途是星辰大海&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/sturloly&quot;&gt;@sturloly&lt;/a&gt; building apps for my future starship&lt;/p&gt;
+
+  &lt;p&gt;感谢以下同学荐稿：&lt;a href=&quot;https://github.com/elevenbeans&quot;&gt;@elevenbeans&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章，期待你们。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 19 Jun 2017 18:00:00 +0800</pubDate>
+        <link>http://ctripfe.com//centrarium/weekly/2017/06/19/weekly.html</link>
+        <guid isPermaLink="true">http://ctripfe.com//centrarium/weekly/2017/06/19/weekly.html</guid>
+        
+        
+        <category>Weekly</category>
+        
+      </item>
+    
+      <item>
+        <title>ELSE 技术周刊(2017.06.12期)</title>
+        <description>&lt;h2 id=&quot;else&quot;&gt;ELSE原创&lt;/h2&gt;
+
+&lt;h4 id=&quot;by-elevenbeanshttpelevenbeansgithubio20170606e7a7bbe58aa8e7abafe6b58fe8a788e599a8e8b083e8af95e696b9e6b395e6b187e680bb&quot;&gt;&lt;a href=&quot;http://elevenbeans.github.io/2017/06/06/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B0%83%E8%AF%95%E6%96%B9%E6%B3%95%E6%B1%87%E6%80%BB/&quot;&gt;移动端浏览器调试方法汇总 (by elevenBeans)&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;浏览器兼容性一直以来都是让 Web 前端开发人员头疼的问题。虽然移动端其内核趋于统一（webkit），兼容问题也不再像 PC 端那么严重。但在生产环境当中，考虑到第三方浏览器在内核上面的 “优化”，如（wechat、UC、QQ、360 等），兼容问题依旧是无法忽略。
+本文汇总一下目前比较常见的 Web 移动端调试方法。&lt;/p&gt;
+
+&lt;h4 id=&quot;conways-game-of-life-explanation-by-sturlolyhttpswwwsturlolycom20170612e590ace8af91conways-game-of-life-is-sample-game-by-john-conway&quot;&gt;&lt;a href=&quot;https://www.sturloly.com/2017/06/12/%E5%90%AC%E8%AF%91conways-game-of-life-is-sample-game-by-john-conway/&quot;&gt;[中英]康威的游戏人生图文解说 – CONWAY’S GAME OF LIFE EXPLANATION (by sturloly)&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Unlike the popular board game of life，Conway’s Game of Life is a simple simulation of living cells.
+  – 本文相关于『作品展示』分类中的 《Chrome extension：Game of Life》一文&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;技术前沿&lt;/h2&gt;
+&lt;h4 id=&quot;reactxphttpsmicrosoftgithubioreactxp&quot;&gt;&lt;a href=&quot;https://microsoft.github.io/reactxp/&quot;&gt;ReactXP&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;微软出品，以微软一惯的傻白甜风格，只要学习过React，相信使用ReactXP也是无障碍的。多说一点，别看市场上都不看好Windows移动战略，你们不支持我，我自己就撸一发，支持我自己，哼！XP means X-Platform  Share most of your code between the &lt;strong&gt;&lt;em&gt;web&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;iOS&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;Android&lt;/em&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;em&gt;Windows&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;es7-decorator-httptaobaofedorgblog20151116es7-decorator&quot;&gt;&lt;a href=&quot;http://taobaofed.org/blog/2015/11/16/es7-decorator/&quot;&gt;ES7 Decorator 装饰者模式&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本文分享了装饰者模式以及如何使用 ES7 的 decorator 概念。&lt;/p&gt;
+
+&lt;h4 id=&quot;introducing-nilejshttpshackernooncomintroducing-nile-js-81d83a31cfe3&quot;&gt;&lt;a href=&quot;https://hackernoon.com/introducing-nile-js-81d83a31cfe3&quot;&gt;[英]Introducing Nile.js&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;webRTC的集大成者，实现了p2p视频直播流。文章还讲述了为什么使用WebTorrent作为视频流，以及用户少的时候对速度的影响&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;前端技术&lt;/h2&gt;
+&lt;h4 id=&quot;httpsgithubcomxitufront-end-handbook-2017&quot;&gt;&lt;a href=&quot;https://github.com/xitu/front-end-handbook-2017&quot;&gt;前端开发者指南&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;一本可供任何人使用的指南，用于学习前端开发实践。该指南大体上勾勒出了前端工程的轮廓，同时也讨论了前端工程的实践。&lt;/p&gt;
+
+&lt;h4 id=&quot;server-sent-events-httpwwwruanyifengcomblog201705server-senteventshtml&quot;&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2017/05/server-sent_events.html&quot;&gt;Server-Sent Events 教程&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;服务器向浏览器推送信息，除了 WebSocket，还有一种方法：Server-Sent Events，目前除了 IE/Edge，其他浏览器都支持。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;作品展示&lt;/h2&gt;
+&lt;h4 id=&quot;repochrome-extensiongame-of-lifehttpsgithubcomyuanchuangame-of-life&quot;&gt;&lt;a href=&quot;https://github.com/yuanchuan/game-of-life&quot;&gt;[Repo]Chrome extension：Game of Life&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;一个利用 github 贡献版玩生命游戏的浏览器扩展，点子不错。&lt;/p&gt;
+
+&lt;h4 id=&quot;v20httpsjuejinimentry5934d00eb123db00642591a9&quot;&gt;&lt;a href=&quot;https://juejin.im/entry/5934d00eb123db00642591a9&quot;&gt;小程序开发 - 小明带你找厕所 V2.0&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;一个简单好玩的程序，适合想撸小程序的开发者入门学习！&lt;/p&gt;
+
+&lt;h4 id=&quot;jparticles-20-httpssegmentfaultcoma1190000009707074&quot;&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000009707074&quot;&gt;JParticles 2.0 发布，打造炫酷的粒子特效&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;其实是一个轻量级的 Canvas 粒子运动特效插件库，粒子运动、波纹运动、模拟波浪进度条&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;实用技巧&lt;/h2&gt;
+&lt;h4 id=&quot;little-things-i-like-to-do-with-githttpscsswizardrycom201705little-things-i-like-to-do-with-git&quot;&gt;&lt;a href=&quot;https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/&quot;&gt;[英]Little Things I Like to Do with Git&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;git使用中的一些小技巧&lt;/p&gt;
+
+&lt;h4 id=&quot;repoalloyleverhttpsgithubcomalloyteamalloylever&quot;&gt;&lt;a href=&quot;https://github.com/AlloyTeam/AlloyLever&quot;&gt;[Repo]AlloyLever&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;1kb代码搞定开发调试发布，错误监控上报，用户问题定位&lt;/p&gt;
+
+&lt;h4 id=&quot;http2-push-is-tougher-than-i-thoughthttpsjakearchibaldcom2017h2-push-tougher-than-i-thought&quot;&gt;&lt;a href=&quot;https://jakearchibald.com/2017/h2-push-tougher-than-i-thought/&quot;&gt;[英]HTTP/2 push is tougher than I thought&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;“凡是页面加载的性能问题，都可以用http2 推送解决”，而对于几乎绝大部分网页，都可以使用http2推送。文章还提供了各主流浏览器的最佳实践。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;技术纵横&lt;/h2&gt;
+&lt;h4 id=&quot;reddit-httpsredditblogcom20170602the-evolution-of-code-deploys-at-reddit&quot;&gt;&lt;a href=&quot;https://redditblog.com/2017/06/02/the-evolution-of-code-deploys-at-reddit/&quot;&gt;[英]Reddit 代码部署的演变&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;在 Reddit， 每个工程师都要编写代码，进行代码审查，并定期发布到生产环境。类似的持续部署过程通常每周发生 200 次，而一次部署只需要不到 10 分钟。&lt;/p&gt;
+
+&lt;h4 id=&quot;switching-from-react-to-vuejshttpvuejsdeveloperscom20170528switch-from-react-to-vue-js&quot;&gt;&lt;a href=&quot;http://vuejsdevelopers.com/2017/05/28/switch-from-react-to-vue-js/&quot;&gt;[英]Switching From React To Vue.js&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;目前最主流的两大框架，文章列举了两者在框架理念，组件化写法，模版，生命周期钩子等等的一系列差异&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;程序人生&lt;/h2&gt;
+&lt;h4 id=&quot;httpsmediumcomevatrostlosbeing-a-junior-developer-at-30-38309f1daee8&quot;&gt;&lt;a href=&quot;https://medium.com/@eva_trostlos/being-a-junior-developer-at-30-38309f1daee8&quot;&gt;[英]作为一名 30 岁的初级开发人员&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;改变职业是可怕的，也可能是一个非常危险的决定。年龄越大，意味着切换工作领域的风险就越大，一切都从头开始。但作者却说，在 30 岁潜水进入科技领域是一个令人难以置信的冒险，充满难忘的经历，厉害的人以及巨大的机会。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpsmpweixinqqcomsbizmjm5mde0mjc4mamid2650996151idx1snad64621a47c38e5b952ab671f5ae3edbchksmbdbf05e48ac88cf2305eea94e6fea4bd4b73ffd460ecf8aaacc19a44e6cbbaef32ffd3d2696fscene21wechatredirect&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;amp;mid=2650996151&amp;amp;idx=1&amp;amp;sn=ad64621a47c38e5b952ab671f5ae3edb&amp;amp;chksm=bdbf05e48ac88cf2305eea94e6fea4bd4b73ffd460ecf8aaacc19a44e6cbbaef32ffd3d2696f&amp;amp;scene=21#wechat_redirect&quot;&gt;[英]据说培养这些软技能，可以有效提升程序员的幸福感！&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;一篇 程序猿 增强 “软技能” 提升的幸福感的 软文。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;团队&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot;&gt;IFT小组&lt;/a&gt; 出品，汇聚一周好文章，&lt;a href=&quot;https://zhuanlan.zhihu.com/p/27349942&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@CurtisCBS&lt;/a&gt; 中年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工, 不安分于前端开发的搬砖工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot;&gt;@Steven&lt;/a&gt; 从 C++ 走来，一路虐过 C#, Java, Python, Go, 现在写 Javascript&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 程序圈的间谍，我的梦想在浩瀚宇宙，我的征途是星辰大海&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/WangPeng2017&quot;&gt;@WangPeng2017&lt;/a&gt; 不想当大神的前端不是一个好码农&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/sturloly&quot;&gt;@sturloly&lt;/a&gt; 我常想，要是只会写代码，和咸鱼有什么区别？&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/elevenBeans&quot;&gt;@elevenBeans&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章，期待你们。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 12 Jun 2017 18:00:00 +0800</pubDate>
+        <link>http://ctripfe.com//centrarium/weekly/2017/06/12/weekly.html</link>
+        <guid isPermaLink="true">http://ctripfe.com//centrarium/weekly/2017/06/12/weekly.html</guid>
+        
+        
+        <category>Weekly</category>
+        
+      </item>
+    
+      <item>
+        <title>ELSE 技术周刊(2017.06.02期)</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;node-8-releasedhttpsnodejsorgenblogreleasev800&quot;&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v8.0.0/&quot;&gt;Node 8 Released&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Node 8 已经发布，带来一系列重大变化和更新，同时 NPM 也更新到 5.0.0。&lt;/p&gt;
+
+&lt;h4 id=&quot;what-are-the-differences-between-the-lockfiles-of-yarn-and-npm-5httpsyarnpkgcomblog20170531determinism&quot;&gt;&lt;a href=&quot;https://yarnpkg.com/blog/2017/05/31/determinism/&quot;&gt;What are the differences between the lockfiles of Yarn and npm 5?&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;NPM 5 重新设计 shrinkwrap，命名为锁包，跟 Yarn 的锁文件有什么区别呢？&lt;/p&gt;
+
+&lt;h4 id=&quot;tiobe-index-for-may-2017httpswwwtiobecomtiobe-index&quot;&gt;&lt;a href=&quot;https://www.tiobe.com/tiobe-index/&quot;&gt;TIOBE Index for May 2017&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;值得关注的是 Go 的排名，从前一年的第 42 名上升到第 16 名！&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;http2-push-is-tougher-than-i-thoughthttpsjakearchibaldcom2017h2-push-tougher-than-i-thought&quot;&gt;&lt;a href=&quot;https://jakearchibald.com/2017/h2-push-tougher-than-i-thought/&quot;&gt;HTTP/2 push is tougher than I thought&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;作者从性能方面挖掘了一些关于 HTTP / 2 推出的更细微的细节，并用一种易懂的方式叙述出来。&lt;/p&gt;
+
+&lt;h4 id=&quot;docker-httpsblogfundebugcom20170531docker-and-vm&quot;&gt;&lt;a href=&quot;https://blog.fundebug.com/2017/05/31/docker-and-vm/&quot;&gt;虚拟机与 Docker 有何不同&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;各种虚拟机技术开启了云计算时代，而 Docker，作为下一代虚拟化技术，正在改变我们开发、测试、部署应用的方式。那虚拟机与 Docker 的区别究竟是什么？&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;前端开发&lt;/h2&gt;
+
+&lt;h4 id=&quot;redux-vs-mobx-httpswwwsitepointcomredux-vs-mobx-which-is-best&quot;&gt;&lt;a href=&quot;https://www.sitepoint.com/redux-vs-mobx-which-is-best/&quot;&gt;Redux vs MobX: 哪个更适合你的项目&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;一篇很好的文章，提供一些非常不错的建议，帮助你更好地选择 Redux 还是 Mobx 作为状态管理解决方案。&lt;/p&gt;
+&lt;h4 id=&quot;javascript-unit-testing-frameworks-comparing-jasmine-mocha-ava-tape-and-jesthttpsrayguncomblogjavascript-unit-testing-frameworks&quot;&gt;&lt;a href=&quot;https://raygun.com/blog/javascript-unit-testing-frameworks/&quot;&gt;JavaScript unit testing frameworks: Comparing Jasmine, Mocha, AVA, Tape and Jest&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;几大主流 JavaScript 单元测试框架对比，文章对于如何选择适合的单元测试框架给了一些建议。&lt;/p&gt;
+
+&lt;h4 id=&quot;javascripthttpsgithubcomjawilblogissues20&quot;&gt;&lt;a href=&quot;https://github.com/jawil/blog/issues/20&quot;&gt;JavaScript正则进阶之路：活学妙用奇淫正则表达式&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;达成一个目的的方法很多种，文章用一种对比的思维来激发学习正则的兴趣。正则表达式是一块硬骨头，很难啃，但是啃着又很香，一旦用好又威力无穷。&lt;/p&gt;
+
+&lt;h4 id=&quot;javascript--asyncawait--promise-httpswwww3ctechcomtopic2021&quot;&gt;&lt;a href=&quot;https://www.w3ctech.com/topic/2021&quot;&gt;JavaScript 的 Async/Await 完胜 Promise 的六个理由&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Node 现在从版本 7.6 开始就支持 async/await 了。如果你还没有试过它，这里有一堆带有示例的理由来说明为什么你应该马上采用它，并且再也不会回头。&lt;/p&gt;
+
+&lt;h4 id=&quot;promise-httpwebjobbolecom91406&quot;&gt;&lt;a href=&quot;http://web.jobbole.com/91406/&quot;&gt;30分钟彻底明白 Promise 原理&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;本文分析了 promise 的这种规则机制是如何实现的， 能够很好的帮助我们理解 then 和 resolve 函数的运行机理。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;实用推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;nextjs-20httpszeitcoblognext2&quot;&gt;&lt;a href=&quot;https://zeit.co/blog/next2&quot;&gt;Next.js 2.0&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Next.js 是一个用于在服务端渲染 React 应用程序的简单框架。处理了 React 同构代码的一些繁琐问题，简化了项目构建，支持各类功能，同时扩展也很灵活，对于要快速搭建 React 服务端渲染，是一个不错的选择。&lt;/p&gt;
+
+&lt;h4 id=&quot;preact-cli-create-and-build-preact-apps-more-easily-toolshttpsgithubcomdevelopitpreact-cli&quot;&gt;&lt;a href=&quot;https://github.com/developit/preact-cli&quot;&gt;Preact CLI: Create and Build Preact Apps More Easily TOOLS&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;preact-cli 脚手架，30 秒搭起 PWA 框架。&lt;/p&gt;
+
+&lt;h4 id=&quot;codeifhttpsgithubcomunbugcodelf&quot;&gt;&lt;a href=&quot;https://github.com/unbug/codelf&quot;&gt;变量命名神器：codeif&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;当你不知道如何怎样给变量名字时，试试这个。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;between-the-wires-an-interview-with-vuejs-creator-evan-youhttpsmediumfreecodecampcombetween-the-wires-an-interview-with-vue-js-creator-evan-you-e383cbf57cc4&quot;&gt;&lt;a href=&quot;https://medium.freecodecamp.com/between-the-wires-an-interview-with-vue-js-creator-evan-you-e383cbf57cc4&quot;&gt;Between the Wires: An interview with Vue.js creator Evan You&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;对尤雨溪的一篇采访，涉及到 Vue 作者的成长故事，编程经历以及关于 Vue 的种种故事，值得一看。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpmpweixinqqcomsad8xrlnmk4kjgadmx-bxxa&quot;&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s/Ad8XrlNmk4kjgAdMx-bXXA&quot;&gt;互联网世界的神奇逻辑&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;文章讲述了互联网对于计算机基础设施的生态，工程师能力，对规模感知模糊，对创作者的距离，企业的生命周期，与大牛的链接的影响。思考一些在互联网才生效的神奇逻辑。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;团队分享&lt;/h2&gt;
+
+&lt;h4 id=&quot;javascript-httpszhuanlanzhihucomp26567790&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26567790&quot;&gt;Javascript 模块现状&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;这是一篇译文，主要介绍 ES Modlues 在浏览器，构建工具以及 Node.js 的实现，尤其是 Node.js 在实现上遇到的问题以及未来的发展方向，并对现在的开发者给出建议。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot;&gt;IFT小组&lt;/a&gt; 出品，汇聚一周好文章，&lt;a href=&quot;https://zhuanlan.zhihu.com/p/27208396&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@CurtisCBS&lt;/a&gt; 中年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工, 不安分于前端开发的搬砖工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot;&gt;@Steven&lt;/a&gt; 从 C++ 走来，一路虐过 C#, Java, Python, Go, 现在写 Javascript&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 程序圈的间谍，我的梦想在浩瀚宇宙，我的征途是星辰大海&lt;/p&gt;
+
+  &lt;p&gt;感谢以下同学荐稿：&lt;a href=&quot;https://github.com/dongtc&quot;&gt;@dongtc&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章，期待你们。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 02 Jun 2017 18:00:00 +0800</pubDate>
+        <link>http://ctripfe.com//centrarium/weekly/2017/06/02/weekly.html</link>
+        <guid isPermaLink="true">http://ctripfe.com//centrarium/weekly/2017/06/02/weekly.html</guid>
+        
+        
+        <category>Weekly</category>
+        
+      </item>
+    
+      <item>
+        <title>ELSE 技术周刊(2017.05.19期)</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;jest-20-released-facebooks-javascript-testing-frameworkhttpsfacebookgithubiojestblog20170506jest-20-delightful-testing-multi-project-runnerhtml&quot;&gt;&lt;a href=&quot;https://facebook.github.io/jest/blog/2017/05/06/jest-20-delightful-testing-multi-project-runner.html&quot;&gt;Jest 20 Released: Facebook’s JavaScript Testing Framework&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;facebook发布了 Jest20，支持多项目同时运行&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;http2-server-pushhttpszhuanlanzhihucomp26757514utmsourcetuicoolutmmediumreferral&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26757514?utm_source=tuicool&amp;amp;utm_medium=referral&quot;&gt;浅谈 HTTP/2 Server Push&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Server push 的意义很简单，说白了就是为了提前推送响应。这里面包含两个问题——推什么和怎么推。&lt;/p&gt;
+
+&lt;h4 id=&quot;webassembly-httpswwwsmashingmagazinecom201705abridged-cartoon-introduction-webassembly&quot;&gt;&lt;a href=&quot;https://www.smashingmagazine.com/2017/05/abridged-cartoon-introduction-webassembly/&quot;&gt;WebAssembly 简明漫画介绍&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;文章采用漫画的形式生动地介绍 WebAssembly 到底是什么，以及为什么它可以那么快。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpsblogsouchecomwo-li-jie-zhong-de-da-qian-duan-da-wu-xian&quot;&gt;&lt;a href=&quot;https://blog.souche.com/wo-li-jie-zhong-de-da-qian-duan-da-wu-xian/&quot;&gt;我理解中的“大前端”/“大无线”&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;怎么实现技术的核心价值,而不是为了用而使用，笔者通过团队的中几个技术栈的演进，为我们展示了他对“大前端”/”大无线”的理解，也诠释了“不一味追求潮流,基于场景讨论问题”的思考。&lt;/p&gt;
+
+&lt;h4 id=&quot;httptechmeituancomhotel-fe-tech-systemhtml&quot;&gt;&lt;a href=&quot;http://tech.meituan.com/hotel-fe-tech-system.html&quot;&gt;美团点评酒旅前端的技术体系&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;对于边界越来越模糊的前端开发，一个完备的技术体系应当包括流程规范，技术工具栈，构建工具栈，自动化测试，部署流程和部署平台，监控体系，文章分享了团队技术体系的细节以及对当前整个架构的思考。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;前端技术&lt;/h2&gt;
+
+&lt;h4 id=&quot;typescript-httpsjuejinimpost59152911a22b9d0058fd5fe8&quot;&gt;&lt;a href=&quot;https://juejin.im/post/59152911a22b9d0058fd5fe8&quot;&gt;[译] 为何 TypeScript 愈发流行了&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;这篇文章试图探讨驱使TypeScript 愈来愈流行的因素，除了 Angular2，以及微软在企业级应用的影响等，其真实原因可能是现如今 JavaScript 开发越来越高的复杂性以及越来越强大的能力。&lt;/p&gt;
+
+&lt;h4 id=&quot;pxhttpimwebiotopic55e3d402771670e207a16bd1&quot;&gt;&lt;a href=&quot;http://imweb.io/topic/55e3d402771670e207a16bd1&quot;&gt;如何在高分屏移动设备上显示1px的线&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;本文详细解释了在retina屏中实现1px border效果，以及如何用CSS实现其效果。&lt;/p&gt;
+
+&lt;h4 id=&quot;css-httpwwwruanyifengcomblog201705css-variableshtml&quot;&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2017/05/css-variables.html&quot;&gt;CSS 变量教程&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;原生 CSS 的新功能，支持变量声明了，以后 CSS 的玩法又多起来了。&lt;/p&gt;
+
+&lt;h4 id=&quot;babel-httpwebjobbolecom91277&quot;&gt;&lt;a href=&quot;http://web.jobbole.com/91277/&quot;&gt;Babel 从入门到插件开发&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;各种Babel插件的应用，能让我们更方便快捷的开发， 现在让我了解下它是怎么应用及插件开发的。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;实用推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;a11ycsshttpffooddgithubioa11ycss&quot;&gt;&lt;a href=&quot;http://ffoodd.github.io/a11y.css/&quot;&gt;A11y.css&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;A11y.css 旨在向开发人员警告 HTML 代码中存在的潜在风险和错误， 可以通过简单地将其作为外部样式表来粗略地评估站点的质量。&lt;/p&gt;
+
+&lt;h4 id=&quot;the-ultimate-atom-editor-setup-for-jsreacthttpsmediumcomproductivity-freakmy-atom-editor-setup-for-js-react-9726cd69ad20&quot;&gt;&lt;a href=&quot;https://medium.com/productivity-freak/my-atom-editor-setup-for-js-react-9726cd69ad20&quot;&gt;The Ultimate Atom Editor Setup (+for JS/React)&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;“工欲善其事必先利其器”，在 atom上的react开发者终极配置。&lt;/p&gt;
+
+&lt;h4 id=&quot;vs-code-httpmpweixinqqcomsbizmjm5nzm0mjcymqmid2650071565idx2sn6669774b038b77489eb115725e36d751chksmbedb396389acb075e9af9116326019fb23fce8928f68025159c623a9cbba475fef3e40f14a2dscene21wechatredirect&quot;&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5NzM0MjcyMQ==&amp;amp;mid=2650071565&amp;amp;idx=2&amp;amp;sn=6669774b038b77489eb115725e36d751&amp;amp;chksm=bedb396389acb075e9af9116326019fb23fce8928f68025159c623a9cbba475fef3e40f14a2d&amp;amp;scene=21#wechat_redirect&quot;&gt;让开发更快更顺畅的 VS Code 插件推荐（一）&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;VS Code 的插件合集。除了自己的一战式的配套插件外，  其他的丰富免费的插件， 也造福这广大 VS Code 发烧友。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;团队分享&lt;/h2&gt;
+
+&lt;h4 id=&quot;all-about-recursion-ptc-tco-and-stc-in-javascript-httpszhuanlanzhihucomp26941235&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26941235&quot;&gt; [译] All About Recursion, PTC, TCO and STC in JavaScript &lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;本文为你提供更好的可视化提示及递归思考, 并解释什么是正确的尾部调用和句法尾部调用，以及如何区分他们，他们又如何工作及他们在javascript引擎中的实现。 @陈炳树&lt;/p&gt;
+
+&lt;h4 id=&quot;webapphttpelevenbeansgithubio20170516e692b8e4ba86e4b880e4b8aae68a95e7a5a8app&quot;&gt;&lt;a href=&quot;http://elevenbeans.github.io/2017/05/16/%E6%92%B8%E4%BA%86%E4%B8%80%E4%B8%AA%E6%8A%95%E7%A5%A8App/&quot;&gt;全栈开发实例：如何独立开发/发布一个WebAPP&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;“不想做全栈的前端不是好的攻城狮 ” , 本文作者分享了自己使用  React + Express + Mongodb 完成一个投票 SPA @李斌&lt;/p&gt;
+</description>
+        <pubDate>Fri, 19 May 2017 18:00:00 +0800</pubDate>
+        <link>http://ctripfe.com//centrarium/weekly/2017/05/19/weekly.html</link>
+        <guid isPermaLink="true">http://ctripfe.com//centrarium/weekly/2017/05/19/weekly.html</guid>
+        
+        
+        <category>Weekly</category>
+        
+      </item>
+    
+      <item>
+        <title>ELSE 技术周刊(2017.05.12期)</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;webpack-announces-new-webpack-clihttpsmediumcomwebpackannouncing-the-new-webpack-cli-75ce1d9b8663&quot;&gt;&lt;a href=&quot;https://medium.com/webpack/announcing-the-new-webpack-cli-75ce1d9b8663&quot;&gt;Webpack Announces New Webpack CLI&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Webpack 发布新的 Webpack CLI，还能很方便地自动将配置迁移到 Webapck2，快来尝试吧。&lt;/p&gt;
+
+&lt;h4 id=&quot;quantum-up-close-what-is-a-browser-enginehttpshacksmozillaorg201705quantum-up-close-what-is-a-browser-engine&quot;&gt;&lt;a href=&quot;https://hacks.mozilla.org/2017/05/quantum-up-close-what-is-a-browser-engine/&quot;&gt;Quantum Up Close: What is a browser engine?&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Mozilla 正在改造 Firefox 全新的浏览器引擎 Quantum ，这篇文章通过这个过程介绍如何来打造浏览器引擎。&lt;/p&gt;
+
+&lt;h4 id=&quot;visual-studio-2017-for-mac-release-noteshttpswwwvisualstudiocomen-usnewsreleasenotesvs2017-mac-relnotes&quot;&gt;&lt;a href=&quot;https://www.visualstudio.com/en-us/news/releasenotes/vs2017-mac-relnotes&quot;&gt;Visual Studio 2017 for Mac: Release Notes&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;微软在 Build 2017 大会发布 Visual Studio 2017 for Mac 正式版，开发者终于能在 Windows 和 Mac 环境之间实现无缝衔接，使用它同时开发服务端和客户端的应用程序。&lt;/p&gt;
+
+&lt;h4 id=&quot;introducing-stack-overflow-trendshttpsstackoverflowblog20170509introducing-stack-overflow-trends&quot;&gt;&lt;a href=&quot;https://stackoverflow.blog/2017/05/09/introducing-stack-overflow-trends/&quot;&gt;Introducing Stack Overflow Trends&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Stack Overflow 发布查看不同技术热门程度的 Trending Tool，涵盖各种技术的热门程度以及生命周期，数据来源于 Stack Overflow 上的提问&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;httpinsightsthoughtworkersorgprinciples-of-refactoring&quot;&gt;&lt;a href=&quot;http://insights.thoughtworkers.org/principles-of-refactoring/&quot;&gt;重构之十六字心法&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;重构威力无边，就像是武侠小说中的一件插在石头上的上古神器，但同样也不是一般人可以轻松驾驭的。如果运用不当，造成的损害也会同样巨大。如何将重构这件神器运用自如，发挥其最大的威力，也是我门一直在探寻的，即重构的手法和心法。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpszhuanlanzhihucomp26211623&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26211623&quot;&gt;美团点评前端无痕埋点实践&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;看看美团点评在代码埋点方案的基础上怎么演化出了一套轻量的、声明式的前端埋点方案。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;前端开发&lt;/h2&gt;
+
+&lt;h4 id=&quot;a-look-at-es6-module-support-in-browsershttpsjakearchibaldcom2017es-modules-in-browsers&quot;&gt;&lt;a href=&quot;https://jakearchibald.com/2017/es-modules-in-browsers/&quot;&gt;A Look at ES6 Module Support in Browsers&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;一瞥es6模块在各主流浏览器的兼容情况，以了解es6 module 向下兼容解决方案、async和defer工作远离以及跨域问题等新特性。&lt;/p&gt;
+
+&lt;h4 id=&quot;v8-ignitionjs-httpszhuanlanzhihucomp26669846&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26669846&quot;&gt;V8 Ignition：JS 引擎与字节码的不解之缘&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;以时间换空间，如今 V8 也回到了字节码的怀抱，来看看 JS 引擎与字节码的不解之缘！&lt;/p&gt;
+
+&lt;h4 id=&quot;elements-of-javascript-stylehttpsmediumcomjavascript-sceneelements-of-javascript-style-caa8821cb99f&quot;&gt;&lt;a href=&quot;https://medium.com/javascript-scene/elements-of-javascript-style-caa8821cb99f&quot;&gt;Elements of JavaScript Style&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;软件开发的本质是组合，我们通过组合模块，函数和数据结构来构建软件。理解如何编写和组成函数是软件开发人员应具备的基本技能。&lt;/p&gt;
+
+&lt;h4 id=&quot;nodejs--javascript-httpszhuanlanzhihucomp26128007&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26128007&quot;&gt;在 Node.js 中看 Javascript 的引用&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;在Javascript 中，对象的传递均是值传递，对象在传递的过程中是拷贝了一份新的引用。听起来有点绕口，不过这是JS基础，面试必问的题，只有理解这个，才能真正写好JS代码。&lt;/p&gt;
+
+&lt;h4 id=&quot;underscorejs-httpsgithubcomqianlongounderscore-analysisissues6&quot;&gt;&lt;a href=&quot;https://github.com/qianlongo/underscore-analysis/issues/6&quot;&gt;underscore.js 源码分析&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;跟着小编了解下 underscore.js  一些 API 实现思路。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;实用推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;prepack-webpack-pluginhttpsgithubcomgajusprepack-webpack-plugin&quot;&gt;&lt;a href=&quot;https://github.com/gajus/prepack-webpack-plugin&quot;&gt;prepack-webpack-plugin&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;基于 prepack 的 webpack 插件。&lt;/p&gt;
+
+&lt;h4 id=&quot;barbajs-create-badass-fluid-and-smooth-transition-between-your-websites-pageshttpsgithubcomlurukebarbajs&quot;&gt;&lt;a href=&quot;https://github.com/luruke/barba.js&quot;&gt;barba.js-Create badass, fluid and smooth transition between your website’s pages&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;4kb 代码解决你所有页面过渡动画,看 barbajs 如何使用 PJAX 实现页面之间切换的流畅特效。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;kpiokrhttpmpweixinqqcomsqbmbtu40psn0earyia9mmq&quot;&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s/QBmbTu40psN0eaRyIa9MmQ&quot;&gt;技术漫谈：为何KPI毁了索尼，而OKR却成就了谷歌？&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;相信大家 接触过 KPI，对于 OKR 也一定不陌生，两者有什么区别 ？ 以及如何有效的制定团队或自己的 OKR？ 此文作者结合自身的理解和运用，做了详细的解说，leader 们看过来。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpwwwhtml-jscomarticle3667&quot;&gt;&lt;a href=&quot;http://www.html-js.com/article/3667&quot;&gt;我脑海中的优秀技术团队&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;团队的组成是人，那么作为一个理想中团队的人应该保持什么样的品行，每个人都有自己的标准，不妨对比着看看。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;http://git.dev.sh.ctripcorp.com/groups/IFT&quot;&gt;IFT 小组&lt;/a&gt; 出品，汇聚一周好文章， &lt;a href=&quot;https://zhuanlan.zhihu.com/p/26859489&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@Curtis&lt;/a&gt; 前端中年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工，不安分于前端开发的搬砖工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot;&gt;@风清洋&lt;/a&gt; 从C++走来，一路虐过C#, Java, Python, Go， 最终定格在Javascript的前端攻城狮&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;&quot;&gt;@王鹏&lt;/a&gt; 不想当大神的前端不是一个好码农&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 程序圈的间谍，我的梦想在浩瀚宇宙，我的征途是星辰大海&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://git.dev.sh.ctripcorp.com/IFT/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章，期待你们。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 12 May 2017 18:00:00 +0800</pubDate>
+        <link>http://ctripfe.com//centrarium/weekly/2017/05/12/weekly.html</link>
+        <guid isPermaLink="true">http://ctripfe.com//centrarium/weekly/2017/05/12/weekly.html</guid>
+        
+        
+        <category>Weekly</category>
+        
+      </item>
+    
+      <item>
+        <title>ELSE 技术周刊(2017.05.05期)</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;prepack--partial-evaluator-for-javascripthttpsprepackio&quot;&gt;&lt;a href=&quot;https://prepack.io/&quot;&gt;Prepack · Partial evaluator for JavaScript&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;facebook团队发布了prepack，官方声明项目还处于早起开发阶段，尚未用于生产。&lt;/p&gt;
+
+&lt;h4 id=&quot;chrome-59-beta-headless-chromium-native-notifications-on-macos-and-service-worker-navigation-preloadhttpsblogchromiumorg201705chrome-59-beta-headless-chromium-nativehtml&quot;&gt;&lt;a href=&quot;https://blog.chromium.org/2017/05/chrome-59-beta-headless-chromium-native.html&quot;&gt;Chrome 59 Beta: Headless Chromium, native notifications on macOS, and service worker navigation preload&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Chrome 59 beta 发布了。提供新的命令行模式 的 Headless Chrome，可以用于自动化测试和 Server 端。还可以看这篇 what’s new Chrome 59’s DevTools 了解新版 DevTools，包含使用 Coverage 选项找到未使用的 CSS 和 JS 代码，以及阻止请求等等。&lt;/p&gt;
+
+&lt;h4 id=&quot;android-httpsgithubcomfuturiceandroid-best-practicesblobmastertranslationschinesereadmecnmd&quot;&gt;&lt;a href=&quot;https://github.com/futurice/android-best-practices/blob/master/translations/Chinese/README.cn.md&quot;&gt;Android 开发最佳实践&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;本文是 Futurice 公司的 Android 开发人员总结的最佳实践，遵循这些准则可以避免重复制造轮子。iOS 详见 iOS Good Practices,Windows Apps详见 Windows client Good Practices。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;前端技术&lt;/h2&gt;
+
+&lt;h4 id=&quot;emojiprototypelength--unicode-httpwwwzcfyccarticleemoji-prototype-length-a-tale-of-characters-in-unicode-2081html&quot;&gt;&lt;a href=&quot;http://www.zcfy.cc/article/emoji-prototype-length-a-tale-of-characters-in-unicode-2081.html&quot;&gt;Emoji.prototype.length —— Unicode 字符那些事儿&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;你聊天一直在用的emoji，在技术层面上如何工作?javascript为什么会这样处理emoji? 一切还是要回归到Unicode字符集。&lt;/p&gt;
+
+&lt;h4 id=&quot;javascriptundefined7httpsrainsoftio7-tips-to-handle-undefined-in-javascriptutmsourcejavascriptweeklyutmmediumemail&quot;&gt;&lt;a href=&quot;https://rainsoft.io/7-tips-to-handle-undefined-in-javascript/?utm_source=javascriptweekly&amp;amp;utm_medium=email&quot;&gt;javascript中处理undefined的7个小技巧&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;js开发者最常遇到的报错,应该就是 TypeError: Cannot read property ‘&lt;prop-name&gt;' of undefined无疑了 ; 怎么解决这个报错？ function undefined() {} ，当然这只是个玩笑，文章中一些以ES6新特性来处理此类报错的方法很实用！&lt;/prop-name&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;http2httpwwwtoutiaocomi6398286551935091202ttfrommobileqqutmcampaignclientshareappnewsarticleutmsourcemobileqqiid5574997551utmmediumtoutiaoios&quot;&gt;&lt;a href=&quot;http://www.toutiao.com/i6398286551935091202/?tt_from=mobile_qq&amp;amp;utm_campaign=client_share&amp;amp;app=news_article&amp;amp;utm_source=mobile_qq&amp;amp;iid=5574997551&amp;amp;utm_medium=toutiao_ios&quot;&gt;军备竞赛之http2性能测试小结&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;随着互联网用户体验的要求越来越高，近些年来加载网站需要下载的资源呈现大规模增长，在此基础上对网页加载速度的要求却从未降低,http2在这方面做了不少的性能优化。&lt;/p&gt;
+
+&lt;h4 id=&quot;javascriptbindhttpsjuejinimpost59093b1fa0bb9f006517b906&quot;&gt;&lt;a href=&quot;https://juejin.im/post/59093b1fa0bb9f006517b906&quot;&gt;JavaScript深入之bind的模拟实现&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;通过bind函数的模拟实现，了解更多bind的特性及使用场景&lt;/p&gt;
+
+&lt;h4 id=&quot;webpackbrowser-synchttpssegmentfaultcoma1190000009127661&quot;&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000009127661&quot;&gt;webpack与browser-sync热更新原理深度讲解&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;剖析webpack开发模式的热更新与browser-sync(websocket)的实现原理，亦给出了前后端最简单的实现。让你对两者有大概的了解。&lt;/p&gt;
+
+&lt;h4 id=&quot;html5-httpsjuejinimpost57b074fda633bd0057035b6d&quot;&gt;&lt;a href=&quot;https://juejin.im/post/57b074fda633bd0057035b6d&quot;&gt;HTML5 手势检测原理和实现&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;前端在手势交互上一直是硬伤，但是这不妨碍你去了解这些手势是怎么实现的。文章介绍了怎么利用H5对touch事件的监听，实现各种炫酷的手势交互体验。&lt;/p&gt;
+
+&lt;h4 id=&quot;githubhttpsgithubcomjawilblogissues10&quot;&gt;&lt;a href=&quot;https://github.com/jawil/blog/issues/10&quot;&gt;工作中经常用到github上优秀、实用、轻量级、无依赖的插件和库&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;前段库大合集!所有你可能会用的插件,一大波轮子来袭&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;实用技巧&lt;/h2&gt;
+
+&lt;h4 id=&quot;safely-accessing-deeply-nested-values-in-javascripthttpsmediumcomjavascript-insidesafely-accessing-deeply-nested-values-in-javascript-99bf72a0855a&quot;&gt;&lt;a href=&quot;https://medium.com/javascript-inside/safely-accessing-deeply-nested-values-in-javascript-99bf72a0855a&quot;&gt;Safely Accessing Deeply Nested Values In JavaScript&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;这是一篇简短的文章，主要介绍如何优雅安全地在 JavaScript 中访问深层嵌套数据结构的几种不同方法。可以使用几行 JS 代码实现，也可以借助一些类库，方法会有差异但都能很好地解决这个问题。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpszhuanlanzhihucomp25720136&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/25720136&quot;&gt;技术文章是怎样炼成的&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;信息时代，原创着实可贵。作者从三个阶段做什么事情，教你如何构建出一篇有质量的技术文章。&lt;/p&gt;
+
+&lt;h4 id=&quot;svg-httpswwwvillainhrcompage20170501svg20e58aa8e794bbe7b2bee9ab93&quot;&gt;&lt;a href=&quot;https://www.villainhr.com/page/2017/05/01/SVG%20%E5%8A%A8%E7%94%BB%E7%B2%BE%E9%AB%93&quot;&gt;SVG 动画精髓&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;从基本语法到动画原理,再到与数学知识的结合，讲解svg高级动画特效是如何实现的。&lt;/p&gt;
+
+&lt;h4 id=&quot;how-to-debug-nodejs-with-the-best-tools-availablehttpsblogrisingstackcomhow-to-debug-nodej-js-with-the-best-tools-available&quot;&gt;&lt;a href=&quot;https://blog.risingstack.com/how-to-debug-nodej-js-with-the-best-tools-available/&quot;&gt;How to Debug Node.js with the Best Tools Available&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;文章介绍了两种node调试的正确姿势:日志记录和开发环境调试。对于开发调试，又介绍了内置调试模块，v8 inspector及在visual Studio的环境下调试等方法。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;httpsjuejinimpost5902126aa0bb9f0065e80ea9&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5902126aa0bb9f0065e80ea9&quot;&gt;代码中添加注释之好坏丑&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;在要不要写注释这个问题上，不同人的看法大相径庭，有人是坚定的支持者，也有人认为这是一件毫无意义的事。“好的代码自身就是文档”这是一个切切实实的真理，可惜的是已经被滥用。注释当然是必要的，这篇文章介绍了什么是好的注释、不好的注释，以及丑陋的注释。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpwwwjianshucomp5a4f4422901c&quot;&gt;&lt;a href=&quot;http://www.jianshu.com/p/5a4f4422901c&quot;&gt;为什么你总是学习，却依然没有成长&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;为什么你总是学习，却依然没有成长，因为你技巧和方法不对!&lt;/p&gt;
+
+&lt;h4 id=&quot;httpsjuejinimpost590702d98d6d810058dd0537&quot;&gt;&lt;a href=&quot;https://juejin.im/post/590702d98d6d810058dd0537&quot;&gt;前端工程师做事的三重境界&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;关于前端工程师成长过程的认知模型，按照这种分析标准，看看你是 Programmer，Developer，还是 Enginner。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpssegmentfaultcoma1190000009271399&quot;&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000009271399&quot;&gt;测试也要有情商之如何与开发搞好关系&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;为什么研发和测试总是冲突的对立面？其实可以友好一点。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 IFT 小组 出品，汇聚一周好文章。本期编辑&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@Curtis&lt;/a&gt; 前端中年人&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工, 不安分于前端开发的搬砖工&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;&quot;&gt;@风清扬&lt;/a&gt; 从C++走来，一路虐过C#, Java, Python, Go， 最终定格在JS的前端攻城狮&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;&quot;&gt;@陈佳文&lt;/a&gt; 中学认真学画画，高中写练级脚本，后来就当了前端&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;&quot;&gt;@王鹏&lt;/a&gt; 不想当大神的前端不是一个好码农&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 程序圈的间谍，我的梦想在浩瀚宇宙，我的征途是星辰大海&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 05 May 2017 18:00:00 +0800</pubDate>
+        <link>http://ctripfe.com//centrarium/weekly/2017/05/05/weekly.html</link>
+        <guid isPermaLink="true">http://ctripfe.com//centrarium/weekly/2017/05/05/weekly.html</guid>
+        
+        
+        <category>Weekly</category>
+        
+      </item>
+    
+      <item>
+        <title>ELSE 技术周刊(2017.04.28期)</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;vuejs-server-side-rendering-guidehttpsssrvuejsorgen&quot;&gt;&lt;a href=&quot;https://ssr.vuejs.org/en/&quot;&gt;Vue.js Server-Side Rendering Guide&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;SSR（Server-Side Rendering）来了。vue 官方支持 node 的服务端渲染了，日前发布了英文版 api 文档，vue 生态越来越完善了。&lt;/p&gt;
+
+&lt;h4 id=&quot;painting-with-code--introducing-our-new-open-source-library-react-sketchapphttpairbnbdesignpainting-with-code&quot;&gt;&lt;a href=&quot;http://airbnb.design/painting-with-code/&quot;&gt;Painting with Code  Introducing our new open source library React Sketch.app.&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Airbnb 开源了一个新的库 &lt;a href=&quot;http://airbnb.io/react-sketchapp/&quot;&gt;React Sketch.app&lt;/a&gt;，可以使用 React 来绘制 Sketch，看起来挺酷炫的，回头一想使用场景貌似不多，要是能反过来把 Sketch 变成 React 就厉害了。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpwwwyinwangorgblog-cn20170423ai&quot;&gt;&lt;a href=&quot;http://www.yinwang.org/blog-cn/2017/04/23/ai&quot;&gt;我为什么不在乎人工智能&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;在这个鼓吹人工智能的时代，有人站出来说要冷静点，人工智能取代不了人类的工作，自动编程也是不可能的，我们不应该过度夸大它的用处。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpswwwzhihucomquestion36292298answer102418523&quot;&gt;&lt;a href=&quot;https://www.zhihu.com/question/36292298/answer/102418523&quot;&gt;维护一个大型开源项目是怎样的体验&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;维护开源项目不容易，许多开源项目就是无人维护而渐渐没落，听听 Electron 和 NW.js 作者维护这两个项目的有趣经历。&lt;/p&gt;
+
+&lt;h4 id=&quot;yes-python-is-slow-and-i-dont-carehttpshackernooncomyes-python-is-slow-and-i-dont-care-13763980b5a1&quot;&gt;&lt;a href=&quot;https://hackernoon.com/yes-python-is-slow-and-i-dont-care-13763980b5a1&quot;&gt;Yes, Python is Slow, and I Don’t Care&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;在硬件成本已经不再是最昂贵资源的时候，把事情做完比快速地做事更加重要。当我们使用 Python，就是在尽情享受可以快速做完事情的乐趣。&lt;/p&gt;
+
+&lt;h4 id=&quot;git-httpblogcodingplayboycom20170323gitinternal&quot;&gt;&lt;a href=&quot;http://blog.codingplayboy.com/2017/03/23/git_internal/&quot;&gt;Git 由浅入深之存储原理&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;详解 .git 目录下的文件内容,概述了 git 的存储方式, 对于每天朝夕相处的 git, 你有必要深入了解一下它。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;前端技术&lt;/h2&gt;
+
+&lt;h4 id=&quot;graphql-httpsjuejinimpost58fd6d121b69e600589ec740&quot;&gt;&lt;a href=&quot;https://juejin.im/post/58fd6d121b69e600589ec740&quot;&gt;[译] 我经常听到的 GraphQL 到底是什么&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;不管你最后会不会用上它，相信多了解了解 GraphQL 是值得的。如果你稍微花点时间去明白它的原理，应该可以找到它很多的可取之处。&lt;/p&gt;
+
+&lt;h4 id=&quot;javascripthttpwwwzcfyccarticle2643&quot;&gt;&lt;a href=&quot;http://www.zcfy.cc/article/2643&quot;&gt;函数式 JavaScript：将方法从对象中解耦&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;解耦让我们可以把函数用在更多地方以及不同类型的对象上，同时让它可以与其它函数组合。我们还消除掉了所有对 this 上下文的引用，光这一项对我来说就足够了！&lt;/p&gt;
+
+&lt;h4 id=&quot;webpack--rollup-httpsmediumcomwebpackwebpack-and-rollup-the-same-but-different-a41ad427058c&quot;&gt;&lt;a href=&quot;https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c&quot;&gt;webpack 与 rollup 的相似与差异&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;引入依赖模块的最小化，无疑是前端静态资源加载的极致体验。 但相对于 webpack2+Tree-shaking，rollup 的优势在哪里？&lt;/p&gt;
+
+&lt;h4 id=&quot;httpblogcsdnnetqq20004604articledetails70480932&quot;&gt;&lt;a href=&quot;http://blog.csdn.net/qq20004604/article/details/70480932&quot;&gt;个人的中小型项目前端架构浅谈&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;React 大法固然好，但是对于一个中小型单页面应用，精简、高效的满足业务的需求以及支持友好的快速的维护、迭代才是王道。在选用以及配置组件化前端框架的问题上，我认为，值得“思考9小时”得以“开发一小时”。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpszhuanlanzhihucomp26426054&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26426054&quot;&gt;单页应用的数据流方案探索&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;徐飞同志在 QCon 北京的分享，主要探讨在前端组件化开发大型应用的组件间通信问题，介绍了 MVI 架构理念。分析目前一些解决方案解决什么问题，还存在什么问题，并提出一套组件化开发的机制来保证对数据流的控制。&lt;/p&gt;
+
+&lt;h4 id=&quot;react-httpszhuanlanzhihucomp26270621&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26270621&quot;&gt;揭秘 react 生态体系&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;详细的总结了 react 的生态体系，以及它在 web 端，移动端，服务器端，VR 等各个领域中技术栈的使用。 不知不觉间 ， react 已不单纯是一个框架，而是一个行业解决方案，通过本文，可以让你对 react 的生态体系有了一个直观的了解。&lt;/p&gt;
+
+&lt;h4 id=&quot;javascript-httpwwwruanyifengcomblog201704memory-leakhtml&quot;&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2017/04/memory-leak.html&quot;&gt;JavaScript 内存泄漏教程&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;被这个问题问倒过吗？出自阮一峰的文章， 详细介绍了,什么是 JS 内存泄露，JS 内存泄漏的识别方法，ES6 对于内存泄露的解决方法&lt;/p&gt;
+
+&lt;h4 id=&quot;nodejs-httpsgithubcomelemefenode-interview&quot;&gt;&lt;a href=&quot;https://github.com/ElemeFE/node-interview&quot;&gt;饿了么大前端 Node.js 进阶教程&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;关于使用 Node 在服务端进行 JS 编程，绝逼不是像在浏览器端写段 JS 弹个框那么简单了，当我们面向服务器时，如何处理 I/O？如何解决并发？如何处理 HTTP? 如何…这是一篇非常基础文章，如果想做一个 NodeJS 全栈工程师，请务必从头至尾过一遍。&lt;strong&gt;强烈推荐&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;httpuedparty&quot;&gt;&lt;a href=&quot;http://ued.party/&quot;&gt;我的职业是前端工程师&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;一本前端小书，作者自称，内容主要集中于前端应用通用知识，并以个人视角来看前端领域的各种技术。&lt;/p&gt;
+
+&lt;h4 id=&quot;javascript-httpsjuejinimpost58f46e8944d904006c026952&quot;&gt;&lt;a href=&quot;https://juejin.im/post/58f46e8944d904006c026952&quot;&gt;JavaScript 中函数节流和函数去抖的讲解&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;关于函数节流（throttle ）和函数去抖（debounce）的讲解，结合 underscore 的 &lt;a href=&quot;http://underscorejs.org/#throttle&quot;&gt;&lt;em&gt;.debounce](http://underscorejs.org/#debounce) 和 [&lt;/em&gt;.throttle &lt;/a&gt; 实现。如果不能完全体会其差异，还可以到 &lt;a href=&quot;http://demo.nimius.net/debounce_throttle/&quot;&gt;这里&lt;/a&gt; 看一下两者可视化的比较。&lt;/p&gt;
+
+&lt;h4 id=&quot;javascripthttpmpweixinqqcomshnbovpsvvntmj48usjkrva&quot;&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s/hnBOvpSvvNtmJ48UsjkRVA&quot;&gt;摆脱浏览器限制的Javascript&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;万金油 JavaScript ，就像是 Atwood定律提到的：任何能够用 JavaScript 实现的应用系统，最终都必将用 JavaScript 实现（Any application that can be written in JavaScript, will eventually be written in JavaScript）&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;实用技巧&lt;/h2&gt;
+
+&lt;h4 id=&quot;max-age-httpsjakearchibaldcom2016caching-best-practices&quot;&gt;&lt;a href=&quot;https://jakearchibald.com/2016/caching-best-practices/&quot;&gt;缓存最佳实践 &amp;amp; max-age 陷阱&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;no-cache 是不缓存资源? must-revalidate 是每次都校验资源？答案都在这篇，还有其他更多关于cache 的冷知识和使用陷阱&lt;/p&gt;
+
+&lt;h4 id=&quot;react----setstatehttpszhuanlanzhihucomp20328570columnslugpurerender&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/20328570?columnSlug=purerender&quot;&gt;React 源码剖析系列 － 解密 setState&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;this.setState() 方法应该是每一位使用 React 的同学最先熟悉的 API。然而，你真的了解 setState 么&lt;/p&gt;
+
+&lt;h4 id=&quot;react--ie8-httpwwwaliuedcomp3240&quot;&gt;&lt;a href=&quot;http://www.aliued.com/?p=3240&quot;&gt;React 项目的一个 ie8 兼容性问题&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;在前端框架层出不穷、标准不断更新的时候，对于低版本的浏览器兼容就成了棘手的问题。本文讲解了 webpack + React 项目的一些 IE8 的兼容方案，以及遇到坑，可以了解下，避免以后遇到此类兼容问题 。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;httpslovekygithubio20170418translate-how-i-became-better-programmer&quot;&gt;&lt;a href=&quot;https://loveky.github.io/2017/04/18/translate-how-i-became-better-programmer/&quot;&gt;[译] 我是如何成为一名更优秀的程序员的&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;作者将自己编程路上的心路历程总结下来，希望对你会有所启发。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpblogjobbolecom110986&quot;&gt;&lt;a href=&quot;http://blog.jobbole.com/110986/&quot;&gt;边工作边带娃，我是如何在 1 年内拿到第 2 个学位和 5 个开发者认证的&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;常规的做事方法都是为傻瓜准备的，因为它设计的目的就是让每个人都能够跟上进度。实际上大多数人都可以做的更快更好。&lt;/p&gt;
+
+&lt;h4 id=&quot;httpslinuxcnarticle-8447-1html&quot;&gt;&lt;a href=&quot;https://linux.cn/article-8447-1.html&quot;&gt;极客漫画：气人的软件&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;看看这些自作聪明的软件，会不会让人发疯。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;http://git.dev.sh.ctripcorp.com/groups/IFT&quot;&gt;IFT 小组&lt;/a&gt; 出品，汇聚一周好文章， &lt;a href=&quot;http://conf.ctripcorp.com/pages/viewpage.action?pageId=136416361&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@Curtis&lt;/a&gt; (陈炳树) 编程时总是伴随着背景音乐的前端农民工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; (邹传勇) 前端搬砖工，不安分于前端开发的搬砖工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://git.dev.sh.ctripcorp.com/u/gy.wang&quot;&gt;@汪桂洋&lt;/a&gt; 从C++走来，一路虐过C#, Java, Python, Go， 最终定格在Javascript的前端攻城狮&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://git.dev.sh.ctripcorp.com/u/chenjiawen&quot;&gt;@陈佳文&lt;/a&gt; 中学认真学画画，高中写练级脚本，后来就当了前端&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://git.dev.sh.ctripcorp.com/u/wangpb&quot;&gt;@王鹏&lt;/a&gt; 不想当大神的前端不是一个好码农&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://git.dev.sh.ctripcorp.com/u/yran&quot;&gt;@yran&lt;/a&gt; 程序圈的间谍，我的梦想在浩瀚宇宙，我的征途是星辰大海&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://git.dev.sh.ctripcorp.com/IFT/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章，期待你们。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 28 Apr 2017 18:00:00 +0800</pubDate>
+        <link>http://ctripfe.com//centrarium/weekly/2017/04/28/weekly.html</link>
+        <guid isPermaLink="true">http://ctripfe.com//centrarium/weekly/2017/04/28/weekly.html</guid>
+        
+        
+        <category>Weekly</category>
+        
+      </item>
+    
+  </channel>
+</rss>
