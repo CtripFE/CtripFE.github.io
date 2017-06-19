@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="wrapper about-page-wrapper">
+<div class="page">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  {% include page_divider.html %}
+
+  <article class="post-content">
+    {% for crew in site.crews %}
+      <li class="crew-container">
+        <a href="{{ crew.url }}">
+          <img src="{{ crew.profile }}" title="Profile Picture" class="crew-profile">
+          <h4>{{ crew.name }}</h4>
+          <p>{{ crew.intro }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </article>
+
+</div>
+</div>

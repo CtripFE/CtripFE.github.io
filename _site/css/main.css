@@ -651,3 +651,38 @@ pre code.hljs {
   margin: 0; }
   .home .post-excerpt h4 a {
     color: #70aad0; }
+
+.page-content .crew-container .crew-profile {
+  max-width: 100px;
+  border-radius: 100%;
+  margin: auto;
+  padding-bottom: 0.5em; }
+
+.crew-container {
+  width: 33.333333%;
+  float: left;
+  list-style: none;
+  text-align: center;
+  padding: 20px 0 20px; }
+
+.crew-container:nth-child(4), .crew-container:nth-child(5) {
+  width: 50%; }
+
+.page-content .crew-container a:hover {
+  text-decoration: none; }
+
+.page-content .crew-container h4 {
+  color: #000;
+  font-weight: 700;
+  font-size: 19px; }
+
+.page-content .crew-container p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.75; }
+
+.about-page-wrapper {
+  max-width: 55rem; }
+
+.main-title {
+  line-height: 100%; }

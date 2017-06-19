@@ -69,6 +69,33 @@ descriptions:
 #     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
 #     desc: Follow me on Twitter            # Description to display as link title, etc
 #     share: true                           # Include in the "Share" section of posts
+crews:
+  - name: '冉余'
+    profile: "/assets/team/ry.jpeg"
+    url: 'https://github.com/mirreal'
+    intro: '程序圈的间谍，我的梦想在浩瀚宇宙，我的征途是星辰大海'
+
+  - name: '风清扬'
+    profile: "/assets/team/gy.png"
+    url: 'https://github.com/StevenX911'
+    intro: '从 C++ 走来，一路虐过 C#, Java, Python, Go, 现在写 Javascript'
+
+  - name: 'stoneYong'
+    profile: "/assets/team/cy.jpeg"
+    url: 'https://github.com/stoneyong'
+    intro: '前端搬砖工, 不安分于前端开发的搬砖工'
+
+  - name: 'sturloly'
+    profile: "/assets/team/jw.png"
+    url: 'https://github.com/sturloly'
+    intro: 'building apps for my future starship'
+
+  - name: 'Curtis'
+    profile: "/assets/team/bs.png"
+    url: 'https://github.com/CurtisCBS'
+    intro: '中年人'
+
+
 social:
   - name: Twitter
     icon: twitter

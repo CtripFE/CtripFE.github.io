@@ -80,6 +80,7 @@
     <a href="/" class="logo">
       
       <img src="/assets/logo.png" alt="ELSE">
+      <span>ELSE</span>
       
     </a>
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
@@ -103,10 +104,6 @@
           
         
           
-          <li class="nav-link"><a href="/typography/">Typography</a>
-          
-        
-          
         
       </ul>
     </nav>
@@ -115,7 +112,7 @@
 
 
     <div class="page-content">
-        <div class="wrapper">
+        <div class="wrapper about-page-wrapper">
 <div class="page">
 
   <header class="post-header">
@@ -129,15 +126,47 @@
 
 
   <article class="post-content">
-    <p><img src="/assets/profile-placeholder.gif" title="Profile Picture" class="profile" /></p>
-
-<p>Centrarium is a custom theme for Jekyll, made by <a href="http://bencentra.com">Ben Centra</a> for his own blog. He’d be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the <a href="https://github.com/bencentra/centrarium">GitHub repository</a>.</p>
-
-<p>This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely.</p>
-
-<p>You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a>. And you can find the source code for Jekyll at <a href="https://github.com/jekyll/jekyll">github.com/jekyll/jekyll</a></p>
-
-
+    
+      <li class="crew-container">
+        <a href="https://github.com/mirreal">
+          <img src="/assets/team/ry.jpeg" title="Profile Picture" class="crew-profile">
+          <h4>冉余</h4>
+          <p>程序圈的间谍，我的梦想在浩瀚宇宙，我的征途是星辰大海</p>
+        </a>
+      </li>
+    
+      <li class="crew-container">
+        <a href="https://github.com/StevenX911">
+          <img src="/assets/team/gy.png" title="Profile Picture" class="crew-profile">
+          <h4>风清扬</h4>
+          <p>从 C++ 走来，一路虐过 C#, Java, Python, Go, 现在写 Javascript</p>
+        </a>
+      </li>
+    
+      <li class="crew-container">
+        <a href="https://github.com/stoneyong">
+          <img src="/assets/team/cy.jpeg" title="Profile Picture" class="crew-profile">
+          <h4>stoneYong</h4>
+          <p>前端搬砖工, 不安分于前端开发的搬砖工</p>
+        </a>
+      </li>
+    
+      <li class="crew-container">
+        <a href="https://github.com/sturloly">
+          <img src="/assets/team/jw.png" title="Profile Picture" class="crew-profile">
+          <h4>sturloly</h4>
+          <p>building apps for my future starship</p>
+        </a>
+      </li>
+    
+      <li class="crew-container">
+        <a href="https://github.com/CurtisCBS">
+          <img src="/assets/team/bs.png" title="Profile Picture" class="crew-profile">
+          <h4>Curtis</h4>
+          <p>中年人</p>
+        </a>
+      </li>
+    
   </article>
 
 </div>
@@ -168,10 +197,6 @@
         
         
           <li class="nav-link"><a href="/posts/">Posts</a>
-        
-        
-        
-          <li class="nav-link"><a href="/typography/">Typography</a>
         
         
         
@@ -299,13 +324,15 @@ $(document).ready(function() {
   });
 </script>
 
-<script>
-<script>
+
+<script type="text/javascript">
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?8dc86729249c78ab7937a77249452f73";
   var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
 
 
