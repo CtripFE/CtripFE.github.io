@@ -464,10 +464,11 @@ pre code.hljs {
 	}
 }
 .page-content .crew-container .crew-profile{
+		width: 6rem;
 		max-width: 100px;
 		border-radius: 100%;
-		margin: auto;
-		padding-bottom: 0.5em;
+		margin: 3rem auto 0;
+		// padding-bottom: 0.5em;
 }
 .crew-container{
 	width: 33.333333%;
