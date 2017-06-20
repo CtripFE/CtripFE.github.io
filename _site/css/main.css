@@ -271,22 +271,28 @@ pre code.hljs {
     margin-right: auto;
     border-radius: 50%; }
 
+.site-header-container, .post-header-container.origin-setting {
+  padding: 0;
+  background-color: transparent; }
+
 .site-header-container, .post-header-container {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 4rem 0 8rem; }
   .site-header-container.has-cover, .post-header-container.has-cover {
     color: #fff;
     text-shadow: 0 2px 1px rgba(0, 0, 0, 0.67) !important;
     background-position: 50% 50%;
     background-size: cover; }
     .site-header-container.has-cover .title, .post-header-container.has-cover .title {
-      font-size: 2.98598em; }
+      font-size: 2.98598em;
+      font-size: 4rem; }
     .site-header-container.has-cover .subtitle, .site-header-container.has-cover .info, .post-header-container.has-cover .subtitle, .post-header-container.has-cover .info {
       font-size: 1.2em; }
   .site-header-container .scrim, .post-header-container .scrim {
     padding: 3em 1em; }
     .site-header-container .scrim.has-cover, .post-header-container .scrim.has-cover {
-      background-color: rgba(0, 0, 0, 0.2);
       padding: 6em 1em !important; }
       @media screen and (min-width: 768px) {
         .site-header-container .scrim.has-cover, .post-header-container .scrim.has-cover {
@@ -438,14 +444,26 @@ pre code.hljs {
     .page-content .pagination a.newer-posts {
       text-decoration: none; }
   .page-content .site-header-container {
+    position: relative;
     color: #fff;
-    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.33);
-    background-color: #70aad0; }
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.33); }
     .page-content .site-header-container .site-header .title {
       font-size: 2.98598em; }
     .page-content .site-header-container .site-header .subtitle {
       font-style: italic;
       font-size: 1.2em; }
+  .page-content .site-header-container:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='300' width='3000' fill='rgb(255,255,255)' fill-opacity='1'%3E%3Cpolygon points='0,300 3000,300 3000,0'%3E%3C/polygon%3E%3C/svg%3E");
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: '';
+    height: 300px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    bottom: -28px; }
   .page-content img {
     display: block;
     margin: auto;
@@ -690,7 +708,7 @@ pre code.hljs {
 .navigation .logo span {
   position: relative;
   bottom: .66666666rem;
-  font-weight: 700; }
+  font-size: 1.5rem; }
 
 *:hover {
   text-decoration: none !important; }

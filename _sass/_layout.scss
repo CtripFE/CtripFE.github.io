@@ -68,10 +68,15 @@ pre code.hljs {
     border-radius: 50%;
   }
 }
-
+.site-header-container, .post-header-container.origin-setting{
+	padding: 0;
+	background-color: transparent;
+}
 .site-header-container, .post-header-container {
 	width: 100%;
 	text-align: center;
+	background-color: #f8f8f8;
+	padding: 4rem 0 8rem;
 	&.has-cover {
 		color: $white;
 		text-shadow: 0 2px 1px rgba(0,0,0,0.67) !important;
@@ -79,6 +84,7 @@ pre code.hljs {
 		background-size: cover;
 		.title {
 			font-size: modular-scale(6);
+			font-size: 4rem;
 		}
 		.subtitle, .info {
 			font-size: modular-scale(1);
@@ -87,7 +93,7 @@ pre code.hljs {
 	.scrim {
 		padding: 3em 1em;
 		&.has-cover {
-			background-color: rgba(0,0,0,0.2);
+			// background-color: rgba(0,0,0,0.2);
 			padding: 6em 1em !important;
 			@include media($tablet) {
 				padding: 9em 1em !important;
@@ -233,9 +239,9 @@ pre code.hljs {
     }
 	}
 	.site-header-container {
+		position: relative;
 		color: $white;
 		text-shadow: 0 2px 1px rgba(0,0,0,0.33);
-		background-color: $highlight-color;
 		.site-header{
 			.title {
 				font-size: modular-scale(6);
@@ -245,6 +251,19 @@ pre code.hljs {
 				font-size: modular-scale(1);
 			}
 		}
+	}
+	.site-header-container:after{
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='300' width='3000' fill='rgb(255,255,255)' fill-opacity='1'%3E%3Cpolygon points='0,300 3000,300 3000,0'%3E%3C/polygon%3E%3C/svg%3E");
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: '';
+    height: 300px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    bottom: -28px;
 	}
 	img {
 		display: block;
@@ -482,7 +501,7 @@ pre code.hljs {
 .navigation .logo span{
 	position: relative;
 	bottom: .66666666rem;
-	font-weight: 700;
+	font-size: 1.5rem;
 }
 *:hover{
 	text-decoration:none!important;
