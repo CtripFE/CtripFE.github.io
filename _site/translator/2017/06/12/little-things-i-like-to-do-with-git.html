@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>喜欢用 Git 做的一些小事</title>
+  <meta name="description" content="  作者：@csswizardry  原文：Little Things I Like to Do with Git  随便说点：这篇文章主要从管理者的角度谈论了使用 git 的心得，使用大量篇幅介绍 git log 的一些方法和技巧。  同样地，发现很多人其实并没有深入全面地去了解过 git 的用法，作为一名开发...">
+  
+  <meta name="author" content="ELSE">
+  <meta name="copyright" content="&copy; ELSE 2017">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="  作者：@csswizardry  原文：Little Things I Like to Do with Git  随便说点：这篇文章主要从管理者的角度谈论了使用 git 的心得，使用大量篇幅介绍 git log 的一些方法和技巧。  同样地，发现很多人其实并没有深入全面地去了解过 git 的用法，作为一名开发..." />
+  <meta property="og:url" content="http://ctripfe.com/" />
+  <meta property="og:site_name" content="ELSE" />
+  <meta property="og:title" content="喜欢用 Git 做的一些小事" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://ctripfe.com//assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="喜欢用 Git 做的一些小事">
+  <meta name="twitter:description" content="  作者：@csswizardry  原文：Little Things I Like to Do with Git  随便说点：这篇文章主要从管理者的角度谈论了使用 git 的心得，使用大量篇幅介绍 git log 的一些方法和技巧。  同样地，发现很多人其实并没有深入全面地去了解过 git 的用法，作为一名开发...">
+  <meta name="twitter:image" content="http://ctripfe.com//assets/logo.png">
+  <meta name="twitter:url" content="http://ctripfe.com/">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://ctripfe.com//translator/2017/06/12/little-things-i-like-to-do-with-git.html">
+  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://ctripfe.com//feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <img src="/assets/logo.png" alt="ELSE">
+      <span class='main-title'>ELSE</span>
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        
+          
+          <li class="nav-link"><a href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li class="nav-link"><a href="/posts/">Posts</a>
+          
+        
+          
+        
+          
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+<div class="post-header-container origin-setting">
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">喜欢用 Git 做的一些小事</h1>
+      <p class="info">by <strong>mirreal</strong></p>
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">June 12, 2017</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/category/translator">Translator</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <blockquote>
+  <p>作者：<a href="https://twitter.com/csswizardry">@csswizardry</a></p>
+
+  <p>原文：<a href="https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/">Little Things I Like to Do with Git</a></p>
+
+  <p>随便说点：这篇文章主要从管理者的角度谈论了使用 git 的心得，使用大量篇幅介绍 <code class="highlighter-rouge">git log</code> 的一些方法和技巧。</p>
+
+  <p>同样地，发现很多人其实并没有深入全面地去了解过 git 的用法，作为一名开发人员，大多数时候只要会使用 <code class="highlighter-rouge">git pull</code>，<code class="highlighter-rouge">git add</code>，<code class="highlighter-rouge">git commit</code>，<code class="highlighter-rouge">git push</code> 似乎就足够，还有很大一部分人只使用特定的图形化工具。但事实上真的是这样吗，可能在遇到某个稍微高级一点的问题或者需求就手足无措。对于某个特定个体而言，很多场景我们未必会遇到，即使碰到也可以现场寻求搜索工具的帮助，这也是一种学习方式，无意否定这种方式，但最大的问题就是只见一叶而难以窥见森林。在这里推荐一个小工具 <a href="https://github.com/Gazler/githug">githug</a>，通过一种比较轻松的游戏的方式来一探全貌。</p>
+</blockquote>
+
+<p>在跟我的朋友 Tim 聊天的时候，谈到我有多喜欢 Git。作为经常使用的一个工具，它强大而优雅。在这里，介绍一下我个人使用得最多，同时也是最有用的一些小技巧。</p>
+
+<h2 id="section">管理者面板</h2>
+
+<p>无论你认为在工作中的游戏化（gamification）和竞争是好是坏，对于这个话题在不同的时间可能是完全不同的结论。但如果你对团队成员在项目中的提交数量感兴趣，使用 <code class="highlighter-rouge">shortlog</code> 就可以找到答案：</p>
+
+<p>（请忽略我）</p>
+
+<p>（我只是占位的）</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git shortlog -sn
+    80  Harry Roberts
+    34  Samantha Peters
+     3  Tom Smith
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">shortlog</code> 可以视作对 <code class="highlighter-rouge">git log</code> 的概要。</p>
+
+<ul>
+  <li><code class="highlighter-rouge">-s</code>选项将隐藏提交描述，仅提供提交计数摘要</li>
+  <li><code class="highlighter-rouge">-n</code> 选项将根据每个作者的提交数对输出进行排序，而不是默认的按作者字母顺序。</li>
+</ul>
+
+<p>上面显示的是项目生命周期的所有提交，但是如果想查看在特定时间内的情况，可以使用 <code class="highlighter-rouge">--since</code> 和 <code class="highlighter-rouge">--until</code> 选项：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git shortlog -sn --since<span class="o">=</span><span class="s1">'10 weeks'</span> --until<span class="o">=</span><span class="s1">'2 weeks'</span>
+    59  Harry Roberts
+    24  Samantha Peters
+</code></pre>
+</div>
+<p>我为此配置了别名 <code class="highlighter-rouge">$ git stats</code></p>
+
+<h2 id="section-1">责任人</h2>
+
+<p>Git 有一个非常有用的 <code class="highlighter-rouge">blame</code> 功能，允许我们查看特定代码段的负责开发人员：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="c"># See who last changed lines 5 through 10 of the buttons’ CSS:</span>
+<span class="gp">$ </span>git blame -L5,10 _components.buttons.scss
+</code></pre>
+</div>
+
+<p>这一条放在这里讲好像有点过头，像是我们在找开发人员哪些地方做错了。但也不完全是这样，另一方面，他们可能已经做了一些我们想要了解的特别厉害或是印象深刻的事情。我们原本会问，哇！我之前还没有看到这个功能，还想知道是谁做的。</p>
+
+<p>由于是从 SVN 转到 Git，我使用 <code class="highlighter-rouge">praise</code> 作为 <code class="highlighter-rouge">blame</code> 的别名，这样二者都可以使用：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git config --global alias.praise blame
+</code></pre>
+</div>
+
+<p>即，我也可以这样做：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="c"># Find out who implemented Resource Hints and buy them a coffee:</span>
+<span class="gp">$ </span>git praise -L18,23 _includes/head.html
+</code></pre>
+</div>
+
+<p>只是一点小变化，但效果不错。</p>
+
+<h2 id="section-2">隐藏空白提示</h2>
+
+<p>当使用 <code class="highlighter-rouge">diff</code> 或 <code class="highlighter-rouge">show</code> 查看具有大量空白变化的版本对比时，会有很多视觉噪音干扰我们，使得很难看到更重要的变化内容。</p>
+
+<p>幸运的是，去除这种空白提示非常容易，在 <code class="highlighter-rouge">git diff</code> 和 <code class="highlighter-rouge">git show</code> 使用 <code class="highlighter-rouge">-w</code> 选项就可以轻松搞定。比如，之前：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> a {
+   color: $color-links;
+
+-&amp;:hover {
+-  color: $color-links-hover;
+-}
++  &amp;:hover {
++    color: $color-links-hover;
++    text-decoration: underline;
++  }
+
+}
+</code></pre>
+</div>
+
+<p>使用 <code class="highlighter-rouge">-w</code> 之后：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> a {
+   color: $color-links;
+
+   &amp;:hover {
+     color: $color-links-hover;
++    text-decoration: underline;
+   }
+
+}
+</code></pre>
+</div>
+
+<p>现在可以很容易看出，唯一有意义的变化是增加了 <code class="highlighter-rouge">text-decoration: underline;</code>，而其余​​的 <code class="highlighter-rouge">diff</code> 是有点误导性的。</p>
+
+<h2 id="section-3">仅显示单词的变化而不是整行</h2>
+
+<p>写代码跟写文章不同，查看变化的单词而不是整行通常会更有用; 这在编辑 markdown 文档时尤其有用，就像现在。</p>
+
+<p>幸运的是，我们只要使用 <code class="highlighter-rouge">--word-diff</code> 选项就能显示单词的变化：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git diff --word-diff
+</code></pre>
+</div>
+
+<p>跟不使用 <code class="highlighter-rouge">--word-diff</code> 选项的区别还是很大的：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>-My friend Tom recently gave an excellent talk
++My good friend Tom gave an excellent talk
+</code></pre>
+</div>
+
+<p>如果启用 <code class="highlighter-rouge">--word-diff</code>，我们能得到更便于理解和更有用的概览：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>My {+good+} friend Tom [-recently-] gave an excellent talk
+</code></pre>
+</div>
+
+<p>注意只有变化的文本被突出显示（通过 <code class="highlighter-rouge"><span class="p">{</span><span class="err">+</span><span class="w"> </span><span class="err">+</span><span class="p">}</span></code> 和 <code class="highlighter-rouge">[- -]</code>)</p>
+
+<h2 id="section-4">查看最近工作的分支</h2>
+
+<p>在任何给定的项目，在许多不同的分支之间切换是很常见的，并且跟踪它们可能相当棘手。我们可以让 Git 帮助我们解决这个问题：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git <span class="k">for</span>-each-ref --count<span class="o">=</span>10 --sort<span class="o">=</span>-committerdate refs/heads/ --format<span class="o">=</span><span class="s2">"%(refname:short)"</span>
+</code></pre>
+</div>
+
+<p>通过这个命令可以知道最近在工作的 10（–count=10）个分支，按照上次工作的时间排序。只显示本地分支（<code class="highlighter-rouge">refs/heads/</code>），并通过 <code class="highlighter-rouge">--format</code> 选项获得更友好的呈现方式。</p>
+
+<p>这是一个有点冗长的命令，所以我为此配置别名 <code class="highlighter-rouge">$ git recent</code>。</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git config --global alias.recent <span class="s2">"for-each-ref --count=10 --sort=-committerdate refs/heads/ --format=</span><span class="se">\"</span><span class="s2">%(refname:short)</span><span class="se">\"</span><span class="s2">"</span>
+</code></pre>
+</div>
+
+<h2 id="section-5">看到每个人都在做什么</h2>
+
+<p>有时候，特别是对于团队领导，了解团队成员在所有分支的行为概览是很有用的。再一次地，Git 可以让这一切变得很容易：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --all --oneline --no-merges
+</code></pre>
+</div>
+
+<p>这可以得到一份关于所有人的日志报告简化版（带有 <code class="highlighter-rouge">--no-merges</code> 选项）</p>
+
+<p>我们也可以通过 <code class="highlighter-rouge">--since</code> 选项来限制返回的提交数量：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --all --since<span class="o">=</span><span class="s1">'2 weeks'</span> --oneline --no-merges
+</code></pre>
+</div>
+
+<p>这样我们可以看到，在过去的两个星期里，每个人都在做什么。</p>
+
+<p>可以配置一个别名 <code class="highlighter-rouge">$ git overview</code></p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git config --global alias.overview <span class="s2">"log --all --since='2 weeks' --oneline --no-merges"</span>
+</code></pre>
+</div>
+
+<h2 id="section-6">提醒你自己已经做了什么</h2>
+
+<p>当你回到一个比较旧的项目，或是在长时间休息之后回到办公室，可能不知道你最后在做什么工作，这种情况时常发生。我们可以通过 Git 轻松获得我们在项目中的工作情况：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --all --oneline --no-merges --author<span class="o">=</span>&lt;your email address&gt;
+</code></pre>
+</div>
+
+<p>和上一条很类似，只是我们将日志限制于我们自己的提交，也可以增加 <code class="highlighter-rouge">--since</code> 限制。</p>
+
+<p>这也有一个别名 <code class="highlighter-rouge">$ git recap</code>。</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git config --global alias.recap <span class="s2">"log --all --oneline --no-merges --author=name@mail.com"</span>
+</code></pre>
+</div>
+
+<h2 id="section-7">今天的工作</h2>
+
+<p>同样地，不在这里讨论如何衡量开发人员的生产力，但我觉得让客户知道我在任何一天的工作情况是很有用的。不是要你保留完成任务的详细列表，我们可以使用 Git 获取所有这些信息：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --since<span class="o">=</span>00:00:00 --all --no-merges --oneline --author<span class="o">=</span>&lt;your email address&gt;
+</code></pre>
+</div>
+
+<p>这将记录（<code class="highlighter-rouge">log</code>） 你工作的所有（<code class="highlighter-rouge">--all</code>）分支，谁（<code class="highlighter-rouge">--author</code>）从（<code class="highlighter-rouge">--since</code>）午夜开始都做了什么，（不包括合并提交 <code class="highlighter-rouge">--no-merges</code>），并提供一个简单的一行 （<code class="highlighter-rouge">--oneline</code>） 概述。</p>
+
+<p>我有这个别名 <code class="highlighter-rouge">$ git today</code>。</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git config --global alias.today <span class="s2">"log --since=00:00:00 --all --no-merges --oneline --author=name@mail.com"</span>
+</code></pre>
+</div>
+
+<h2 id="section-8">生成更改日志</h2>
+
+<p>维护一份 CHANGELOG 可能有点乏味，我们必须查看自上次发布以来所做的所有工作，然后提取其中有用的部分。幸运的是，我们可以使用 Git 来给我们一个好的开头：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --oneline --no-merges &lt;last tag&gt;..HEAD
+</code></pre>
+</div>
+
+<p>注意：<code class="highlighter-rouge">HEAD</code> 是可选的，如果你省略（即… –no-merges <last tag="">..），`HEAD` 会是隐含的，当然这样可以节省几次敲击键盘的时间。</last></p>
+
+<p>这将创建一个简化的日志，显示最后一个发布版本和 <code class="highlighter-rouge">HEAD</code> 之间的所有提交（不包括合并提交）。</p>
+
+<p>例如：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --oneline --no-merges 1.0.0..
+1257b95 <span class="o">[</span>refs <span class="c">#00019] Bump version</span>
+2b9b28e <span class="o">[</span>refs <span class="c">#00019] Add auto width class</span>
+17b8eb1 <span class="o">[</span>refs <span class="c">#00015] Tidy up README.md</span>
+bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell main mixin</span>
+</code></pre>
+</div>
+
+<p>这告诉我，自从上次发布（1.0.0）到当前项目状态（<code class="highlighter-rouge">HEAD</code>），已经完成哪些工作。这对于 CHANGELOG 来说是一个很好的参考。</p>
+
+<p>注意：不仅仅适用于 tag，还可以使用提交哈希。</p>
+
+<h2 id="section-9">检查需要拉取哪些变化</h2>
+
+<p>如果你在一段时间内不在项目，可能需要先检查上游的变更，然后再将这些更新下载到本地分支。</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --oneline --no-merges HEAD..&lt;remote&gt;/&lt;branch&gt;
+</code></pre>
+</div>
+
+<p>注意：同样地，<code class="highlighter-rouge">HEAD</code> 在这里是可选的，省略将使其隐含。</p>
+
+<p>例如，让我们来看看你在度假时在特性分支做了什么：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git checkout feature/fonts
+<span class="gp">$ </span>git fetch
+<span class="gp">$ </span>git log --oneline --no-merges ..origin/feature/fonts
+</code></pre>
+</div>
+
+<p>我使用这个别名 <code class="highlighter-rouge">$ git upstream</code>。</p>
+
+<h2 id="section-10">检查即将上传的内容</h2>
+
+<p>最好的情况是可以经常提交和上传，但如果某种原因导致有大量的本地提交尚未上传，可以快速回顾一下都是什么。</p>
+
+<p>为了做到这一点，我们反转之前的命令就能轻松实现：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --oneline --no-merges &lt;remote&gt;/&lt;branch&gt;..HEAD
+</code></pre>
+</div>
+
+<p>例如：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git fetch
+<span class="gp">$ </span>git log --oneline --no-merges origin/feature/fonts..HEAD
+</code></pre>
+</div>
+
+<p>注意：同样地，<code class="highlighter-rouge">HEAD</code> 在这里是可选的，省略将使其隐含。</p>
+
+<p>这将记录 <code class="highlighter-rouge">HEAD</code> 需要上传到 <code class="highlighter-rouge">&lt;remote&gt;/&lt;branch&gt;</code> 的提交。</p>
+
+<p>我使用这个别名 <code class="highlighter-rouge">$ git local</code>。</p>
+
+<h2 id="section-11">查看复杂日志</h2>
+
+<p>上面的每一个例子都使用简化的日志，因为只想快速了解发生了什么。对于更多细节，我使用带有 <code class="highlighter-rouge">--graph</code> 选项的日志和一些额外的选项：</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --graph --all --decorate --stat --date<span class="o">=</span>iso
+</code></pre>
+</div>
+
+<p>这将给出所有（<code class="highlighter-rouge">--all</code>）分支基于 <code class="highlighter-rouge">--graph</code> 的提交记录 ` –stat<code class="highlighter-rouge">（添加，删除）日志。</code>–decorate` 选项会告诉我们提交信息适用于那些分支，还包含一个更加严格的日期格式。</p>
+
+<p>我使用这个别名 <code class="highlighter-rouge">$ git graph</code>。</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git config --global alias.graph <span class="s2">"log --graph --all --decorate --stat --date=iso"</span>
+</code></pre>
+</div>
+
+</article>
+
+
+
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<section class="share">
+  <span>Share: </span>
+  
+    
+    
+      <a href="//twitter.com/share?text=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html&via=TheBenCentra"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+        <i class="fa fa-twitter-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+      <a href="//www.facebook.com/sharer.php?t=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&u=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html"
+        onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html"
+        onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
+        <i class="fa fa-linkedin-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <a href="//plus.google.com/share?title=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html"
+        onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
+        <i class="fa fa-google-plus-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      <a href="//www.pinterest.com/pin/create/button/?description=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html&media=http://ctripfe.com//assets/header_image.jpg"
+        onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
+        <i class="fa fa-pinterest-square fa-lg"></i>
+      </a>
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://ctripfe.com//translator/2017/06/12/little-things-i-like-to-do-with-git.html') + '&title=喜欢用 Git 做的一些小事'; return false">
+        <i class="fa fa-reddit-square fa-lg"></i>
+      </a>
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+
+
+
+
+</div>
+</div>
+
+    </div>
+
+    <footer class="site-footer" style="display:none;">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">ELSE</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/about/">About</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/posts/">Posts</a>
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:477623879@qq.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">477623879@qq.com</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://twitter.com/TheBenCentra" title="Follow me on Twitter">
+              <i class="fa fa-twitter"></i>
+              <span class="username">TheBenCentra</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+          <li>
+            <a href="https://github.com/CtripFE" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">CtripFE</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://www.linkedin.com/pub/ben-centra/47/769/60a" title="Connect with me on LinkedIn">
+              <i class="fa fa-linkedin"></i>
+              <span class="username">Ben Centra</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">A simple yet classy theme for your Jekyll website or blog.
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-101266075-1', 'auto');
+  ga('send', 'pageview', {
+    'page': '/translator/2017/06/12/little-things-i-like-to-do-with-git.html',
+    'title': '喜欢用 Git 做的一些小事'
+  });
+</script>
+
+
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8dc86729249c78ab7937a77249452f73";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+  </body>
+
+</html>

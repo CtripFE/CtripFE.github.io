@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>ELSE 技术周刊(2017.05.19期)</title>
-  <meta name="description" content="业界动态">
+  <title>移除在 ESM 模式生成的严格模式</title>
+  <meta name="description" content="起源">
   
   <meta name="author" content="ELSE">
   <meta name="copyright" content="&copy; ELSE 2017">
@@ -41,10 +41,10 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="业界动态" />
+  <meta property="og:description" content="起源" />
   <meta property="og:url" content="http://ctripfe.com/" />
   <meta property="og:site_name" content="ELSE" />
-  <meta property="og:title" content="ELSE 技术周刊(2017.05.19期)" />
+  <meta property="og:title" content="移除在 ESM 模式生成的严格模式" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="http://ctripfe.com//assets/logo.png" />
   <meta property="og:image:type" content="image/png" />
@@ -55,8 +55,8 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ELSE 技术周刊(2017.05.19期)">
-  <meta name="twitter:description" content="业界动态">
+  <meta name="twitter:title" content="移除在 ESM 模式生成的严格模式">
+  <meta name="twitter:description" content="起源">
   <meta name="twitter:image" content="http://ctripfe.com//assets/logo.png">
   <meta name="twitter:url" content="http://ctripfe.com/">
   
@@ -65,7 +65,7 @@
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://ctripfe.com//weekly/2017/05/19/weekly.html">
+  <link rel="canonical" href="http://ctripfe.com//team/2017/06/05/remove-strict-node.html">
   <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://ctripfe.com//feed.xml" />
 </head>
 
@@ -116,8 +116,8 @@
 <div class="post-header-container origin-setting">
   <div class="scrim ">
     <header class="post-header">
-      <h1 class="title">ELSE 技术周刊(2017.05.19期)</h1>
-      <p class="info">by <strong>stoneYong</strong></p>
+      <h1 class="title">移除在 ESM 模式生成的严格模式</h1>
+      <p class="info">by <strong>mirreal</strong></p>
     </header>
   </div>
 </div>
@@ -131,81 +131,106 @@
  
 
 <section class="post-meta">
-  <div class="post-date">May 19, 2017</div>
+  <div class="post-date">June 5, 2017</div>
   <div class="post-categories">
   in 
     
-    <a href="/category/Weekly">Weekly</a>
+    <a href="/category/team">Team</a>
     
   
   </div>
 </section>
 
 <article class="post-content">
-  <h2 id="section">业界动态</h2>
+  <h2 id="section">起源</h2>
 
-<h4 id="jest-20-released-facebooks-javascript-testing-frameworkhttpsfacebookgithubiojestblog20170506jest-20-delightful-testing-multi-project-runnerhtml"><a href="https://facebook.github.io/jest/blog/2017/05/06/jest-20-delightful-testing-multi-project-runner.html">Jest 20 Released: Facebook’s JavaScript Testing Framework</a></h4>
+<p>项目升级构建方式，以前的代码采用 AMD 风格组织代码，并使用 <code class="highlighter-rouge">r.js</code> 完成打包优化工作。后续成员选择采用 ES6 的风格编写代码，然后 webpack + babel 完成打包构建。迁移工作并不如想象中那么容易，终于完成各种配置，测试时候发现问题：抛出一个语法错误。错误很快被定位，属于历史代码的不规范写法，之所以现在暴露出来是因为新的构建方式会加入 <code class="highlighter-rouge">"use strict"</code>。</p>
 
-<p>facebook发布了 Jest20，支持多项目同时运行</p>
+<h2 id="section-1">严格模式</h2>
 
-<h2 id="section-1">技术纵横</h2>
+<p>在编写代码的过程中，我们使用 <code class="highlighter-rouge">strict mode</code> 是一种很好的方式，严格模式会将 JavaScript 陷阱直接变成明显的错误，比如未声明导致的全局变量，可以让我们开发过程中就发现错误。</p>
 
-<h4 id="http2-server-pushhttpszhuanlanzhihucomp26757514utmsourcetuicoolutmmediumreferral"><a href="https://zhuanlan.zhihu.com/p/26757514?utm_source=tuicool&amp;utm_medium=referral">浅谈 HTTP/2 Server Push</a></h4>
+<p>众所周知，JavaScript 这门语言之前存在大量不好的设计，使用严格模式意味着在采用一种限制性更高的方式编写代码，同时更 “安全”。但这里所谓的安全在生产环境又可能是另外一回事，尤其是对于那些上了年纪的历史代码，我们更倾向于在生产环境去除严格模式。</p>
 
-<p>Server push 的意义很简单，说白了就是为了提前推送响应。这里面包含两个问题——推什么和怎么推。</p>
+<h2 id="es2015">ES2015+</h2>
 
-<h4 id="webassembly-httpswwwsmashingmagazinecom201705abridged-cartoon-introduction-webassembly"><a href="https://www.smashingmagazine.com/2017/05/abridged-cartoon-introduction-webassembly/">WebAssembly 简明漫画介绍</a></h4>
+<p>现在大部分人已经在使用更强大，更具有表现力的 <code class="highlighter-rouge">ES2015+</code> 编写代码。可能还会使用到 babel 来转化成用于生产环境运行的代码，在使用 <code class="highlighter-rouge">preset es2015</code> 时，会自动加入 <code class="highlighter-rouge">“use strict”</code>。</p>
 
-<p>文章采用漫画的形式生动地介绍 WebAssembly 到底是什么，以及为什么它可以那么快。</p>
+<p>babel 的处理方式是将 ES2015 模块转换成 <code class="highlighter-rouge">CommonJS</code> 格式的，然后再统一处理，即 <code class="highlighter-rouge">transform-es2015-modules-commonjs</code>，这个插件位于 <code class="highlighter-rouge">preset es2015</code> 中，并且依赖于 <code class="highlighter-rouge">transform-strict-mode</code></p>
 
-<h4 id="httpsblogsouchecomwo-li-jie-zhong-de-da-qian-duan-da-wu-xian"><a href="https://blog.souche.com/wo-li-jie-zhong-de-da-qian-duan-da-wu-xian/">我理解中的“大前端”/“大无线”</a></h4>
+<h2 id="section-2">也许你会想去掉严格模式</h2>
 
-<p>怎么实现技术的核心价值,而不是为了用而使用，笔者通过团队的中几个技术栈的演进，为我们展示了他对“大前端”/”大无线”的理解，也诠释了“不一味追求潮流,基于场景讨论问题”的思考。</p>
+<p>也许你会想去掉严格模式，毕竟对于一些历史代码，很难预测加入严格模式会导致什么异常。</p>
 
-<h4 id="httptechmeituancomhotel-fe-tech-systemhtml"><a href="http://tech.meituan.com/hotel-fe-tech-system.html">美团点评酒旅前端的技术体系</a></h4>
+<!-- 可以从两个方面来考虑： -->
 
-<p>对于边界越来越模糊的前端开发，一个完备的技术体系应当包括流程规范，技术工具栈，构建工具栈，自动化测试，部署流程和部署平台，监控体系，文章分享了团队技术体系的细节以及对当前整个架构的思考。</p>
+<ul>
+  <li>第一，在处理过程中去掉 <code class="highlighter-rouge">"use strict"</code>，这里不用我们自己去写了，借助这个插件 <code class="highlighter-rouge">transform-remove-strict-mode</code></li>
+  <li>第二，不用 <code class="highlighter-rouge">transform-es2015-modules-commonjs</code>，可以使用 <code class="highlighter-rouge">webpack 2</code> 直接处理 ES6 模块</li>
+</ul>
 
-<h2 id="section-2">前端技术</h2>
+<h3 id="section-3">方案一</h3>
 
-<h4 id="typescript-httpsjuejinimpost59152911a22b9d0058fd5fe8"><a href="https://juejin.im/post/59152911a22b9d0058fd5fe8">[译] 为何 TypeScript 愈发流行了</a></h4>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>npm install babel-plugin-transform-remove-strict-mode --save-dev
+</code></pre>
+</div>
 
-<p>这篇文章试图探讨驱使TypeScript 愈来愈流行的因素，除了 Angular2，以及微软在企业级应用的影响等，其真实原因可能是现如今 JavaScript 开发越来越高的复杂性以及越来越强大的能力。</p>
+<p>修改 <code class="highlighter-rouge">.babelrc</code></p>
 
-<h4 id="pxhttpimwebiotopic55e3d402771670e207a16bd1"><a href="http://imweb.io/topic/55e3d402771670e207a16bd1">如何在高分屏移动设备上显示1px的线</a></h4>
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"presets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">[</span><span class="s2">"es2015"</span><span class="p">],</span><span class="w">
+        </span><span class="s2">"stage-0"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"react"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nt">"plugins"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"transform-remove-strict-mode"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
 
-<p>本文详细解释了在retina屏中实现1px border效果，以及如何用CSS实现其效果。</p>
+<h3 id="section-4">方案二</h3>
 
-<h4 id="css-httpwwwruanyifengcomblog201705css-variableshtml"><a href="http://www.ruanyifeng.com/blog/2017/05/css-variables.html">CSS 变量教程</a></h4>
+<blockquote>
+  <p><a href="https://babeljs.io/docs/plugins/preset-es2015/#optionsmodules">modules</a></p>
 
-<p>原生 CSS 的新功能，支持变量声明了，以后 CSS 的玩法又多起来了。</p>
+  <p><code class="highlighter-rouge">"amd" | "umd" | "systemjs" | "commonjs" | false</code>, defaults to <code class="highlighter-rouge">"commonjs"</code>.</p>
 
-<h4 id="babel-httpwebjobbolecom91277"><a href="http://web.jobbole.com/91277/">Babel 从入门到插件开发</a></h4>
+  <p>Enable transformation of ES6 module syntax to another module type.</p>
 
-<p>各种Babel插件的应用，能让我们更方便快捷的开发， 现在让我了解下它是怎么应用及插件开发的。</p>
+  <p>Setting this to <code class="highlighter-rouge">false</code> will not transform modules.</p>
+</blockquote>
 
-<h2 id="section-3">实用推荐</h2>
+<p>我们去掉 <code class="highlighter-rouge">preset es2015</code> 的模块处理，改由 <code class="highlighter-rouge">webpack</code> 来处理：</p>
 
-<h4 id="a11ycsshttpffooddgithubioa11ycss"><a href="http://ffoodd.github.io/a11y.css/">A11y.css</a></h4>
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"presets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">[</span><span class="s2">"es2015"</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"modules"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">}],</span><span class="w">
+        </span><span class="s2">"stage-0"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"react"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
 
-<p>A11y.css 旨在向开发人员警告 HTML 代码中存在的潜在风险和错误， 可以通过简单地将其作为外部样式表来粗略地评估站点的质量。</p>
+<p>这种方案也能解决之前问题，因为之前存在问题的模块使用 ES5 编写的，使用 AMD 风格。</p>
 
-<h4 id="the-ultimate-atom-editor-setup-for-jsreacthttpsmediumcomproductivity-freakmy-atom-editor-setup-for-js-react-9726cd69ad20"><a href="https://medium.com/productivity-freak/my-atom-editor-setup-for-js-react-9726cd69ad20">The Ultimate Atom Editor Setup (+for JS/React)</a></h4>
+<p>但是，参考 <a href="http://www.ecma-international.org/ecma-262/6.0/#sec-strict-mode-code">http://www.ecma-international.org/ecma-262/6.0/#sec-strict-mode-code</a> ，在 ES6 语法下，模块系统以及 class 等仍然都是工作在 <code class="highlighter-rouge">strict mode</code> 下的，而 webpack2 的也确实是这样处理的。</p>
 
-<p>“工欲善其事必先利其器”，在 atom上的react开发者终极配置。</p>
+<p>实现对语言本身是没问题的，使用新语法意味着我们要抛弃掉以前一些设计不好的地方，编写高质量的代码。</p>
 
-<h4 id="vs-code-httpmpweixinqqcomsbizmjm5nzm0mjcymqmid2650071565idx2sn6669774b038b77489eb115725e36d751chksmbedb396389acb075e9af9116326019fb23fce8928f68025159c623a9cbba475fef3e40f14a2dscene21wechatredirect"><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzM0MjcyMQ==&amp;mid=2650071565&amp;idx=2&amp;sn=6669774b038b77489eb115725e36d751&amp;chksm=bedb396389acb075e9af9116326019fb23fce8928f68025159c623a9cbba475fef3e40f14a2d&amp;scene=21#wechat_redirect">让开发更快更顺畅的 VS Code 插件推荐（一）</a></h4>
-<p>VS Code 的插件合集。除了自己的一战式的配套插件外，  其他的丰富免费的插件， 也造福这广大 VS Code 发烧友。</p>
+<h3 id="section-5">对比</h3>
 
-<h2 id="section-4">团队分享</h2>
+<p>相比而言，方案二更合适，因为方案一处理的过程实际是删除所有<code class="highlighter-rouge">"use strict"</code>，有时候未必符合你本来的意愿。</p>
 
-<h4 id="all-about-recursion-ptc-tco-and-stc-in-javascript-httpszhuanlanzhihucomp26941235"><a href="https://zhuanlan.zhihu.com/p/26941235"> [译] All About Recursion, PTC, TCO and STC in JavaScript </a></h4>
+<p>采用方案二还有一些好处，比如可以使用 <code class="highlighter-rouge">webpack2</code> 已经支持的 <code class="highlighter-rouge">tree shaking</code> 优化技术，因为这项技术基于 <code class="highlighter-rouge">ES6 Modules</code>，得让 <code class="highlighter-rouge">webpack</code> 直接处理才能使用。</p>
 
-<p>本文为你提供更好的可视化提示及递归思考, 并解释什么是正确的尾部调用和句法尾部调用，以及如何区分他们，他们又如何工作及他们在javascript引擎中的实现。 @陈炳树</p>
+<h2 id="section-6">后续</h2>
 
-<h4 id="webapphttpelevenbeansgithubio20170516e692b8e4ba86e4b880e4b8aae68a95e7a5a8app"><a href="http://elevenbeans.github.io/2017/05/16/%E6%92%B8%E4%BA%86%E4%B8%80%E4%B8%AA%E6%8A%95%E7%A5%A8App/">全栈开发实例：如何独立开发/发布一个WebAPP</a></h4>
+<p>这种属于历史遗留问题，比如不小心引入的全局变量，类似的代码质量问题还不少。</p>
 
-<p>“不想做全栈的前端不是好的攻城狮 ” , 本文作者分享了自己使用  React + Express + Mongodb 完成一个投票 SPA @李斌</p>
+<p>所以，我们使用 lint 工具来帮助我们避免这种问题，对于代码质量的要求必须苛刻。</p>
 
 </article>
 
@@ -222,7 +247,7 @@
   
     
     
-      <a href="//twitter.com/share?text=ELSE+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%282017.05.19%E6%9C%9F%29&url=http%3A%2F%2Fctripfe.com%2F%2Fweekly%2F2017%2F05%2F19%2Fweekly.html&via=TheBenCentra"
+      <a href="//twitter.com/share?text=%E7%A7%BB%E9%99%A4%E5%9C%A8+ESM+%E6%A8%A1%E5%BC%8F%E7%94%9F%E6%88%90%E7%9A%84%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F&url=http%3A%2F%2Fctripfe.com%2F%2Fteam%2F2017%2F06%2F05%2Fremove-strict-node.html&via=TheBenCentra"
         onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
         <i class="fa fa-twitter-square fa-lg"></i>
       </a>
@@ -237,7 +262,7 @@
     
     
     
-      <a href="//www.facebook.com/sharer.php?t=ELSE+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%282017.05.19%E6%9C%9F%29&u=http%3A%2F%2Fctripfe.com%2F%2Fweekly%2F2017%2F05%2F19%2Fweekly.html"
+      <a href="//www.facebook.com/sharer.php?t=%E7%A7%BB%E9%99%A4%E5%9C%A8+ESM+%E6%A8%A1%E5%BC%8F%E7%94%9F%E6%88%90%E7%9A%84%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F&u=http%3A%2F%2Fctripfe.com%2F%2Fteam%2F2017%2F06%2F05%2Fremove-strict-node.html"
         onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
         <i class="fa fa-facebook-square fa-lg"></i>
       </a>
@@ -262,7 +287,7 @@
     
     
     
-      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fctripfe.com%2F%2Fweekly%2F2017%2F05%2F19%2Fweekly.html"
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fctripfe.com%2F%2Fteam%2F2017%2F06%2F05%2Fremove-strict-node.html"
         onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
         <i class="fa fa-linkedin-square fa-lg"></i>
       </a>
@@ -275,7 +300,7 @@
     
     
     
-      <a href="//plus.google.com/share?title=ELSE+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%282017.05.19%E6%9C%9F%29&url=http%3A%2F%2Fctripfe.com%2F%2Fweekly%2F2017%2F05%2F19%2Fweekly.html"
+      <a href="//plus.google.com/share?title=%E7%A7%BB%E9%99%A4%E5%9C%A8+ESM+%E6%A8%A1%E5%BC%8F%E7%94%9F%E6%88%90%E7%9A%84%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F&url=http%3A%2F%2Fctripfe.com%2F%2Fteam%2F2017%2F06%2F05%2Fremove-strict-node.html"
         onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
         <i class="fa fa-google-plus-square fa-lg"></i>
       </a>
@@ -309,7 +334,7 @@
     
     
     
-      <a href="//www.pinterest.com/pin/create/button/?description=ELSE+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%282017.05.19%E6%9C%9F%29&url=http%3A%2F%2Fctripfe.com%2F%2Fweekly%2F2017%2F05%2F19%2Fweekly.html&media=http://ctripfe.com//assets/header_image.jpg"
+      <a href="//www.pinterest.com/pin/create/button/?description=%E7%A7%BB%E9%99%A4%E5%9C%A8+ESM+%E6%A8%A1%E5%BC%8F%E7%94%9F%E6%88%90%E7%9A%84%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F&url=http%3A%2F%2Fctripfe.com%2F%2Fteam%2F2017%2F06%2F05%2Fremove-strict-node.html&media=http://ctripfe.com//assets/header_image.jpg"
         onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
         <i class="fa fa-pinterest-square fa-lg"></i>
       </a>
@@ -378,7 +403,7 @@
     
     
     
-      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://ctripfe.com//weekly/2017/05/19/weekly.html') + '&title=ELSE 技术周刊(2017.05.19期)'; return false">
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://ctripfe.com//team/2017/06/05/remove-strict-node.html') + '&title=移除在 ESM 模式生成的严格模式'; return false">
         <i class="fa fa-reddit-square fa-lg"></i>
       </a>
     
@@ -550,8 +575,8 @@ $(document).ready(function() {
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-101266075-1', 'auto');
   ga('send', 'pageview', {
-    'page': '/weekly/2017/05/19/weekly.html',
-    'title': 'ELSE 技术周刊(2017.05.19期)'
+    'page': '/team/2017/06/05/remove-strict-node.html',
+    'title': '移除在 ESM 模式生成的严格模式'
   });
 </script>
 

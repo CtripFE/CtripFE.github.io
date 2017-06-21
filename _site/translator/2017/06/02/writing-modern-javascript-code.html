@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>编写现代 JavaScript 代码</title>
+  <meta name="description" content="  原文作者：Sébastien Castiel  原文链接：Writing modern JavaScript code  说点什么：这是一篇很朴素的文章，讲的道理都懂，但实际上，在工作中遇到类似的情形却未必如此，编写可维护，可阅读，更安全的代码是我们应有的责任。">
+  
+  <meta name="author" content="ELSE">
+  <meta name="copyright" content="&copy; ELSE 2017">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="  原文作者：Sébastien Castiel  原文链接：Writing modern JavaScript code  说点什么：这是一篇很朴素的文章，讲的道理都懂，但实际上，在工作中遇到类似的情形却未必如此，编写可维护，可阅读，更安全的代码是我们应有的责任。" />
+  <meta property="og:url" content="http://ctripfe.com/" />
+  <meta property="og:site_name" content="ELSE" />
+  <meta property="og:title" content="编写现代 JavaScript 代码" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://ctripfe.com//assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="编写现代 JavaScript 代码">
+  <meta name="twitter:description" content="  原文作者：Sébastien Castiel  原文链接：Writing modern JavaScript code  说点什么：这是一篇很朴素的文章，讲的道理都懂，但实际上，在工作中遇到类似的情形却未必如此，编写可维护，可阅读，更安全的代码是我们应有的责任。">
+  <meta name="twitter:image" content="http://ctripfe.com//assets/logo.png">
+  <meta name="twitter:url" content="http://ctripfe.com/">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://ctripfe.com//translator/2017/06/02/writing-modern-javascript-code.html">
+  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://ctripfe.com//feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <img src="/assets/logo.png" alt="ELSE">
+      <span class='main-title'>ELSE</span>
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        
+          
+          <li class="nav-link"><a href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li class="nav-link"><a href="/posts/">Posts</a>
+          
+        
+          
+        
+          
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+<div class="post-header-container origin-setting">
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">编写现代 JavaScript 代码</h1>
+      <p class="info">by <strong>mirreal</strong></p>
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">June 2, 2017</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/category/translator">Translator</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <blockquote>
+  <p>原文作者：<a href="https://twitter.com/scastiel">Sébastien Castiel</a></p>
+
+  <p>原文链接：<a href="https://dev.to/scastiel/writing-modern-javascript-code">Writing modern JavaScript code</a></p>
+
+  <p>说点什么：这是一篇很朴素的文章，讲的道理都懂，但实际上，在工作中遇到类似的情形却未必如此，编写可维护，可阅读，更安全的代码是我们应有的责任。</p>
+</blockquote>
+
+<p>是不是还认为 JavaScript 是一门用于在光标悬浮时改变页面元素的语言？这些日子已经不复存在，每一种语言都在随着时间推移而发展，我们使用语言的方式同样也在发展。看一下你一两年前写的代码：会感到羞愧吗？如果是的话，这篇文章应该很适合你。</p>
+
+<p>这里会列出一些所谓的最佳实践，目的是让你的 JavaScript 代码更容易编写，阅读和维护。</p>
+
+<h2 id="linter">使用可格式化代码的 linter</h2>
+
+<p>第一个建议是使用 linter 工具，可以帮助你检查在不同文件是否遵守一致的规则，尤其是当不同开发人员在同一个项目上工作：缩进，括号中的空格，替换 <code class="highlighter-rouge">==</code> 为 <code class="highlighter-rouge">===</code> …</p>
+
+<p>但更重要的是，尽可能使用 linter 工具自动修复代码。<a href="http://eslint.org/">ESLint</a> 就做得很好（带有 <code class="highlighter-rouge">--fix</code> 选项），而且与所有主流 IDE 完美集成，可以在保存时自动修复文件。</p>
+
+<p>还可以使用 <a href="https://github.com/prettier/prettier">Prettier</a>，不过这款工具更注重格式化而不是静态检查，但处理后的结果基本相同。</p>
+
+<p>下一步将介绍与 linter 工具一起使用的规则：</p>
+
+<h2 id="linter-">为你的 linter 定制现代化的规则</h2>
+
+<p>如果不知道你的代码需要什么样的规则，可以参考：<a href="https://standardjs.com/">StandardJS</a>。这是一个<strong>非常</strong>严格的 linter，无法修改配置，但里面的每一条规则已经越来越多地被社区接纳。比如：</p>
+
+<ul>
+  <li>使用 2 个空格缩进（我曾经使用 4 个空格，但实际使用起来 2 个空格很不错）</li>
+  <li>不使用分号（一开始可能会觉得奇怪，但几天后就再也回不去了）</li>
+  <li>在关键字（如 if）和花括号使用空格，在括号不使用空格</li>
+  <li><a href="https://standardjs.com/rules.html">等等</a>。</li>
+</ul>
+
+<p>StandardJS 是一个独立的 Node 模块，可以进行 lint 和修复代码，但如果要在现有的大型项目中使用，并且想要停用一些规则（因为有些地方可能需要作大量修改），还可以使用 <a href="https://github.com/feross/eslint-config-standard">ESLint 预定配置</a>。比如，我就停用了规则 <a href="http://eslint.org/docs/rules/no-mixed-operators">no-mixed-operators</a> 和 <a href="https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md">import / no-webpack-loader-syntax</a>。</p>
+
+<h2 id="es2015-">使用 ES2015+ 的新特性</h2>
+
+<p>如果你在使用 JavaScript 开发，根本没办法不听说 ES2015 +（或 ES6，ES7 …）的特性。有的已经是我离不开的：</p>
+
+<ul>
+  <li>箭头函数：对于函数式编程，比如写 <code class="highlighter-rouge">x =&gt; x * 2</code> 这样的函数非常有用（见下一点）</li>
+  <li>类：停止使用原型函数，使用类更酷炫（但不要滥用，JavaScript 比任何面向对象的语言好多了）</li>
+  <li>对数组和对象的操作：</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">doSomething</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">doSomethingElse</span><span class="p">()</span>
+  <span class="kr">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">doSomethingWithA</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
+  <span class="kr">const</span> <span class="nx">otherResults</span> <span class="o">=</span> <span class="p">{</span> <span class="na">c</span><span class="p">:</span> <span class="s1">'😺'</span><span class="p">,</span> <span class="na">d</span><span class="p">:</span> <span class="s1">'🐶'</span> <span class="p">}</span>
+  <span class="k">return</span> <span class="p">{</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="p">...</span><span class="nx">otherResults</span> <span class="p">}</span> <span class="c1">// equivalent to { a: a, b: b }</span>
+<span class="p">}</span>
+<span class="kr">const</span> <span class="p">{</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="p">...</span><span class="nx">rest</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">doSomething</span><span class="p">()</span> <span class="c1">// Also works with arrays!</span>
+<span class="c1">// `rest` looks like { b: ..., d: '🐶' }</span>
+</code></pre>
+</div>
+
+<ul>
+  <li>使用 <code class="highlighter-rouge">async/await</code> 编写更简单的异步处理：</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="c1">// Please try to write the same code with classic promises ;)</span>
+<span class="nx">async</span> <span class="kd">function</span> <span class="nx">doSomething</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">getValueForA</span><span class="p">()</span>
+  <span class="kr">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">getValueForBFromA</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
+  <span class="kr">const</span> <span class="p">[</span><span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">]</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">([</span>
+    <span class="c1">// parallel execution</span>
+    <span class="nx">getValueForC</span><span class="p">(),</span> <span class="nx">getValueForDFromB</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span>
+  <span class="p">])</span>
+  <span class="kr">const</span> <span class="nx">total</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">calculateTotal</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">)</span>
+  <span class="k">return</span> <span class="nx">total</span> <span class="o">/</span> <span class="mi">1000</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>想知道如何使用这些特性呢？<a href="https://blog.castiel.me/posts/002-use-the-coolest-es6-features-everywhere.html">我的另一篇文章能给一些建议</a>。（顺便说一下，使用最新版本的 Node.js，可能不再需要 Babel 就能使用这些新特性）</p>
+
+<h2 id="section">使用函数式编程</h2>
+
+<p>函数式编程最近很热门，取得不少成就，而且不仅仅是在 JavaScript 中。为什么呢？函数式编程能使代码更具可预测性，确定性，更安全，一旦习惯这种方式，代码会更容易维护。这里有一些简单的建议：</p>
+
+<p>首先，停止使用 for 循环，在大多数（可能是所有？）情况下根本不需要。例如：</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[{</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'first'</span><span class="p">,</span> <span class="na">value</span><span class="p">:</span> <span class="mi">13</span> <span class="p">},</span> <span class="p">{</span> <span class="na">name</span><span class="p">:</span> <span class="s1">'second'</span><span class="p">,</span> <span class="na">value</span><span class="p">:</span> <span class="mi">7</span> <span class="p">}]</span>
+
+<span class="c1">// Instead of:</span>
+<span class="kr">const</span> <span class="nx">res</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">calculatedValue</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">value</span> <span class="o">*</span> <span class="mi">10</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">calculatedValue</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">res</span><span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">name</span><span class="p">]</span> <span class="o">=</span> <span class="nx">calculatedValue</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Prefer:</span>
+<span class="kr">const</span> <span class="nx">res</span> <span class="o">=</span> <span class="nx">arr</span>
+  <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">elem</span> <span class="o">=&gt;</span> <span class="p">({</span> <span class="na">name</span><span class="p">:</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="na">calculatedValue</span><span class="p">:</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">value</span> <span class="o">*</span> <span class="mi">10</span> <span class="p">}))</span>
+  <span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">elem</span> <span class="o">=&gt;</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">calculatedValue</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">acc</span><span class="p">,</span> <span class="nx">elem</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">({</span>
+    <span class="p">[</span><span class="nx">elem</span><span class="p">.</span><span class="nx">name</span><span class="p">]:</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">calculatedValue</span><span class="p">,</span>
+    <span class="p">...</span><span class="nx">acc</span>
+  <span class="p">}),</span> <span class="p">{})</span>
+</code></pre>
+</div>
+
+<p>好吧，这实际上是一个非常极端的例子，对于不习惯函数式编程的人而言，可能看起来更加复杂。但我们可以稍微简化一下：</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">enrichElementWithCalculatedValue</span> <span class="o">=</span>
+  <span class="nx">elem</span> <span class="o">=&gt;</span> <span class="p">({</span> <span class="na">name</span><span class="p">:</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="na">calculatedValue</span><span class="p">:</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">value</span> <span class="o">*</span> <span class="mi">10</span> <span class="p">})</span>
+<span class="kr">const</span> <span class="nx">filterElementsByValue</span> <span class="o">=</span> <span class="nx">value</span> <span class="o">=&gt;</span>
+  <span class="nx">elem</span> <span class="o">=&gt;</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">calculatedValue</span> <span class="o">&gt;</span> <span class="nx">value</span>
+<span class="kr">const</span> <span class="nx">aggregateElementInObject</span> <span class="o">=</span> <span class="p">(</span><span class="nx">acc</span><span class="p">,</span> <span class="nx">elem</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">({</span>
+  <span class="p">[</span><span class="nx">elem</span><span class="p">.</span><span class="nx">name</span><span class="p">]:</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">calculatedValue</span><span class="p">,</span>
+  <span class="p">...</span><span class="nx">acc</span>
+<span class="p">})</span>
+<span class="kr">const</span> <span class="nx">res</span> <span class="o">=</span> <span class="nx">arr</span>
+  <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">enrichElementWithCalculatedValue</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">filterElementsByValue</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
+  <span class="p">.</span><span class="nx">reduce</span><span class="p">(</span><span class="nx">aggregateElementInObject</span><span class="p">,</span> <span class="p">{})</span>
+</code></pre>
+</div>
+
+<p>在这里，我们定义了三个函数，其功能基本上与其名字一致。第二个建议：创建局部函数（即使是在已经存在的函数中）来说明代码的功能，不需要使用注释。</p>
+
+<p>注意，三个局部函数不修改它们的执行上下文。没有外部变量被修改，没有其他服务被调用…在函数式编程中，它们被称为<em>纯函数</em>。纯函数具有很大的优势：</p>
+
+<ul>
+  <li>很容易测试，因为从给定参数只有一个可能的结果，不管被调用了多少次;</li>
+  <li>无论应用状态如何，都能保证相同的结果;</li>
+  <li>应用状态在函数调用之前和之后保持不变。</li>
+</ul>
+
+<p>所以我的第三个建议是：尽可能地使用纯函数。</p>
+
+<h2 id="section-1">其他的一些建议</h2>
+
+<ul>
+  <li>习惯于使用异步代码，并多使用 promise，看看 <a href="http://reactivex.io/rxjs/">RxJS</a> 的 observales（有<a href="http://reactivex.io/learnrx/">一个很棒的教程关于从函数式编程到响应式编程</a>）</li>
+  <li>写测试！这应该是很明显的，但是据我所知很多项目都有未经测试的代码，尽管测试 JavaScript（前端或后端）并不困难。</li>
+  <li>使用最新的语言特性：比如不要再写 <code class="highlighter-rouge">arr.indexOf(elem) !== -1</code>，而应该写成 <code class="highlighter-rouge">arr.includes(elem)</code>。</li>
+  <li>大量阅读技术文章：<a href="https://www.reddit.com/r/javascript/">JavaScript subreddit</a> 是了解目前社区最酷做法的一个很好的来源。</li>
+</ul>
+
+<p>总而言之，最好的建议就是：<strong>总是重构你的代码</strong>。比如改进你一年前写过的模块？借此机会，用 <code class="highlighter-rouge">const</code> 取代 <code class="highlighter-rouge">var</code>，使用箭头函数或 <code class="highlighter-rouge">async/await</code> 简化代码……和你喜欢的代码工作一件很愉悦的事。</p>
+
+</article>
+
+
+
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<section class="share">
+  <span>Share: </span>
+  
+    
+    
+      <a href="//twitter.com/share?text=%E7%BC%96%E5%86%99%E7%8E%B0%E4%BB%A3+JavaScript+%E4%BB%A3%E7%A0%81&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F02%2Fwriting-modern-javascript-code.html&via=TheBenCentra"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+        <i class="fa fa-twitter-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+      <a href="//www.facebook.com/sharer.php?t=%E7%BC%96%E5%86%99%E7%8E%B0%E4%BB%A3+JavaScript+%E4%BB%A3%E7%A0%81&u=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F02%2Fwriting-modern-javascript-code.html"
+        onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F02%2Fwriting-modern-javascript-code.html"
+        onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
+        <i class="fa fa-linkedin-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <a href="//plus.google.com/share?title=%E7%BC%96%E5%86%99%E7%8E%B0%E4%BB%A3+JavaScript+%E4%BB%A3%E7%A0%81&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F02%2Fwriting-modern-javascript-code.html"
+        onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
+        <i class="fa fa-google-plus-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      <a href="//www.pinterest.com/pin/create/button/?description=%E7%BC%96%E5%86%99%E7%8E%B0%E4%BB%A3+JavaScript+%E4%BB%A3%E7%A0%81&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F02%2Fwriting-modern-javascript-code.html&media=http://ctripfe.com//assets/header_image.jpg"
+        onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
+        <i class="fa fa-pinterest-square fa-lg"></i>
+      </a>
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://ctripfe.com//translator/2017/06/02/writing-modern-javascript-code.html') + '&title=编写现代 JavaScript 代码'; return false">
+        <i class="fa fa-reddit-square fa-lg"></i>
+      </a>
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+
+
+
+
+</div>
+</div>
+
+    </div>
+
+    <footer class="site-footer" style="display:none;">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">ELSE</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/about/">About</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/posts/">Posts</a>
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:477623879@qq.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">477623879@qq.com</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://twitter.com/TheBenCentra" title="Follow me on Twitter">
+              <i class="fa fa-twitter"></i>
+              <span class="username">TheBenCentra</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+          <li>
+            <a href="https://github.com/CtripFE" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">CtripFE</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://www.linkedin.com/pub/ben-centra/47/769/60a" title="Connect with me on LinkedIn">
+              <i class="fa fa-linkedin"></i>
+              <span class="username">Ben Centra</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">A simple yet classy theme for your Jekyll website or blog.
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-101266075-1', 'auto');
+  ga('send', 'pageview', {
+    'page': '/translator/2017/06/02/writing-modern-javascript-code.html',
+    'title': '编写现代 JavaScript 代码'
+  });
+</script>
+
+
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8dc86729249c78ab7937a77249452f73";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+  </body>
+
+</html>
