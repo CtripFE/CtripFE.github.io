@@ -1,4 +1,11 @@
-# [译]2017年，一个Node开发者的好习惯
+---
+layout: post
+title:  "[译]2017年，一个Node开发者的好习惯"
+date:   2017-06-22 10:00:00
+author: 风清洋
+categories: translator
+---
+
 
 > 原文链接：[Habits of a Happy Node Hacker 2017](https://blog.heroku.com/node-habits-2017)
 

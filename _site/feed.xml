@@ -6,15 +6,13 @@
 </description>
     <link>http://ctripfe.com//</link>
     <atom:link href="http://ctripfe.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Jun 2017 21:12:11 +0800</pubDate>
-    <lastBuildDate>Thu, 22 Jun 2017 21:12:11 +0800</lastBuildDate>
+    <pubDate>Thu, 22 Jun 2017 21:18:35 +0800</pubDate>
+    <lastBuildDate>Thu, 22 Jun 2017 21:18:35 +0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
-        <title>Habits Of A Happy Node Hacker 2017</title>
-        <description>&lt;h1 id=&quot;node&quot;&gt;[译]2017年，一个Node开发者的好习惯&lt;/h1&gt;
-
-&lt;blockquote&gt;
+        <title>[译]2017年，一个Node开发者的好习惯</title>
+        <description>&lt;blockquote&gt;
   &lt;p&gt;原文链接：&lt;a href=&quot;https://blog.heroku.com/node-habits-2017&quot;&gt;Habits of a Happy Node Hacker 2017&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -191,10 +189,12 @@
 
 &lt;p&gt;Happy hacking!&lt;/p&gt;
 </description>
-        <pubDate>Wed, 21 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://ctripfe.com//2017/06/21/Habits-of-a-Happy-Node-Hacker-2017.html</link>
-        <guid isPermaLink="true">http://ctripfe.com//2017/06/21/Habits-of-a-Happy-Node-Hacker-2017.html</guid>
+        <pubDate>Thu, 22 Jun 2017 18:00:00 +0800</pubDate>
+        <link>http://ctripfe.com//translator/2017/06/22/Habits-of-a-Happy-Node-Hacker-2017.html</link>
+        <guid isPermaLink="true">http://ctripfe.com//translator/2017/06/22/Habits-of-a-Happy-Node-Hacker-2017.html</guid>
         
+        
+        <category>translator</category>
         
       </item>
     
@@ -1588,70 +1588,86 @@ bbe7d05 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;refs &lt;span class=&quot;
       </item>
     
       <item>
-        <title>Weekly</title>
-        <description>&lt;h1 id=&quot;else-20170526-&quot;&gt;ELSE 技术周刊（2017.05.26 期）&lt;/h1&gt;
+        <title>ELSE 技术周刊（2017.05.26 期）</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;业界动态&lt;/h2&gt;
 
-&lt;h2 id=&quot;section&quot;&gt;业界动态&lt;/h2&gt;
+&lt;h4 id=&quot;gitlab-92-httplinkzhihucomtargethttps3agithubcomgitlabhqgitlabhqblobmasterchangelogmd&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//github.com/gitlabhq/gitlabhq/blob/master/CHANGELOG.md&quot;&gt;GitLab 9.2 发布，简化多人协作&amp;amp;增强本地化&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//github.com/gitlabhq/gitlabhq/blob/master/CHANGELOG.md&quot;&gt;GitLab 9.2 发布，简化多人协作&amp;amp;增强本地化&lt;/a&gt;
-GitLab 9.2 发布了，新版本旨在让团队的每个人都能够贡献他们力量，不管是远程或在同个房间。&lt;/p&gt;
+&lt;p&gt;GitLab 9.2 发布了，新版本旨在让团队的每个人都能够贡献他们力量，不管是远程或在同个房间。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//medium.com/webpack/the-state-of-javascript-modules-4636d1774358&quot;&gt;The state of JavaScript modules&lt;/a&gt;
-文章介绍 ES Modules 在浏览器以及 Node.js 的现状。不同浏览器的最新版已经开始不同程度的支持，但具体规则还有待统一完善，而在 Node 的不确定性更多。但我们现在仍然可以使用 ESM 编写代码，再利用 Webpack，Rollup 以及 babel 等工具适配不同的环境。&lt;/p&gt;
+&lt;h4 id=&quot;the-state-of-javascript-moduleshttplinkzhihucomtargethttps3amediumcomwebpackthe-state-of-javascript-modules-4636d1774358&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//medium.com/webpack/the-state-of-javascript-modules-4636d1774358&quot;&gt;The state of JavaScript modules&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//workboxjs.org/&quot;&gt;Workbox: JavaScript Libraries for Progressive Web Apps&lt;/a&gt;
-Workbox 是对 Google 以前的 service worker 库的重新思考，重点是模块化。&lt;/p&gt;
+&lt;p&gt;文章介绍 ES Modules 在浏览器以及 Node.js 的现状。不同浏览器的最新版已经开始不同程度的支持，但具体规则还有待统一完善，而在 Node 的不确定性更多。但我们现在仍然可以使用 ESM 编写代码，再利用 Webpack，Rollup 以及 babel 等工具适配不同的环境。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//www.thurrott.com/windows/windows-10/116101/microsoft-said-progressive-web-apps-build&quot;&gt;This is What Microsoft Said About Progressive Web Apps at Build&lt;/a&gt;
-作者预测 Progressive Web Apps（PWAs）和其他混合应用程序将比 Windows 10 上的 Universal Windows Platform（UWP）应用程序更受欢迎。看看微软在 Build 大会是怎么谈论 PWAs 的。&lt;/p&gt;
+&lt;h4 id=&quot;workbox-javascript-libraries-for-progressive-web-appshttplinkzhihucomtargethttps3aworkboxjsorg&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//workboxjs.org/&quot;&gt;Workbox: JavaScript Libraries for Progressive Web Apps&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Workbox 是对 Google 以前的 service worker 库的重新思考，重点是模块化。&lt;/p&gt;
+
+&lt;h4 id=&quot;this-is-what-microsoft-said-about-progressive-web-apps-at-buildhttplinkzhihucomtargethttps3awwwthurrottcomwindowswindows-10116101microsoft-said-progressive-web-apps-build&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//www.thurrott.com/windows/windows-10/116101/microsoft-said-progressive-web-apps-build&quot;&gt;This is What Microsoft Said About Progressive Web Apps at Build&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;作者预测 Progressive Web Apps（PWAs）和其他混合应用程序将比 Windows 10 上的 Universal Windows Platform（UWP）应用程序更受欢迎。看看微软在 Build 大会是怎么谈论 PWAs 的。&lt;/p&gt;
 
 &lt;h2 id=&quot;section-1&quot;&gt;技术纵横&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s/-Dy5BXSULDoDDE1gbclSOg&quot;&gt;VR进化论|教你搭建通用的WebVR工程&lt;/a&gt;
-本文旨在介绍如何搭建WebVR工程以支持多场景开发。&lt;/p&gt;
+&lt;h4 id=&quot;vrwebvrhttplinkzhihucomtargethttp3ampweixinqqcoms-dy5bxsuldodde1gbclsog&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s/-Dy5BXSULDoDDE1gbclSOg&quot;&gt;VR进化论|教你搭建通用的WebVR工程&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//bocoup.com/blog/the-many-faces-of-functions-in-javascript&quot;&gt;the-many-faces-of-functions-in-javascript&lt;/a&gt;
-js的函数使用到底有多少种 ？ 文章从最基础的函数声明及函数表达式切入，到构造函数，渐进到ES6的箭头函数、生成器，最后到ES7的各种异步函数，让你对javaScript的函数有个更全局的认识。&lt;/p&gt;
+&lt;p&gt;本文旨在介绍如何搭建WebVR工程以支持多场景开发。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=http%3A//www.ruanyifeng.com/blog/2017/05/technology-is-future.html&quot;&gt;技术决定历史&lt;/a&gt;
-本文选自作者正在写的新书《未来世界的幸存者》，“主导历史的因素，短期（一年到几年）是政治，中期（几年到几十年）是经济，长期（几十年到几百年）则是技术” 。 试想过 如果中国参与了前两次世界革命，现在会是什么样？~~&lt;/p&gt;
+&lt;h4 id=&quot;the-many-faces-of-functions-in-javascripthttplinkzhihucomtargethttps3abocoupcomblogthe-many-faces-of-functions-in-javascript&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//bocoup.com/blog/the-many-faces-of-functions-in-javascript&quot;&gt;the-many-faces-of-functions-in-javascript&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26709518&quot;&gt;10 个基于 JavaScript 的机器学习实例&lt;/a&gt;
-前端也能撸的机器学习案例， 我是看了第7个决定转的&lt;/p&gt;
+&lt;p&gt;js的函数使用到底有多少种 ？ 文章从最基础的函数声明及函数表达式切入，到构造函数，渐进到ES6的箭头函数、生成器，最后到ES7的各种异步函数，让你对javaScript的函数有个更全局的认识。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=http%3A//lawtech0902.com/2017/03/25/Redis-1/&quot;&gt;Redis学习笔记(一)：初识Redis&lt;/a&gt;
-Redis的简介，安装（Mac)以及与memcached及其他类型数据库对比&lt;/p&gt;
+&lt;h4 id=&quot;httplinkzhihucomtargethttp3awwwruanyifengcomblog201705technology-is-futurehtml&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=http%3A//www.ruanyifeng.com/blog/2017/05/technology-is-future.html&quot;&gt;技术决定历史&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;本文选自作者正在写的新书《未来世界的幸存者》，“主导历史的因素，短期（一年到几年）是政治，中期（几年到几十年）是经济，长期（几十年到几百年）则是技术” 。 试想过 如果中国参与了前两次世界革命，现在会是什么样？~~&lt;/p&gt;
+
+&lt;h4 id=&quot;javascript-httpszhuanlanzhihucomp26709518&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26709518&quot;&gt;10 个基于 JavaScript 的机器学习实例&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;前端也能撸的机器学习案例， 我是看了第7个决定转的&lt;/p&gt;
+
+&lt;h4 id=&quot;redisredishttplinkzhihucomtargethttp3alawtech0902com20170325redis-1&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=http%3A//lawtech0902.com/2017/03/25/Redis-1/&quot;&gt;Redis学习笔记(一)：初识Redis&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Redis的简介，安装（Mac)以及与memcached及其他类型数据库对比&lt;/p&gt;
 
 &lt;h2 id=&quot;section-2&quot;&gt;前端技术&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//medium.com/front-end-hacking/server-side-rendering-with-react-and-express-382591bfc77c&quot;&gt;Server side rendering with React and Express&lt;/a&gt;
-实现express+react服务端渲染的基本套路&lt;/p&gt;
+&lt;h4 id=&quot;server-side-rendering-with-react-and-expresshttplinkzhihucomtargethttps3amediumcomfront-end-hackingserver-side-rendering-with-react-and-express-382591bfc77c&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//medium.com/front-end-hacking/server-side-rendering-with-react-and-express-382591bfc77c&quot;&gt;Server side rendering with React and Express&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/27093191&quot;&gt;Redux状态管理之痛点、分析与改良&lt;/a&gt;
-深入分析了redux存在的一些问题&lt;/p&gt;
+&lt;p&gt;实现express+react服务端渲染的基本套路&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26426054&quot;&gt;单页应用的数据流方案探索&lt;/a&gt;
-民工叔抽象的对单页数据流进行的分析，需要细读细思&lt;/p&gt;
+&lt;h4 id=&quot;reduxhttpszhuanlanzhihucomp27093191&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/27093191&quot;&gt;Redux状态管理之痛点、分析与改良&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//segmentfault.com/a/1190000005701562&quot;&gt;Elm入门实践（一）——基础篇&lt;/a&gt;
-Elm 是一门专注于Web前端的纯函数式语言。你可能没听说过它，但一定听说过Redux，而Redux的核心reducer就是受到了Elm的启发。&lt;/p&gt;
+&lt;p&gt;深入分析了redux存在的一些问题&lt;/p&gt;
+
+&lt;h4 id=&quot;httpszhuanlanzhihucomp26426054&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26426054&quot;&gt;单页应用的数据流方案探索&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;民工叔抽象的对单页数据流进行的分析，需要细读细思&lt;/p&gt;
+
+&lt;h4 id=&quot;elmhttplinkzhihucomtargethttps3asegmentfaultcoma1190000005701562&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//segmentfault.com/a/1190000005701562&quot;&gt;Elm入门实践（一）——基础篇&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Elm 是一门专注于Web前端的纯函数式语言。你可能没听说过它，但一定听说过Redux，而Redux的核心reducer就是受到了Elm的启发。&lt;/p&gt;
 
 &lt;h2 id=&quot;section-3&quot;&gt;实用推荐&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//github.com/remy/nodemon&quot;&gt;nodemon (auto restart when code has changed)&lt;/a&gt;
-一个实时检测服务端代码变动并重启的小工具&lt;/p&gt;
+&lt;h4 id=&quot;nodemon-auto-restart-when-code-has-changedhttplinkzhihucomtargethttps3agithubcomremynodemon&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//github.com/remy/nodemon&quot;&gt;nodemon (auto restart when code has changed)&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//github.com/node-inspector/node-inspector&quot;&gt;node-inspector (debug node simply in browser)&lt;/a&gt;
-用于在浏览器中调试node应用的小工具&lt;/p&gt;
+&lt;p&gt;一个实时检测服务端代码变动并重启的小工具&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//github.com/babel/example-node-server&quot;&gt;babel-cli/babel-node (useful when we use lower version node.js to develop)&lt;/a&gt;
-用低版本node.js开发环境中使用ES2015语法时必不可少的必备利器&lt;/p&gt;
+&lt;h4 id=&quot;node-inspector-debug-node-simply-in-browserhttplinkzhihucomtargethttps3agithubcomnode-inspectornode-inspector&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//github.com/node-inspector/node-inspector&quot;&gt;node-inspector (debug node simply in browser)&lt;/a&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=http%3A//www.alloyteam.com/nav/&quot;&gt;前端网站分享&lt;/a&gt;
-这是我见过最全的前端资源目录&lt;/p&gt;
+&lt;p&gt;用于在浏览器中调试node应用的小工具&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/MsDZycS1t6Mh7WkxU-OGiw&quot;&gt;如何开始写一本属于自己的技术书&lt;/a&gt;
-如题。如果你还没有写一本自己的技术书，又或是不知道从何开始，不妨读读作者的经验。&lt;/p&gt;
+&lt;h4 id=&quot;babel-clibabel-node-useful-when-we-use-lower-version-nodejs-to-develophttplinkzhihucomtargethttps3agithubcombabelexample-node-server&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//github.com/babel/example-node-server&quot;&gt;babel-cli/babel-node (useful when we use lower version node.js to develop)&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;用低版本node.js开发环境中使用ES2015语法时必不可少的必备利器&lt;/p&gt;
+
+&lt;h4 id=&quot;httplinkzhihucomtargethttp3awwwalloyteamcomnav&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=http%3A//www.alloyteam.com/nav/&quot;&gt;前端网站分享&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;这是我见过最全的前端资源目录&lt;/p&gt;
+
+&lt;h4 id=&quot;httplinkzhihucomtargethttps3ampweixinqqcomsmsdzycs1t6mh7wkxu-ogiw&quot;&gt;&lt;a href=&quot;http://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/MsDZycS1t6Mh7WkxU-OGiw&quot;&gt;如何开始写一本属于自己的技术书&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;如题。如果你还没有写一本自己的技术书，又或是不知道从何开始，不妨读读作者的经验。&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot;&gt;IFT小组&lt;/a&gt; 出品，汇聚一周好文章，&lt;a href=&quot;https://zhuanlan.zhihu.com/p/27113543&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
@@ -1671,10 +1687,12 @@ Elm 是一门专注于Web前端的纯函数式语言。你可能没听说过它�
   &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章，期待你们。&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Fri, 26 May 2017 00:00:00 +0800</pubDate>
-        <link>http://ctripfe.com//2017/05/26/weekly.html</link>
-        <guid isPermaLink="true">http://ctripfe.com//2017/05/26/weekly.html</guid>
+        <pubDate>Fri, 26 May 2017 18:00:00 +0800</pubDate>
+        <link>http://ctripfe.com//weekly/2017/05/26/weekly.html</link>
+        <guid isPermaLink="true">http://ctripfe.com//weekly/2017/05/26/weekly.html</guid>
         
+        
+        <category>weekly</category>
         
       </item>
     
