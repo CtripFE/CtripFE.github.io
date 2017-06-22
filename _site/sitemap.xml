@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://ctripfe.com//2017/06/21/Habits-of-a-Happy-Node-Hacker-2017.html</loc>
+<lastmod>2017-06-21T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>http://ctripfe.com//weekly/2017/06/19/weekly.html</loc>
 <lastmod>2017-06-19T18:00:00+08:00</lastmod>
 </url>
@@ -31,6 +35,10 @@
 <url>
 <loc>http://ctripfe.com//translator/2017/05/28/my-atom-editor-setup-for-js-react.html</loc>
 <lastmod>2017-05-28T18:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://ctripfe.com//2017/05/26/weekly.html</loc>
+<lastmod>2017-05-26T00:00:00+08:00</lastmod>
 </url>
 <url>
 <loc>http://ctripfe.com//weekly/2017/05/19/weekly.html</loc>
