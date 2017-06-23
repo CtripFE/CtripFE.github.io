@@ -42,7 +42,7 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 # Disqus comments
-# disqus_shortname: bencentra
+disqus_shortname: "else-1"
 
 # Google analytics
 ga_tracking_id: "UA-101266075-1"
