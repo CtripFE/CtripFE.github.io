@@ -13,7 +13,7 @@ layout: default
   <article class="post-content">
     {% for crew in site.crews %}
       <li class="crew-container">
-        <a href="{{ crew.url }}">
+        <a href="{{ crew.url }}" target="_blank">
           <img src="{{ crew.profile }}" title="Profile Picture" class="crew-profile">
           <h4>{{ crew.name }}</h4>
           <p>{{ crew.intro }}</p>

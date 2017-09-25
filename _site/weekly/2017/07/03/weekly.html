@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ELSE 技术周刊(2017.07.03期)</title>
+  <meta name="description" content="业界动态Chrome再出招 呈现API将仅支持HTTPS谷歌工程师宣布将在2018年第二季度发布的Chrome 67中禁止一切使用不安全来源的呈现API(Presentation API)。">
+  
+  <meta name="author" content="ELSE">
+  <meta name="copyright" content="&copy; ELSE 2017">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="业界动态Chrome再出招 呈现API将仅支持HTTPS谷歌工程师宣布将在2018年第二季度发布的Chrome 67中禁止一切使用不安全来源的呈现API(Presentation API)。" />
+  <meta property="og:url" content="http://else.vip/" />
+  <meta property="og:site_name" content="ELSE" />
+  <meta property="og:title" content="ELSE 技术周刊(2017.07.03期)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://else.vip//assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ELSE 技术周刊(2017.07.03期)">
+  <meta name="twitter:description" content="业界动态Chrome再出招 呈现API将仅支持HTTPS谷歌工程师宣布将在2018年第二季度发布的Chrome 67中禁止一切使用不安全来源的呈现API(Presentation API)。">
+  <meta name="twitter:image" content="http://else.vip//assets/logo.png">
+  <meta name="twitter:url" content="http://else.vip/">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://else.vip//weekly/2017/07/03/weekly.html">
+  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://else.vip//feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <img src="/assets/logo.png" alt="ELSE">
+      <span class='main-title'>ELSE</span>
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        
+          
+          <li class="nav-link"><a href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li class="nav-link"><a href="/posts/">Posts</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/weekly/">weekly</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/translator/">translator</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/team/">team</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+<div class="post-header-container origin-setting">
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">ELSE 技术周刊(2017.07.03期)</h1>
+      <p class="info">by <strong>风清洋</strong></p>
+    </header>
+  </div>
+</div>
+
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">July 3, 2017</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/category/weekly">Weekly</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <h2 id="业界动态">业界动态</h2>
+<h4 id="chrome再出招-呈现api将仅支持https"><a href="https://www.sslchina.com/chrome-presentation-api/">Chrome再出招 呈现API将仅支持HTTPS</a></h4>
+<p>谷歌工程师宣布将在2018年第二季度发布的Chrome 67中禁止一切使用不安全来源的呈现API(Presentation API)。</p>
+
+<h4 id="tc39-ecmascript-and-the-future-of-javascript"><a href="https://ponyfoo.com/articles/tc39-ecmascript-proposals-future-of-javascript">TC39, ECMAScript, and the Future of JavaScript</a></h4>
+
+<p>从 T39 的工作流程，到 ECMAScript 现在的发展模式，以及未来即将引入的一些很酷的特性，作为开发人员，我们也要持续更新自己的知识体系。</p>
+
+<h2 id="前端技术">前端技术</h2>
+
+<h4 id="react-组件设计和分解思考"><a href="https://juejin.im/post/59522e57f265da6c3b27ab62">React 组件设计和分解思考</a></h4>
+<ul>
+  <li>切割 render()</li>
+  <li>合理分隔子组件(组件职责单一化，复用性强)</li>
+  <li>模版化组件(个人十分推荐)</li>
+  <li>高阶玩法</li>
+</ul>
+
+<h4 id="2017年前端框架类库工具大比拼"><a href="http://www.cnblogs.com/powertoolsteam/p/front_end_framework_2017.html">2017年前端框架、类库、工具大比拼</a></h4>
+<p>本文讨论了目前最为流行的客户端JavaScript框架、类库和工具以及它们之间的基本差异，可以了解下它们各自的好处，选择适合自己项目的。</p>
+
+<h2 id="实用技巧">实用技巧</h2>
+
+<h4 id="我是如何实现electron的在线升级热更新功能的"><a href="http://www.zhangxinxu.com/wordpress/2017/06/how-electron-online-update-hot-fix/">我是如何实现electron的在线升级热更新功能的？</a></h4>
+
+<p>利用简单的package.json文件版本比较和http请求，实现最简单的electron应用热更新。</p>
+
+<h4 id="刨根问底http和websocket协议二"><a href="http://www.jianshu.com/p/f666da1b1835">刨根问底HTTP和WebSocket协议(二）</a></h4>
+<p>本片中作者对 WebSocket 协议作了全面的介绍，对数据帧还不够详细， 说是会在后面的文章中详述，大家可以关注下。</p>
+
+<h2 id="技术纵横">技术纵横</h2>
+
+<h4 id="stack-overflow-2017-开发者调查报告程序员必看"><a href="https://zhuanlan.zhihu.com/p/27473861">Stack Overflow 2017 开发者调查报告（程序员必看）</a></h4>
+
+<p>做技术的，我个人一直认为一定要时刻关注趋势，因为这个时代变化太快了，技术的更新日新月异，做技术的尤其不能固步自封，我们要以一种开放的心态，来拥抱变化，为未来做准备，那么今天，我就以我个人的角度，来带大家解读下这份报告，值得一提的是，这份报告涉及的方面很多，我只挑一些大家比较关心的报告进行解读。</p>
+
+<h4 id="vue-vs-react-javascript-框架之战"><a href="http://www.zcfy.cc/article/vue-vs-react-battle-of-the-javascript-frameworks-3310.html">Vue vs React: Javascript 框架之战</a></h4>
+
+<p>作为目前最流行的两大框架：React 和 Vue，来回顾一下二者的相同和区别。</p>
+
+<h4 id="github--bitbucket--gitlab--coding-的对比分析"><a href="http://blog.csdn.net/firim/article/details/52807302">GitHub &amp; Bitbucket &amp; GitLab &amp; Coding 的对比分析</a></h4>
+<p>Why But Why? 阅读此文源于自己纯粹的好奇，以此想分享 ‘知道为什么我们使用我们所使用的东西’ 的这个理念 以及 ’在编程的世界，琐碎的知识点将积累出健壮程序意识‘。个人观点，精读下试试有没有，像我一样，解开了心里的一些长久的偏门小疑问？</p>
+
+<h2 id="程序人生">程序人生</h2>
+
+<h4 id="前端路上的旅行"><a href="http://www.w3cplus.com/front-end-trip-on-road.html">前端路上的旅行</a></h4>
+
+<p>如何成为一名合格的前端工程师？说实话，很难讲。十年前和今天，以及今天和十年后，要求大不同，前端领域变化太快，涉猎的范围也越来越广。不过，有一点要明白，任何新的技术都是为了改善使用者的体验，学以致用在技术领域真的特别重要，我们需要不断地学习，不断地革自己的命。</p>
+
+<blockquote>
+  <p>ELSE 技术周刊由 <a href="https://github.com/CtripFE">IFT小组</a> 出品，汇聚一周好文章，<a href="https://zhuanlan.zhihu.com/p/27208396">周刊原文</a>。本期编辑：</p>
+
+  <p><a href="https://github.com/CurtisCBS">@CurtisCBS</a> 中年人</p>
+
+  <p><a href="https://github.com/stoneyong">@StoneZou</a> 前端搬砖工, 不安分于前端开发的搬砖工</p>
+
+  <p><a href="https://github.com/StevenX911">@Steven</a> 写JS的老年人</p>
+
+  <p><a href="https://github.com/mirreal">@mirreal</a> 程序圈的间谍，我的梦想在浩瀚宇宙，我的征途是星辰大海</p>
+
+  <p><a href="https://github.com/sturloly">@sturloly</a> building apps for my future starship</p>
+
+  <p>感谢以下同学荐稿：<a href="https://github.com/elevenbeans">@elevenbeans</a></p>
+
+  <p><a href="https://github.com/CtripFE/fe-weekly/issues">点击这里</a> 向我们推荐你读到的好文章，期待你们。</p>
+</blockquote>
+
+</article>
+
+
+
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<section class="share">
+  <span>Share: </span>
+  
+    
+    
+      <a href="//twitter.com/share?text=ELSE+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%282017.07.03%E6%9C%9F%29&url=http%3A%2F%2Felse.vip%2F%2Fweekly%2F2017%2F07%2F03%2Fweekly.html&via=TheBenCentra"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+        <i class="fa fa-twitter-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+      <a href="//www.facebook.com/sharer.php?t=ELSE+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%282017.07.03%E6%9C%9F%29&u=http%3A%2F%2Felse.vip%2F%2Fweekly%2F2017%2F07%2F03%2Fweekly.html"
+        onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Felse.vip%2F%2Fweekly%2F2017%2F07%2F03%2Fweekly.html"
+        onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
+        <i class="fa fa-linkedin-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <a href="//plus.google.com/share?title=ELSE+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%282017.07.03%E6%9C%9F%29&url=http%3A%2F%2Felse.vip%2F%2Fweekly%2F2017%2F07%2F03%2Fweekly.html"
+        onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
+        <i class="fa fa-google-plus-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      <a href="//www.pinterest.com/pin/create/button/?description=ELSE+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%282017.07.03%E6%9C%9F%29&url=http%3A%2F%2Felse.vip%2F%2Fweekly%2F2017%2F07%2F03%2Fweekly.html&media=http://else.vip//assets/header_image.jpg"
+        onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
+        <i class="fa fa-pinterest-square fa-lg"></i>
+      </a>
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://else.vip//weekly/2017/07/03/weekly.html') + '&title=ELSE 技术周刊(2017.07.03期)'; return false">
+        <i class="fa fa-reddit-square fa-lg"></i>
+      </a>
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+
+
+<div id="gitment-container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    id: location.pathname,
+    owner: 'StevenX911',
+    repo: 'else-site-comments',
+    oauth: {
+      client_id: 'ca6900778cfe3509f1b6',
+      client_secret: '0b9939124803bad0b3a35d6899ffba57ddbe255e',
+    },
+  })
+  gitment.render('gitment-container')
+</script>
+
+</div>
+</div>
+
+    </div>
+
+    <footer class="site-footer" style="display:none;">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">ELSE</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/about/">About</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/posts/">Posts</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/weekly/">weekly</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/translator/">translator</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/team/">team</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:wgyngbh@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">wgyngbh@gmail.com</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://twitter.com/TheBenCentra" title="Follow me on Twitter">
+              <i class="fa fa-twitter"></i>
+              <span class="username">TheBenCentra</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+          <li>
+            <a href="https://github.com/CtripFE" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">CtripFE</span>
+            </a>
+          </li>
+          
+        
+          
+          <li>
+            <a href="https://www.linkedin.com/pub/ben-centra/47/769/60a" title="Connect with me on LinkedIn">
+              <i class="fa fa-linkedin"></i>
+              <span class="username">Ben Centra</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">A simple yet classy theme for your Jekyll website or blog.
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-50689045-3', 'auto');
+  ga('send', 'pageview', {
+    'page': '/weekly/2017/07/03/weekly.html',
+    'title': 'ELSE 技术周刊(2017.07.03期)'
+  });
+</script>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8eb075a2200713af43ef2376e0235f86";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+  </body>
+
+</html>

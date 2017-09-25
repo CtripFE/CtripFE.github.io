@@ -42,11 +42,11 @@
   
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="  作者：@csswizardry  原文：Little Things I Like to Do with Git  随便说点：这篇文章主要从管理者的角度谈论了使用 git 的心得，使用大量篇幅介绍 git log 的一些方法和技巧。  同样地，发现很多人其实并没有深入全面地去了解过 git 的用法，作为一名开发..." />
-  <meta property="og:url" content="http://ctripfe.com/" />
+  <meta property="og:url" content="http://else.vip/" />
   <meta property="og:site_name" content="ELSE" />
   <meta property="og:title" content="喜欢用 Git 做的一些小事" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://ctripfe.com//assets/logo.png" />
+  <meta property="og:image" content="http://else.vip//assets/logo.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -57,16 +57,16 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="喜欢用 Git 做的一些小事">
   <meta name="twitter:description" content="  作者：@csswizardry  原文：Little Things I Like to Do with Git  随便说点：这篇文章主要从管理者的角度谈论了使用 git 的心得，使用大量篇幅介绍 git log 的一些方法和技巧。  同样地，发现很多人其实并没有深入全面地去了解过 git 的用法，作为一名开发...">
-  <meta name="twitter:image" content="http://ctripfe.com//assets/logo.png">
-  <meta name="twitter:url" content="http://ctripfe.com/">
+  <meta name="twitter:image" content="http://else.vip//assets/logo.png">
+  <meta name="twitter:url" content="http://else.vip/">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://ctripfe.com//translator/2017/06/12/little-things-i-like-to-do-with-git.html">
-  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://ctripfe.com//feed.xml" />
+  <link rel="canonical" href="http://else.vip//translator/2017/06/12/little-things-i-like-to-do-with-git.html">
+  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://else.vip//feed.xml" />
 </head>
 
 
@@ -98,6 +98,28 @@
         
           
           <li class="nav-link"><a href="/posts/">Posts</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/weekly/">weekly</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/translator/">translator</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/team/">team</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
           
         
           
@@ -155,7 +177,7 @@
 
 <p>在跟我的朋友 Tim 聊天的时候，谈到我有多喜欢 Git。作为经常使用的一个工具，它强大而优雅。在这里，介绍一下我个人使用得最多，同时也是最有用的一些小技巧。</p>
 
-<h2 id="section">管理者面板</h2>
+<h2 id="管理者面板">管理者面板</h2>
 
 <p>无论你认为在工作中的游戏化（gamification）和竞争是好是坏，对于这个话题在不同的时间可能是完全不同的结论。但如果你对团队成员在项目中的提交数量感兴趣，使用 <code class="highlighter-rouge">shortlog</code> 就可以找到答案：</p>
 
@@ -163,12 +185,11 @@
 
 <p>（我只是占位的）</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git shortlog -sn
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git shortlog <span class="nt">-sn</span>
     80  Harry Roberts
     34  Samantha Peters
      3  Tom Smith
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><code class="highlighter-rouge">shortlog</code> 可以视作对 <code class="highlighter-rouge">git log</code> 的概要。</p>
 
@@ -179,46 +200,42 @@
 
 <p>上面显示的是项目生命周期的所有提交，但是如果想查看在特定时间内的情况，可以使用 <code class="highlighter-rouge">--since</code> 和 <code class="highlighter-rouge">--until</code> 选项：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git shortlog -sn --since<span class="o">=</span><span class="s1">'10 weeks'</span> --until<span class="o">=</span><span class="s1">'2 weeks'</span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git shortlog <span class="nt">-sn</span> <span class="nt">--since</span><span class="o">=</span><span class="s1">'10 weeks'</span> <span class="nt">--until</span><span class="o">=</span><span class="s1">'2 weeks'</span>
     59  Harry Roberts
     24  Samantha Peters
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>我为此配置了别名 <code class="highlighter-rouge">$ git stats</code></p>
 
-<h2 id="section-1">责任人</h2>
+<h2 id="责任人">责任人</h2>
 
 <p>Git 有一个非常有用的 <code class="highlighter-rouge">blame</code> 功能，允许我们查看特定代码段的负责开发人员：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="c"># See who last changed lines 5 through 10 of the buttons’ CSS:</span>
-<span class="gp">$ </span>git blame -L5,10 _components.buttons.scss
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># See who last changed lines 5 through 10 of the buttons’ CSS:</span>
+<span class="nv">$ </span>git blame <span class="nt">-L5</span>,10 _components.buttons.scss
+</code></pre></div></div>
 
 <p>这一条放在这里讲好像有点过头，像是我们在找开发人员哪些地方做错了。但也不完全是这样，另一方面，他们可能已经做了一些我们想要了解的特别厉害或是印象深刻的事情。我们原本会问，哇！我之前还没有看到这个功能，还想知道是谁做的。</p>
 
 <p>由于是从 SVN 转到 Git，我使用 <code class="highlighter-rouge">praise</code> 作为 <code class="highlighter-rouge">blame</code> 的别名，这样二者都可以使用：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git config --global alias.praise blame
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--global</span> alias.praise blame
+</code></pre></div></div>
 
 <p>即，我也可以这样做：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="c"># Find out who implemented Resource Hints and buy them a coffee:</span>
-<span class="gp">$ </span>git praise -L18,23 _includes/head.html
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Find out who implemented Resource Hints and buy them a coffee:</span>
+<span class="nv">$ </span>git praise <span class="nt">-L18</span>,23 _includes/head.html
+</code></pre></div></div>
 
 <p>只是一点小变化，但效果不错。</p>
 
-<h2 id="section-2">隐藏空白提示</h2>
+<h2 id="隐藏空白提示">隐藏空白提示</h2>
 
 <p>当使用 <code class="highlighter-rouge">diff</code> 或 <code class="highlighter-rouge">show</code> 查看具有大量空白变化的版本对比时，会有很多视觉噪音干扰我们，使得很难看到更重要的变化内容。</p>
 
 <p>幸运的是，去除这种空白提示非常容易，在 <code class="highlighter-rouge">git diff</code> 和 <code class="highlighter-rouge">git show</code> 使用 <code class="highlighter-rouge">-w</code> 选项就可以轻松搞定。比如，之前：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code> a {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> a {
    color: $color-links;
 
 -&amp;:hover {
@@ -230,12 +247,11 @@
 +  }
 
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>使用 <code class="highlighter-rouge">-w</code> 之后：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code> a {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> a {
    color: $color-links;
 
    &amp;:hover {
@@ -244,115 +260,101 @@
    }
 
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>现在可以很容易看出，唯一有意义的变化是增加了 <code class="highlighter-rouge">text-decoration: underline;</code>，而其余​​的 <code class="highlighter-rouge">diff</code> 是有点误导性的。</p>
 
-<h2 id="section-3">仅显示单词的变化而不是整行</h2>
+<h2 id="仅显示单词的变化而不是整行">仅显示单词的变化而不是整行</h2>
 
 <p>写代码跟写文章不同，查看变化的单词而不是整行通常会更有用; 这在编辑 markdown 文档时尤其有用，就像现在。</p>
 
 <p>幸运的是，我们只要使用 <code class="highlighter-rouge">--word-diff</code> 选项就能显示单词的变化：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git diff --word-diff
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git diff <span class="nt">--word-diff</span>
+</code></pre></div></div>
 
 <p>跟不使用 <code class="highlighter-rouge">--word-diff</code> 选项的区别还是很大的：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>-My friend Tom recently gave an excellent talk
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-My friend Tom recently gave an excellent talk
 +My good friend Tom gave an excellent talk
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>如果启用 <code class="highlighter-rouge">--word-diff</code>，我们能得到更便于理解和更有用的概览：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>My {+good+} friend Tom [-recently-] gave an excellent talk
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>My {+good+} friend Tom [-recently-] gave an excellent talk
+</code></pre></div></div>
 
-<p>注意只有变化的文本被突出显示（通过 <code class="highlighter-rouge"><span class="p">{</span><span class="err">+</span><span class="w"> </span><span class="err">+</span><span class="p">}</span></code> 和 <code class="highlighter-rouge">[- -]</code>)</p>
+<p>注意只有变化的文本被突出显示（通过 <code class="highlighter-rouge">{+ +}</code> 和 <code class="highlighter-rouge">[- -]</code>)</p>
 
-<h2 id="section-4">查看最近工作的分支</h2>
+<h2 id="查看最近工作的分支">查看最近工作的分支</h2>
 
 <p>在任何给定的项目，在许多不同的分支之间切换是很常见的，并且跟踪它们可能相当棘手。我们可以让 Git 帮助我们解决这个问题：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git <span class="k">for</span>-each-ref --count<span class="o">=</span>10 --sort<span class="o">=</span>-committerdate refs/heads/ --format<span class="o">=</span><span class="s2">"%(refname:short)"</span>
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git <span class="k">for</span><span class="nt">-each-ref</span> <span class="nt">--count</span><span class="o">=</span>10 <span class="nt">--sort</span><span class="o">=</span><span class="nt">-committerdate</span> refs/heads/ <span class="nt">--format</span><span class="o">=</span><span class="s2">"%(refname:short)"</span>
+</code></pre></div></div>
 
 <p>通过这个命令可以知道最近在工作的 10（–count=10）个分支，按照上次工作的时间排序。只显示本地分支（<code class="highlighter-rouge">refs/heads/</code>），并通过 <code class="highlighter-rouge">--format</code> 选项获得更友好的呈现方式。</p>
 
 <p>这是一个有点冗长的命令，所以我为此配置别名 <code class="highlighter-rouge">$ git recent</code>。</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git config --global alias.recent <span class="s2">"for-each-ref --count=10 --sort=-committerdate refs/heads/ --format=</span><span class="se">\"</span><span class="s2">%(refname:short)</span><span class="se">\"</span><span class="s2">"</span>
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> alias.recent <span class="s2">"for-each-ref --count=10 --sort=-committerdate refs/heads/ --format=</span><span class="se">\"</span><span class="s2">%(refname:short)</span><span class="se">\"</span><span class="s2">"</span>
+</code></pre></div></div>
 
-<h2 id="section-5">看到每个人都在做什么</h2>
+<h2 id="看到每个人都在做什么">看到每个人都在做什么</h2>
 
 <p>有时候，特别是对于团队领导，了解团队成员在所有分支的行为概览是很有用的。再一次地，Git 可以让这一切变得很容易：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --all --oneline --no-merges
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git log <span class="nt">--all</span> <span class="nt">--oneline</span> <span class="nt">--no-merges</span>
+</code></pre></div></div>
 
 <p>这可以得到一份关于所有人的日志报告简化版（带有 <code class="highlighter-rouge">--no-merges</code> 选项）</p>
 
 <p>我们也可以通过 <code class="highlighter-rouge">--since</code> 选项来限制返回的提交数量：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --all --since<span class="o">=</span><span class="s1">'2 weeks'</span> --oneline --no-merges
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git log <span class="nt">--all</span> <span class="nt">--since</span><span class="o">=</span><span class="s1">'2 weeks'</span> <span class="nt">--oneline</span> <span class="nt">--no-merges</span>
+</code></pre></div></div>
 
 <p>这样我们可以看到，在过去的两个星期里，每个人都在做什么。</p>
 
 <p>可以配置一个别名 <code class="highlighter-rouge">$ git overview</code></p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git config --global alias.overview <span class="s2">"log --all --since='2 weeks' --oneline --no-merges"</span>
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> alias.overview <span class="s2">"log --all --since='2 weeks' --oneline --no-merges"</span>
+</code></pre></div></div>
 
-<h2 id="section-6">提醒你自己已经做了什么</h2>
+<h2 id="提醒你自己已经做了什么">提醒你自己已经做了什么</h2>
 
 <p>当你回到一个比较旧的项目，或是在长时间休息之后回到办公室，可能不知道你最后在做什么工作，这种情况时常发生。我们可以通过 Git 轻松获得我们在项目中的工作情况：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --all --oneline --no-merges --author<span class="o">=</span>&lt;your email address&gt;
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git log <span class="nt">--all</span> <span class="nt">--oneline</span> <span class="nt">--no-merges</span> <span class="nt">--author</span><span class="o">=</span>&lt;your email address&gt;
+</code></pre></div></div>
 
 <p>和上一条很类似，只是我们将日志限制于我们自己的提交，也可以增加 <code class="highlighter-rouge">--since</code> 限制。</p>
 
 <p>这也有一个别名 <code class="highlighter-rouge">$ git recap</code>。</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git config --global alias.recap <span class="s2">"log --all --oneline --no-merges --author=name@mail.com"</span>
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> alias.recap <span class="s2">"log --all --oneline --no-merges --author=name@mail.com"</span>
+</code></pre></div></div>
 
-<h2 id="section-7">今天的工作</h2>
+<h2 id="今天的工作">今天的工作</h2>
 
 <p>同样地，不在这里讨论如何衡量开发人员的生产力，但我觉得让客户知道我在任何一天的工作情况是很有用的。不是要你保留完成任务的详细列表，我们可以使用 Git 获取所有这些信息：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --since<span class="o">=</span>00:00:00 --all --no-merges --oneline --author<span class="o">=</span>&lt;your email address&gt;
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git log <span class="nt">--since</span><span class="o">=</span>00:00:00 <span class="nt">--all</span> <span class="nt">--no-merges</span> <span class="nt">--oneline</span> <span class="nt">--author</span><span class="o">=</span>&lt;your email address&gt;
+</code></pre></div></div>
 
 <p>这将记录（<code class="highlighter-rouge">log</code>） 你工作的所有（<code class="highlighter-rouge">--all</code>）分支，谁（<code class="highlighter-rouge">--author</code>）从（<code class="highlighter-rouge">--since</code>）午夜开始都做了什么，（不包括合并提交 <code class="highlighter-rouge">--no-merges</code>），并提供一个简单的一行 （<code class="highlighter-rouge">--oneline</code>） 概述。</p>
 
 <p>我有这个别名 <code class="highlighter-rouge">$ git today</code>。</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git config --global alias.today <span class="s2">"log --since=00:00:00 --all --no-merges --oneline --author=name@mail.com"</span>
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> alias.today <span class="s2">"log --since=00:00:00 --all --no-merges --oneline --author=name@mail.com"</span>
+</code></pre></div></div>
 
-<h2 id="section-8">生成更改日志</h2>
+<h2 id="生成更改日志">生成更改日志</h2>
 
 <p>维护一份 CHANGELOG 可能有点乏味，我们必须查看自上次发布以来所做的所有工作，然后提取其中有用的部分。幸运的是，我们可以使用 Git 来给我们一个好的开头：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --oneline --no-merges &lt;last tag&gt;..HEAD
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git log <span class="nt">--oneline</span> <span class="nt">--no-merges</span> &lt;last tag&gt;..HEAD
+</code></pre></div></div>
 
 <p>注意：<code class="highlighter-rouge">HEAD</code> 是可选的，如果你省略（即… –no-merges <last tag="">..），`HEAD` 会是隐含的，当然这样可以节省几次敲击键盘的时间。</last></p>
 
@@ -360,54 +362,49 @@
 
 <p>例如：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --oneline --no-merges 1.0.0..
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git log <span class="nt">--oneline</span> <span class="nt">--no-merges</span> 1.0.0..
 1257b95 <span class="o">[</span>refs <span class="c">#00019] Bump version</span>
 2b9b28e <span class="o">[</span>refs <span class="c">#00019] Add auto width class</span>
 17b8eb1 <span class="o">[</span>refs <span class="c">#00015] Tidy up README.md</span>
 bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell main mixin</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>这告诉我，自从上次发布（1.0.0）到当前项目状态（<code class="highlighter-rouge">HEAD</code>），已经完成哪些工作。这对于 CHANGELOG 来说是一个很好的参考。</p>
 
 <p>注意：不仅仅适用于 tag，还可以使用提交哈希。</p>
 
-<h2 id="section-9">检查需要拉取哪些变化</h2>
+<h2 id="检查需要拉取哪些变化">检查需要拉取哪些变化</h2>
 
 <p>如果你在一段时间内不在项目，可能需要先检查上游的变更，然后再将这些更新下载到本地分支。</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --oneline --no-merges HEAD..&lt;remote&gt;/&lt;branch&gt;
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git log <span class="nt">--oneline</span> <span class="nt">--no-merges</span> HEAD..&lt;remote&gt;/&lt;branch&gt;
+</code></pre></div></div>
 
 <p>注意：同样地，<code class="highlighter-rouge">HEAD</code> 在这里是可选的，省略将使其隐含。</p>
 
 <p>例如，让我们来看看你在度假时在特性分支做了什么：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git checkout feature/fonts
-<span class="gp">$ </span>git fetch
-<span class="gp">$ </span>git log --oneline --no-merges ..origin/feature/fonts
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git checkout feature/fonts
+<span class="nv">$ </span>git fetch
+<span class="nv">$ </span>git log <span class="nt">--oneline</span> <span class="nt">--no-merges</span> ..origin/feature/fonts
+</code></pre></div></div>
 
 <p>我使用这个别名 <code class="highlighter-rouge">$ git upstream</code>。</p>
 
-<h2 id="section-10">检查即将上传的内容</h2>
+<h2 id="检查即将上传的内容">检查即将上传的内容</h2>
 
 <p>最好的情况是可以经常提交和上传，但如果某种原因导致有大量的本地提交尚未上传，可以快速回顾一下都是什么。</p>
 
 <p>为了做到这一点，我们反转之前的命令就能轻松实现：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --oneline --no-merges &lt;remote&gt;/&lt;branch&gt;..HEAD
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git log <span class="nt">--oneline</span> <span class="nt">--no-merges</span> &lt;remote&gt;/&lt;branch&gt;..HEAD
+</code></pre></div></div>
 
 <p>例如：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git fetch
-<span class="gp">$ </span>git log --oneline --no-merges origin/feature/fonts..HEAD
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git fetch
+<span class="nv">$ </span>git log <span class="nt">--oneline</span> <span class="nt">--no-merges</span> origin/feature/fonts..HEAD
+</code></pre></div></div>
 
 <p>注意：同样地，<code class="highlighter-rouge">HEAD</code> 在这里是可选的，省略将使其隐含。</p>
 
@@ -415,21 +412,19 @@ bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell ma
 
 <p>我使用这个别名 <code class="highlighter-rouge">$ git local</code>。</p>
 
-<h2 id="section-11">查看复杂日志</h2>
+<h2 id="查看复杂日志">查看复杂日志</h2>
 
 <p>上面的每一个例子都使用简化的日志，因为只想快速了解发生了什么。对于更多细节，我使用带有 <code class="highlighter-rouge">--graph</code> 选项的日志和一些额外的选项：</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git log --graph --all --decorate --stat --date<span class="o">=</span>iso
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git log <span class="nt">--graph</span> <span class="nt">--all</span> <span class="nt">--decorate</span> <span class="nt">--stat</span> <span class="nt">--date</span><span class="o">=</span>iso
+</code></pre></div></div>
 
 <p>这将给出所有（<code class="highlighter-rouge">--all</code>）分支基于 <code class="highlighter-rouge">--graph</code> 的提交记录 ` –stat<code class="highlighter-rouge">（添加，删除）日志。</code>–decorate` 选项会告诉我们提交信息适用于那些分支，还包含一个更加严格的日期格式。</p>
 
 <p>我使用这个别名 <code class="highlighter-rouge">$ git graph</code>。</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>git config --global alias.graph <span class="s2">"log --graph --all --decorate --stat --date=iso"</span>
-</code></pre>
-</div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> alias.graph <span class="s2">"log --graph --all --decorate --stat --date=iso"</span>
+</code></pre></div></div>
 
 </article>
 
@@ -446,7 +441,7 @@ bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell ma
   
     
     
-      <a href="//twitter.com/share?text=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html&via=TheBenCentra"
+      <a href="//twitter.com/share?text=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&url=http%3A%2F%2Felse.vip%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html&via=TheBenCentra"
         onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
         <i class="fa fa-twitter-square fa-lg"></i>
       </a>
@@ -461,7 +456,7 @@ bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell ma
     
     
     
-      <a href="//www.facebook.com/sharer.php?t=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&u=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html"
+      <a href="//www.facebook.com/sharer.php?t=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&u=http%3A%2F%2Felse.vip%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html"
         onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
         <i class="fa fa-facebook-square fa-lg"></i>
       </a>
@@ -486,7 +481,7 @@ bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell ma
     
     
     
-      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html"
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Felse.vip%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html"
         onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
         <i class="fa fa-linkedin-square fa-lg"></i>
       </a>
@@ -499,7 +494,7 @@ bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell ma
     
     
     
-      <a href="//plus.google.com/share?title=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html"
+      <a href="//plus.google.com/share?title=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&url=http%3A%2F%2Felse.vip%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html"
         onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
         <i class="fa fa-google-plus-square fa-lg"></i>
       </a>
@@ -533,7 +528,7 @@ bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell ma
     
     
     
-      <a href="//www.pinterest.com/pin/create/button/?description=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&url=http%3A%2F%2Fctripfe.com%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html&media=http://ctripfe.com//assets/header_image.jpg"
+      <a href="//www.pinterest.com/pin/create/button/?description=%E5%96%9C%E6%AC%A2%E7%94%A8+Git+%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E4%BA%8B&url=http%3A%2F%2Felse.vip%2F%2Ftranslator%2F2017%2F06%2F12%2Flittle-things-i-like-to-do-with-git.html&media=http://else.vip//assets/header_image.jpg"
         onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
         <i class="fa fa-pinterest-square fa-lg"></i>
       </a>
@@ -602,7 +597,7 @@ bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell ma
     
     
     
-      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://ctripfe.com//translator/2017/06/12/little-things-i-like-to-do-with-git.html') + '&title=喜欢用 Git 做的一些小事'; return false">
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://else.vip//translator/2017/06/12/little-things-i-like-to-do-with-git.html') + '&title=喜欢用 Git 做的一些小事'; return false">
         <i class="fa fa-reddit-square fa-lg"></i>
       </a>
     
@@ -620,25 +615,21 @@ bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell ma
 </section>
 
 
-
-  
-  <section class="disqus">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname = 'else-1';
-
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </section>
-  
-
+<div id="gitment-container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    id: location.pathname,
+    owner: 'StevenX911',
+    repo: 'else-site-comments',
+    oauth: {
+      client_id: 'ca6900778cfe3509f1b6',
+      client_secret: '0b9939124803bad0b3a35d6899ffba57ddbe255e',
+    },
+  })
+  gitment.render('gitment-container')
+</script>
 
 </div>
 </div>
@@ -671,6 +662,28 @@ bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell ma
         
         
         
+          <li class="nav-link"><a href="/category/weekly/">weekly</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/translator/">translator</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/team/">team</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -682,9 +695,9 @@ bbe7d05 <span class="o">[</span>refs <span class="c">#00012] Rename Supercell ma
       <p><strong>Contact</strong></p>
       <ul class="social-media-list">
         <li>
-          <a href="mailto:477623879@qq.com">
+          <a href="mailto:wgyngbh@gmail.com">
             <i class="fa fa-envelope-o"></i>
-            <span class="username">477623879@qq.com</span>
+            <span class="username">wgyngbh@gmail.com</span>
           </a>
         </li>
 
@@ -790,7 +803,7 @@ $(document).ready(function() {
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-101266075-1', 'auto');
+  ga('create', 'UA-50689045-3', 'auto');
   ga('send', 'pageview', {
     'page': '/translator/2017/06/12/little-things-i-like-to-do-with-git.html',
     'title': '喜欢用 Git 做的一些小事'
@@ -798,12 +811,12 @@ $(document).ready(function() {
 </script>
 
 
-<script type="text/javascript">
+<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?8dc86729249c78ab7937a77249452f73";
-  var s = document.getElementsByTagName("script")[0];
+  hm.src = "https://hm.baidu.com/hm.js?8eb075a2200713af43ef2376e0235f86";
+  var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
