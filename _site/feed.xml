@@ -6,13 +6,92 @@
 </description>
     <link>http://else.vip//</link>
     <atom:link href="http://else.vip//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Sep 2017 15:07:40 +0800</pubDate>
-    <lastBuildDate>Mon, 25 Sep 2017 15:07:40 +0800</lastBuildDate>
+    <pubDate>Mon, 02 Oct 2017 11:24:20 +0800</pubDate>
+    <lastBuildDate>Mon, 02 Oct 2017 11:24:20 +0800</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
+        <title>ELSE 技术周刊(2017.10.02期)</title>
+        <description>&lt;h2 id=&quot;本期推荐&quot;&gt;本期推荐&lt;/h2&gt;
+&lt;h4 id=&quot;es6-promise模式与反模式&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/29783901&quot;&gt;ES6 Promise：模式与反模式&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;这是一篇有用的关于常见 Promise 模式和反模式的文章。&lt;/p&gt;
+
+&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;react-v160&quot;&gt;&lt;a href=&quot;https://facebook.github.io/react/blog/2017/09/26/react-v16.0.html&quot;&gt;React v16.0&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;React 16 如期发布，遵循 MIT 许可。 当地时间 9月 26 日，FB 工程师 Andrew Clark 在 React 官方主页发文，宣布 React v16.0 发布，并介绍了新版本中的改进内容。&lt;/p&gt;
+
+&lt;h4 id=&quot;nodejs-㕛分家了后续发版将受影响&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/28799213&quot;&gt;Node.js 㕛分家了，后续发版将受影响&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本周，Node 社区的几个核心成员又从 Node.js master 分支 fork 出了一个项目，名叫 Ayo.js。&lt;/p&gt;
+
+&lt;h4 id=&quot;firefox突然提速一倍chrome自愧不如&quot;&gt;&lt;a href=&quot;http://www.toutiao.com/a6470454402669871629/?tt_from=mobile_qq&amp;amp;utm_campaign=client_share&amp;amp;app=news_article&amp;amp;utm_source=mobile_qq&amp;amp;iid=0&amp;amp;utm_medium=toutiao_ios&quot;&gt;Firefox突然提速一倍！Chrome自愧不如&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;曾经将IE浏览器斩落马下的Firefox虽然如今没那么强势了，如日中天的是Google Chrome，但是火狐从来没放弃努力，今天就放出了全新的Firefox 57版本，但是认为单纯的数字已经不足以反应新版的特别，所以命名为“Firefox Quantum”。&lt;/p&gt;
+
+&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
+
+&lt;h4 id=&quot;深度剖析如何实现一个-virtual-dom-算法&quot;&gt;&lt;a href=&quot;http://segmentfault.com/p/1210000011364809&quot;&gt;深度剖析：如何实现一个 Virtual DOM 算法&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本文会在教你怎么用 300~400 行代码实现一个基本的 Virtual DOM 算法，并且尝试尽量把 Virtual DOM 的算法思路阐述清楚。希望在阅读本文后，能让你深入理解 Virtual DOM 算法，给你现有前端的编程提供一些新的思考。&lt;/p&gt;
+
+&lt;h4 id=&quot;promise-异步流程控制&quot;&gt;&lt;a href=&quot;https://juejin.im/post/59cdb6526fb9a00a4e67c7fb&quot;&gt;Promise 异步流程控制&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;由一道面试题发散开来，从并发请求，控制并发量，顺序处理等方面深入理解 Promise 的 API 和其使用场景。&lt;/p&gt;
+
+&lt;h4 id=&quot;nodejs-十问&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/29650110&quot;&gt;Node.js 十问&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;node开发者未必都了解的十个问题，问题涉及了v8引擎，语法使用到模块依赖等。&lt;/p&gt;
+
+&lt;h4 id=&quot;a-brief-history-of-modularity&quot;&gt;&lt;a href=&quot;https://ponyfoo.com/articles/brief-history-of-modularity#nodejs-and-the-advent-of-commonjs&quot;&gt;A Brief History of Modularity&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;一瞥前端模块化的历史，从最开始的script标签和闭包到当前最热门的ES6 module，babel和webpack。&lt;/p&gt;
+
+&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;浅谈hybrid技术的设计与实现前言&quot;&gt;&lt;a href=&quot;http://www.cnblogs.com/yexiaochai/p/4921635.html&quot;&gt;浅谈Hybrid技术的设计与实现前言&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本篇博客中，作者系统的介绍了hybrid发展史，也对其开发模式作了详细讲解。从交互设计到Hybrid的资源管理，包含H5与Native通信、交互格式约定、跳转、数据请求等技术细节都有所介绍，对新接触Hybrid 开发模式的同学很有帮助。&lt;/p&gt;
+
+&lt;h4 id=&quot;安全技能学习笔记反射型-xss-sql-注入&quot;&gt;&lt;a href=&quot;https://testerhome.com/topics/9898&quot;&gt;安全技能学习笔记——反射型 XSS 、SQL 注入&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;很详细地介绍了两个基本的网路安全技巧，以及详细的攻击示例，很具参考价值。&lt;/p&gt;
+
+&lt;h4 id=&quot;什么是-base64-算法&quot;&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s/H5U53RayntyX4-turj1j8A&quot;&gt;什么是 Base64 算法？&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;这次玻璃猫为我们带来的是Base64 算法的介绍，通过两只小仓鼠的对答，可以很好的了解 ASCII 和Base64的基本原理。&lt;/p&gt;
+
+&lt;h4 id=&quot;他们十年做出h5界photoshop还说流量平权才是未来&quot;&gt;&lt;a href=&quot;http://www.toutiao.com/a6465451450428113165/?tt_from=mobile_qq&amp;amp;utm_campaign=client_share&amp;amp;app=news_article&amp;amp;utm_source=mobile_qq&amp;amp;iid=5574997551&amp;amp;utm_medium=toutiao_ios&quot;&gt;他们十年做出“H5界Photoshop”，还说流量平权才是未来&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;iH5是一个完全可视化的HTML5应用编辑工具，它能抽离H5技术的底层代码逻辑，归并为“拖拽”“单击”等可视化操作，改变了HTML5的生产方式。&lt;/p&gt;
+
+&lt;h2 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;如何读懂火焰图&quot;&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2017/09/flame-graph.html&quot;&gt;如何读懂火焰图？&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;通过火焰图查看性能指标，了解如何通过perf指令生成的火焰图进行性能指标分析以及如何对node服务进程生成对应的火焰图？&lt;/p&gt;
+
+&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;程序员的创业陷阱接私活&quot;&gt;&lt;a href=&quot;https://segmentfault.com/p/1210000011379205&quot;&gt;程序员的创业陷阱：接私活&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;在我和你有一样能力的时候，我曾经说过一句话：我希望我死前的最后一个动作是按下 【Enter】，我写代码的动力不是赚钱 ( 当然赚钱很重要，但如果只是赚钱，我大可去作直销、卖保险、到大公司上班 … )，精准来说不只是赚钱，我的动力来源来自于我写出来的代码可以让非常多人使用，真正帮助到很多人，而且很多人都说好。( 相信我，如果你真的做到这一点，其实你也赚到钱了 )&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot;&gt;IFT 小组&lt;/a&gt; 出品，汇聚一周好文章， &lt;a href=&quot;https://zhuanlan.zhihu.com/p/29427394&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@Curtis&lt;/a&gt; 前端中年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工，不安分于前端开发的搬砖工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot;&gt;@Steven&lt;/a&gt; 写 JS 的老年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 想当设计师的程序员不是一个好攻城狮&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 02 Oct 2017 18:00:00 +0800</pubDate>
+        <link>http://else.vip//weekly/2017/10/02/weekly.html</link>
+        <guid isPermaLink="true">http://else.vip//weekly/2017/10/02/weekly.html</guid>
+        
+        
+        <category>weekly</category>
+        
+      </item>
+    
+      <item>
         <title>ELSE 技术周刊(2017.09.25期)</title>
-        <description>&lt;h1 id=&quot;业界动态&quot;&gt;业界动态&lt;/h1&gt;
+        <description>&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
 
 &lt;h4 id=&quot;facebook将修改reactjestflow-与-immutablejs授权许可&quot;&gt;&lt;a href=&quot;https://juejin.im/entry/59c5c4645188253da713d999&quot;&gt;Facebook将修改React、Jest、Flow 与 Immutable.js授权许可&lt;/a&gt;&lt;/h4&gt;
 
@@ -31,7 +110,7 @@
 &lt;h4 id=&quot;为处理升级过程的问题-angular-5-将会推迟发布&quot;&gt;&lt;a href=&quot;http://www.oschina.net/news/88843/angular-5-delayed&quot;&gt;为处理升级过程的问题 Angular 5 将会推迟发布&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Angular 发布历史，以及版本号的问题&lt;/p&gt;
 
-&lt;h1 id=&quot;前端开发&quot;&gt;前端开发&lt;/h1&gt;
+&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
 
 &lt;h4 id=&quot;浏览器的渲染过程与原理&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/29418126&quot;&gt;浏览器的渲染：过程与原理&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;本文不是关于浏览器渲染的底层原理或前端优化具体细节的讲解，而是关于浏览器对页面的渲染——这一过程的描述及其背后原理的解释。这是因为前端优化是一个非常庞大且零散的知识集合，一篇文章如果要写优化的具体方法恐怕只能做一些有限的列举。&lt;/p&gt;
@@ -59,7 +138,7 @@
 
 &lt;p&gt;与HTML5中新增的其他DOM扩展类似，这些变化同样基于那些已经得到很多浏览器完美支持的专有扩展。所以，尽管这些扩展被写入标准的时间相对不长，但很多浏览器很早就已经支持这些功能了。&lt;/p&gt;
 
-&lt;h1 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h1&gt;
+&lt;h2 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h2&gt;
 
 &lt;h4 id=&quot;iphone-x的缺口和css&quot;&gt;&lt;a href=&quot;http://www.w3cplus.com/css/the-notch-and-css.html&quot;&gt;iPhone X的缺口和CSS&lt;/a&gt;&lt;/h4&gt;
 
@@ -72,7 +151,7 @@
 
 &lt;p&gt;PWA（Progressive Web Apps,渐进式网页应用）是Google在2015年推出的项目，致力于通过web app获得类似native app体验的网站。&lt;/p&gt;
 
-&lt;h1 id=&quot;程序人生&quot;&gt;程序人生&lt;/h1&gt;
+&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
 
 &lt;h4 id=&quot;程序世界里的不信任原则&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/29470110&quot;&gt;程序世界里的不信任原则&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;人与人之间最重要的是信任，但程序的世界里，可能信任越少越好；我越发觉得越是高性能高可用的系统里，不信任原则会体现得更加淋漓尽致。 为了少走弯路，写下这篇文章留给自己参考，其中一些是自己踩过的一些坑；一些是接手他人系统时触过的雷；还有一些是从别人分享的经验学习得来；能力有限，先记下自己的一些体会，错误的地方再慢慢改正。&lt;/p&gt;
@@ -1185,81 +1264,6 @@ LAUNCH SUCCESS
         <pubDate>Mon, 28 Aug 2017 18:00:00 +0800</pubDate>
         <link>http://else.vip//weekly/2017/08/28/weekly.html</link>
         <guid isPermaLink="true">http://else.vip//weekly/2017/08/28/weekly.html</guid>
-        
-        
-        <category>weekly</category>
-        
-      </item>
-    
-      <item>
-        <title>ELSE 技术周刊(2017.08.21期)</title>
-        <description>&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
-
-&lt;h4 id=&quot;top-level-await-now-supported-in-chrome-devtools-console&quot;&gt;&lt;a href=&quot;https://twitter.com/umaar/status/897408737694109697&quot;&gt;Top-Level ‘await’ Now Supported in Chrome DevTools’ Console&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Chrome Canary版本控制台开始支持await&lt;/p&gt;
-
-&lt;h4 id=&quot;rethinking-drag-and-drop&quot;&gt;&lt;a href=&quot;https://medium.com/@alexandereardon/rethinking-drag-and-drop-d9f5770b4e6b&quot;&gt;Rethinking drag and drop&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Atlassian 公司最近发布一个 &lt;a href=&quot;https://github.com/atlassian/react-beautiful-dnd&quot;&gt;react-beautiful-dnd&lt;/a&gt; 的拖放库，适用于 React。&lt;/p&gt;
-
-&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
-
-&lt;h4 id=&quot;emotional-artifical-intelligence&quot;&gt;&lt;a href=&quot;https://deepmoji.mit.edu/&quot;&gt;Emotional Artifical Intelligence&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;利用深度学习模型来理解语句中的情绪，该项目从 tweets 中训练出期望的模型，利用 emoji 来表达话中的情感，来玩玩看。&lt;a href=&quot;https://www.technologyreview.com/s/608387/an-algorithm-trained-on-emoji-knows-when-youre-being-sarcastic-on-twitter/&quot;&gt;相关介绍&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5NTY0MTY1OQ==&amp;amp;mid=2654510836&amp;amp;idx=1&amp;amp;sn=4cb53acf0c7f1a8cfeccd639173b2259&amp;amp;chksm=bd395ea08a4ed7b6635c7ae7f304340c2bb8fb26b07ef2ba861df6bc438dffe05bee1c433386&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0821ULT13ktL7hMR3NQF7447&amp;amp;key=be4ae3a2d743c4d2a626a89e6dc1d4cc1798bf2a08bce1d47ecc3ada0d2daf86d4849f17f3cd19db8fa90cf1ce1ee883cda16ab830646e84d300c64dacab563e534b6bc08fe0a593ac729dca4d9e0f63&amp;amp;ascene=0&amp;amp;uin=MzAwODQwMzU1&amp;amp;devicetype=iMac+MacBookPro14%2C2+OSX+OSX+10.12.5+build(16F2073)&amp;amp;version=12020810&amp;amp;nettype=WIFI&amp;amp;fontScale=100&amp;amp;pass_ticket=amDv0yi%2FY2MAFdNy3ciR%2Bs3NyX0ZUROYvtCDZNSWunV1i23YRr%2Bwbq3ems85ORBV&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;linux grep的对大数据的匹配查询实践&lt;/p&gt;
-
-&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
-
-&lt;h4 id=&quot;监控平台前端sdk开发实践&quot;&gt;&lt;a href=&quot;https://juejin.im/post/598850c9f265da3e3b66c49e&quot;&gt;监控平台前端SDK开发实践&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;一个有效的监控系统能及时上报错误，收集有效信息，并为故障跟踪排查提供依据，这里是美团团队前端 SDK 部分的实践分享。&lt;/p&gt;
-
-&lt;h4 id=&quot;移动-h5-首屏秒开优化方案探讨&quot;&gt;&lt;a href=&quot;http://blog.cnbang.net/tech/3477/&quot;&gt;移动 H5 首屏秒开优化方案探讨&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;文章总结了常用 H5 的首屏秒开的优化方案， 从前端资源文件的优化， 到客户端缓存，再到离线包的使用，以及预加载 webview、预加载数据等细节的优化， 都有很好的说明。&lt;/p&gt;
-
-&lt;h4 id=&quot;让webpackbabel支持ie8&quot;&gt;&lt;a href=&quot;https://www.maizhiying.me/posts/2017/03/01/webpack-babel-ie8-support.html&quot;&gt;让Webpack+Babel支持IE8&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;虽然Webpack2已经不支持IE8，说明需要支持IE8的时代也差不多要过去了。但是不妨碍对于IE的兼容的研究，了解关于Babel构建后的代码，例如class，Babel Polyfill的代码等。&lt;/p&gt;
-
-&lt;h4 id=&quot;how-angular-protects-us-from-xss-attacks&quot;&gt;&lt;a href=&quot;https://hackernoon.com/how-angular-protects-us-from-xss-attacks-3cb7a7d49d95&quot;&gt;How Angular Protects Us From XSS Attacks?&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;关于web常见的安全问题XSS攻击，angular在这方面是如何实现XSS攻击，框架在实现拦截攻击上又做了那些事情？&lt;/p&gt;
-
-&lt;h2 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h2&gt;
-
-&lt;h4 id=&quot;css技巧逐帧动画抖动解决方案&quot;&gt;&lt;a href=&quot;https://aotu.io/notes/2017/08/14/fix-sprite-anim/&quot;&gt;CSS技巧：逐帧动画抖动解决方案&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;基于viewport+rem在移动端上的实践，在使用sprite+animation出现图像抖动的原理是什么？文章还提供了该问题三种解决方案。&lt;/p&gt;
-
-&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
-
-&lt;h4 id=&quot;javascript-疲劳终极指南我们行业的真相&quot;&gt;&lt;a href=&quot;http://zcfy.cc/article/3914&quot;&gt;JavaScript 疲劳终极指南：我们行业的真相&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;你是否也会产生疲劳感，发现层出不穷的新概念，太多看起来都差不多的包。但要明白的是，你并不需要掌握所有东西，更重要的一点是脚踏实地从基础开始。而这所有，只是为了解决问题。&lt;/p&gt;
-
-&lt;h4 id=&quot;大公司里怎样开发和部署前端代码附实践方案&quot;&gt;&lt;a href=&quot;http://www.jianshu.com/p/35e20bb361d0&quot;&gt;大公司里怎样开发和部署前端代码？(附实践方案)&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;文章中讲解了前端工程中， 静态资源优化方案和怎么平滑部署前端代码，尤其提到的 以文件的摘要信息为依据，控制缓存更新与非覆盖式发布的细节， 也是前端工程更重要的方案。&lt;/p&gt;
-
-&lt;h4 id=&quot;割不完的韭菜&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI0MjA1Mjg2Ng==&amp;amp;mid=2649867381&amp;amp;idx=1&amp;amp;sn=72974764f20acfa562785054a6214359&amp;amp;chksm=f1075e18c670d70e7ebf14407422e6203a28184a6969d056770aae0e11d00686bd9622fc059c&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0821xHmLO6VTitX6lzPYhJO8&amp;amp;key=1a8f9280f573accce958756a2a9fdbe01bb1e983e48c8c0a9a73a6ef669e0894d6ef370b828535d5d32a3d03e56020b2db07043b9913b0e3939fafffa83a712eb0d9708442d2845cd63f225eff18d111&amp;amp;ascene=0&amp;amp;uin=MzAwODQwMzU1&amp;amp;devicetype=iMac+MacBookPro14%2C2+OSX+OSX+10.12.5+build(16F2073)&amp;amp;version=12020810&amp;amp;nettype=WIFI&amp;amp;fontScale=100&amp;amp;pass_ticket=amDv0yi%2FY2MAFdNy3ciR%2Bs3NyX0ZUROYvtCDZNSWunV1i23YRr%2Bwbq3ems85ORBV&quot;&gt;割不完的韭菜&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;创业应该是为用户创造价值，然后通过某种方式将这个价值的一部分变现出来，获取财富。但现实是，割韭菜更容易，来钱更快。作者还顺便聊聊对区块链，比特币等的看法。&lt;/p&gt;
-
-&lt;h2 id=&quot;产品设计&quot;&gt;产品设计&lt;/h2&gt;
-
-&lt;h4 id=&quot;深刻剖析500知识产品样本为你打开知识付费产品n种可能&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&amp;amp;mid=2654587337&amp;amp;idx=1&amp;amp;sn=62f391cc10d3a04424e6ff409698d10b&quot;&gt;深刻剖析500+知识产品样本，为你打开知识付费产品N种可能&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;知识产品的业务本质是什么以及我们能做什么？文章阐述了互联网知识经济的3大战略可选性。&lt;/p&gt;
-</description>
-        <pubDate>Mon, 21 Aug 2017 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2017/08/21/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2017/08/21/weekly.html</guid>
         
         
         <category>weekly</category>
