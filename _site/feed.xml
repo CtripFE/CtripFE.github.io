@@ -6,8 +6,8 @@
 </description>
     <link>http://else.vip//</link>
     <atom:link href="http://else.vip//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 Oct 2017 14:47:00 +0800</pubDate>
-    <lastBuildDate>Wed, 11 Oct 2017 14:47:00 +0800</lastBuildDate>
+    <pubDate>Thu, 12 Oct 2017 15:29:09 +0800</pubDate>
+    <lastBuildDate>Thu, 12 Oct 2017 15:29:09 +0800</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
@@ -186,114 +186,6 @@
         
         
         <category>weekly</category>
-        
-      </item>
-    
-      <item>
-        <title>服务器建站步骤(Tomcat版)</title>
-        <description>&lt;h4 id=&quot;更新服务器&quot;&gt;更新服务器&lt;/h4&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get update&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;安装nginx&quot;&gt;安装nginx&lt;/h4&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install nginx&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;安装mysql&quot;&gt;安装mysql&lt;/h4&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install mysql-server mysql-client&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;创建数据库&quot;&gt;创建数据库&lt;/h4&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mysql -uroot -p -e 'create database ghost;'&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;导入数据库&quot;&gt;导入数据库&lt;/h4&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mysql&amp;gt;source /home/steven/Documents/Dump20150117.sql&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;安装java运行环境&quot;&gt;安装java运行环境&lt;/h4&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install default-jre&lt;/code&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install default-jdk&lt;/code&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;这是一段不重要的话，大家可以忽略&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;下载tomcat并解压到usrsrc目录下&quot;&gt;下载Tomcat并解压到/usr/src/目录下&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;删除多余文件 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo rm -rf /docs;sudo rm -rf /ROOT;...&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;清空回收站
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;rm &lt;span class=&quot;nt&quot;&gt;-fr&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.local/share/Trash/files/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-zxvf&lt;/span&gt; apache-tomcat-7.0.57.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;启动或停止tomcat将目录指向tomcat下的bin&quot;&gt;启动或停止Tomcat[将目录指向Tomcat下的bin]&lt;/h4&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;###启动Tomcat&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; ./startup.sh
-&lt;span class=&quot;c&quot;&gt;###停止Tomcat&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; ./shutdown.sh
-&lt;span class=&quot;c&quot;&gt;###查看启停状态&lt;/span&gt;
-ps &lt;span class=&quot;nt&quot;&gt;-ef&lt;/span&gt;|grep java
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;nginx-配置可以直接修改default文件&quot;&gt;Nginx 配置【可以直接修改default文件】&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;进入 /etc/nginx/sites-available/ 目录设置 Nginx ：
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/nginx/sites-available/  
-touch ghost.conf  
-vim ghost.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;输入如下内容：
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;server &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;  
-  listen 80&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  server_name m.yigechengzi.com www.yigechengzi.com yigechengzi.com&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-  location / &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      proxy_set_header   X-Real-IP &lt;span class=&quot;nv&quot;&gt;$remote_addr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-      proxy_set_header   Host      &lt;span class=&quot;nv&quot;&gt;$http_host&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-      proxy_pass         http://127.0.0.1:8080&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;为 ghost.conf 文件做一个软链接到 /etc/nginx/sites-enabled/ 目录下：
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;ln &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /etc/nginx/sites-available/ghost.conf /etc/nginx/sites-enabled/ghost.conf 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;重启 Nginx
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service nginx restart
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;配置tomcat下serverxml&quot;&gt;配置tomcat下server.xml&lt;/h4&gt;
-
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Context&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;path=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;docBase=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;meiyuntu&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;debug=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;reloadable=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;Context&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;path=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;docBase=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ilove&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;debug=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;reloadable=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;查看tomcat下状态&quot;&gt;查看tomcat下状态&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;先切换到：&lt;code class=&quot;highlighter-rouge&quot;&gt;cd tomcat/logs&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tail -f catalina.out&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;这样运行时就可以实时查看运行日志了&lt;/li&gt;
-  &lt;li&gt;Ctrl+c 是退出tail命令。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 22 Sep 2017 18:00:00 +0800</pubDate>
-        <link>http://else.vip//team/2017/09/22/team.html</link>
-        <guid isPermaLink="true">http://else.vip//team/2017/09/22/team.html</guid>
-        
-        
-        <category>team</category>
         
       </item>
     
@@ -1264,6 +1156,81 @@ LAUNCH SUCCESS
         <pubDate>Mon, 28 Aug 2017 18:00:00 +0800</pubDate>
         <link>http://else.vip//weekly/2017/08/28/weekly.html</link>
         <guid isPermaLink="true">http://else.vip//weekly/2017/08/28/weekly.html</guid>
+        
+        
+        <category>weekly</category>
+        
+      </item>
+    
+      <item>
+        <title>ELSE 技术周刊(2017.08.21期)</title>
+        <description>&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;top-level-await-now-supported-in-chrome-devtools-console&quot;&gt;&lt;a href=&quot;https://twitter.com/umaar/status/897408737694109697&quot;&gt;Top-Level ‘await’ Now Supported in Chrome DevTools’ Console&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Chrome Canary版本控制台开始支持await&lt;/p&gt;
+
+&lt;h4 id=&quot;rethinking-drag-and-drop&quot;&gt;&lt;a href=&quot;https://medium.com/@alexandereardon/rethinking-drag-and-drop-d9f5770b4e6b&quot;&gt;Rethinking drag and drop&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Atlassian 公司最近发布一个 &lt;a href=&quot;https://github.com/atlassian/react-beautiful-dnd&quot;&gt;react-beautiful-dnd&lt;/a&gt; 的拖放库，适用于 React。&lt;/p&gt;
+
+&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;emotional-artifical-intelligence&quot;&gt;&lt;a href=&quot;https://deepmoji.mit.edu/&quot;&gt;Emotional Artifical Intelligence&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;利用深度学习模型来理解语句中的情绪，该项目从 tweets 中训练出期望的模型，利用 emoji 来表达话中的情感，来玩玩看。&lt;a href=&quot;https://www.technologyreview.com/s/608387/an-algorithm-trained-on-emoji-knows-when-youre-being-sarcastic-on-twitter/&quot;&gt;相关介绍&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5NTY0MTY1OQ==&amp;amp;mid=2654510836&amp;amp;idx=1&amp;amp;sn=4cb53acf0c7f1a8cfeccd639173b2259&amp;amp;chksm=bd395ea08a4ed7b6635c7ae7f304340c2bb8fb26b07ef2ba861df6bc438dffe05bee1c433386&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0821ULT13ktL7hMR3NQF7447&amp;amp;key=be4ae3a2d743c4d2a626a89e6dc1d4cc1798bf2a08bce1d47ecc3ada0d2daf86d4849f17f3cd19db8fa90cf1ce1ee883cda16ab830646e84d300c64dacab563e534b6bc08fe0a593ac729dca4d9e0f63&amp;amp;ascene=0&amp;amp;uin=MzAwODQwMzU1&amp;amp;devicetype=iMac+MacBookPro14%2C2+OSX+OSX+10.12.5+build(16F2073)&amp;amp;version=12020810&amp;amp;nettype=WIFI&amp;amp;fontScale=100&amp;amp;pass_ticket=amDv0yi%2FY2MAFdNy3ciR%2Bs3NyX0ZUROYvtCDZNSWunV1i23YRr%2Bwbq3ems85ORBV&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;linux grep的对大数据的匹配查询实践&lt;/p&gt;
+
+&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
+
+&lt;h4 id=&quot;监控平台前端sdk开发实践&quot;&gt;&lt;a href=&quot;https://juejin.im/post/598850c9f265da3e3b66c49e&quot;&gt;监控平台前端SDK开发实践&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;一个有效的监控系统能及时上报错误，收集有效信息，并为故障跟踪排查提供依据，这里是美团团队前端 SDK 部分的实践分享。&lt;/p&gt;
+
+&lt;h4 id=&quot;移动-h5-首屏秒开优化方案探讨&quot;&gt;&lt;a href=&quot;http://blog.cnbang.net/tech/3477/&quot;&gt;移动 H5 首屏秒开优化方案探讨&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;文章总结了常用 H5 的首屏秒开的优化方案， 从前端资源文件的优化， 到客户端缓存，再到离线包的使用，以及预加载 webview、预加载数据等细节的优化， 都有很好的说明。&lt;/p&gt;
+
+&lt;h4 id=&quot;让webpackbabel支持ie8&quot;&gt;&lt;a href=&quot;https://www.maizhiying.me/posts/2017/03/01/webpack-babel-ie8-support.html&quot;&gt;让Webpack+Babel支持IE8&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;虽然Webpack2已经不支持IE8，说明需要支持IE8的时代也差不多要过去了。但是不妨碍对于IE的兼容的研究，了解关于Babel构建后的代码，例如class，Babel Polyfill的代码等。&lt;/p&gt;
+
+&lt;h4 id=&quot;how-angular-protects-us-from-xss-attacks&quot;&gt;&lt;a href=&quot;https://hackernoon.com/how-angular-protects-us-from-xss-attacks-3cb7a7d49d95&quot;&gt;How Angular Protects Us From XSS Attacks?&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;关于web常见的安全问题XSS攻击，angular在这方面是如何实现XSS攻击，框架在实现拦截攻击上又做了那些事情？&lt;/p&gt;
+
+&lt;h2 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;css技巧逐帧动画抖动解决方案&quot;&gt;&lt;a href=&quot;https://aotu.io/notes/2017/08/14/fix-sprite-anim/&quot;&gt;CSS技巧：逐帧动画抖动解决方案&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;基于viewport+rem在移动端上的实践，在使用sprite+animation出现图像抖动的原理是什么？文章还提供了该问题三种解决方案。&lt;/p&gt;
+
+&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;javascript-疲劳终极指南我们行业的真相&quot;&gt;&lt;a href=&quot;http://zcfy.cc/article/3914&quot;&gt;JavaScript 疲劳终极指南：我们行业的真相&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;你是否也会产生疲劳感，发现层出不穷的新概念，太多看起来都差不多的包。但要明白的是，你并不需要掌握所有东西，更重要的一点是脚踏实地从基础开始。而这所有，只是为了解决问题。&lt;/p&gt;
+
+&lt;h4 id=&quot;大公司里怎样开发和部署前端代码附实践方案&quot;&gt;&lt;a href=&quot;http://www.jianshu.com/p/35e20bb361d0&quot;&gt;大公司里怎样开发和部署前端代码？(附实践方案)&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;文章中讲解了前端工程中， 静态资源优化方案和怎么平滑部署前端代码，尤其提到的 以文件的摘要信息为依据，控制缓存更新与非覆盖式发布的细节， 也是前端工程更重要的方案。&lt;/p&gt;
+
+&lt;h4 id=&quot;割不完的韭菜&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI0MjA1Mjg2Ng==&amp;amp;mid=2649867381&amp;amp;idx=1&amp;amp;sn=72974764f20acfa562785054a6214359&amp;amp;chksm=f1075e18c670d70e7ebf14407422e6203a28184a6969d056770aae0e11d00686bd9622fc059c&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0821xHmLO6VTitX6lzPYhJO8&amp;amp;key=1a8f9280f573accce958756a2a9fdbe01bb1e983e48c8c0a9a73a6ef669e0894d6ef370b828535d5d32a3d03e56020b2db07043b9913b0e3939fafffa83a712eb0d9708442d2845cd63f225eff18d111&amp;amp;ascene=0&amp;amp;uin=MzAwODQwMzU1&amp;amp;devicetype=iMac+MacBookPro14%2C2+OSX+OSX+10.12.5+build(16F2073)&amp;amp;version=12020810&amp;amp;nettype=WIFI&amp;amp;fontScale=100&amp;amp;pass_ticket=amDv0yi%2FY2MAFdNy3ciR%2Bs3NyX0ZUROYvtCDZNSWunV1i23YRr%2Bwbq3ems85ORBV&quot;&gt;割不完的韭菜&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;创业应该是为用户创造价值，然后通过某种方式将这个价值的一部分变现出来，获取财富。但现实是，割韭菜更容易，来钱更快。作者还顺便聊聊对区块链，比特币等的看法。&lt;/p&gt;
+
+&lt;h2 id=&quot;产品设计&quot;&gt;产品设计&lt;/h2&gt;
+
+&lt;h4 id=&quot;深刻剖析500知识产品样本为你打开知识付费产品n种可能&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&amp;amp;mid=2654587337&amp;amp;idx=1&amp;amp;sn=62f391cc10d3a04424e6ff409698d10b&quot;&gt;深刻剖析500+知识产品样本，为你打开知识付费产品N种可能&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;知识产品的业务本质是什么以及我们能做什么？文章阐述了互联网知识经济的3大战略可选性。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Aug 2017 18:00:00 +0800</pubDate>
+        <link>http://else.vip//weekly/2017/08/21/weekly.html</link>
+        <guid isPermaLink="true">http://else.vip//weekly/2017/08/21/weekly.html</guid>
         
         
         <category>weekly</category>
