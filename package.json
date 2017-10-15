@@ -1,0 +1,25 @@
+{
+  "name": "else",
+  "version": "1.0.0",
+  "description": "code for else site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CtripFE/CtripFE.github.io.git"
+  },
+  "keywords": [
+    "else"
+  ],
+  "author": "stevenx911",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CtripFE/CtripFE.github.io/issues"
+  },
+  "homepage": "https://github.com/CtripFE/CtripFE.github.io#readme",
+  "dependencies": {
+    "gitment": "^0.0.3"
+  }
+}
