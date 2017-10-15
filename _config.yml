@@ -14,7 +14,7 @@ subtitle: "Welcome to ELSE team blog"
 email: wgyngbh@gmail.com
 name: ELSE
 description: >
-  A simple yet classy theme for your Jekyll website or blog.
+  坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -98,11 +98,11 @@ crews:
 
 
 social:
-  - name: Twitter
-    icon: twitter
-    username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
-    desc: Follow me on Twitter
+  - name: zhihu
+    icon: coffee
+    username: ELSE知乎专栏
+    url: https://zhuanlan.zhihu.com/itech
+    desc: Follow me on Zhihu
     share: true
 
   - name: Facebook
@@ -122,7 +122,7 @@ social:
   - name: LinkedIn
     icon: linkedin
     username: Ben Centra
-    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
+    url: 
     desc: Connect with me on LinkedIn
     share: true
 
