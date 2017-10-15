@@ -6,8 +6,8 @@
 </description>
     <link>http://else.vip//</link>
     <atom:link href="http://else.vip//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Oct 2017 14:34:01 +0800</pubDate>
-    <lastBuildDate>Sun, 15 Oct 2017 14:34:01 +0800</lastBuildDate>
+    <pubDate>Sun, 15 Oct 2017 14:38:40 +0800</pubDate>
+    <lastBuildDate>Sun, 15 Oct 2017 14:38:40 +0800</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
@@ -41,7 +41,7 @@
 &lt;h4 id=&quot;微前端---将微服务理念延伸到前端开发中&quot;&gt;&lt;a href=&quot;http://www.cnblogs.com/zhuanzhuanfe/p/7644846.html&quot; target=&quot;_blank&quot;&gt;微前端 - 将微服务理念延伸到前端开发中&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;本文描述了采用不同 JavaScript 技术框架的多个团队中协同构建一个现代化前端 Web 应用所需要的技术、策略和方法。&lt;/p&gt;
 
-&lt;h4 id=&quot;产品设计&quot;&gt;产品设计&lt;/h4&gt;
+&lt;h2 id=&quot;产品设计&quot;&gt;产品设计&lt;/h2&gt;
 
 &lt;h4 id=&quot;设计灵感--消息界面&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/29771780&quot; target=&quot;_blank&quot;&gt;设计灵感 | 消息界面&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;当今世界最好的前端UI设计荟萃，不可错过~&lt;/p&gt;
