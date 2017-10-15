@@ -6,9 +6,100 @@
 </description>
     <link>http://else.vip//</link>
     <atom:link href="http://else.vip//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Oct 2017 12:13:46 +0800</pubDate>
-    <lastBuildDate>Sat, 14 Oct 2017 12:13:46 +0800</lastBuildDate>
+    <pubDate>Sun, 15 Oct 2017 13:49:14 +0800</pubDate>
+    <lastBuildDate>Sun, 15 Oct 2017 13:49:14 +0800</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>ELSE 技术周刊(2017.10.16期)</title>
+        <description>&lt;h2 id=&quot;本期推荐&quot;&gt;本期推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;反击爬虫前端工程师的脑洞可以有多大&quot;&gt;&lt;a href=&quot;http://litten.me/2017/07/09/prevent-spiders/&quot; target=&quot;_blank&quot;&gt;反击爬虫，前端工程师的脑洞可以有多大&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;反爬虫策略的关键在于识别真实用户和机器，这些策略大多在于后端。但爬虫是可以无限接近于真人，这篇文章介绍了前端能做的一些好玩的反击方式。&lt;/p&gt;
+
+&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
+
+&lt;h4 id=&quot;传送门react-portal&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/29880992&quot; target=&quot;_blank&quot;&gt;传送门：React Portal&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;React v16直接支持Portal，是因为Portal这个功能真的是必不可少，不然对话框这样的场景都没法应付。&lt;/p&gt;
+
+&lt;h4 id=&quot;如何无痛降低-if-else-面条代码复杂度&quot;&gt;&lt;a href=&quot;https://juejin.im/post/59dc66256fb9a0452a3b4832?utm_source=gold_browser_extension&quot; target=&quot;_blank&quot;&gt;如何无痛降低 if else 面条代码复杂度&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;对于代码最常用的逻辑语句if else在复杂逻辑场景下如何避免出现面条代码，提高代码的可读性及更好的维护是程序员需要掌握的编程技巧。&lt;/p&gt;
+
+&lt;h4 id=&quot;前端中的-pipeline&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/28561932&quot; target=&quot;_blank&quot;&gt;前端中的 Pipeline&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;计算机领域的 Pipeline通常认为起源于 Unix。最初 Douglas Mcllroy 发现很多时候人们会将 shell 命令的输出传递给另外一个 shell 命令，因此就提出了 Pipeline这一概念。而在前端领域，也有不少的Pipeline，如Express在1.0引入Middleware Pipeline，以及建立在node Stream上面的Pipeline和Promise Pipeline等，这些Pipeline也使得代码能够具有更好的可读性。&lt;/p&gt;
+
+&lt;h4 id=&quot;理解css中的bfc块级可视化上下文译&quot;&gt;&lt;a href=&quot;http://flypursue.com/jekyll/update/2015/08/10/bfc.html&quot; target=&quot;_blank&quot;&gt;理解CSS中的BFC(块级可视化上下文)[译]&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;网页布局中，很多人都会无意中用到 块级格式化上下文（block formatting context）模式，即所说的BFC。 它是css中基于box的一个布局对象，它是页面中的一块渲染区域，并且有一套渲染规则，它决定了其子元素将如何定位，以及和其他元素的关系和相互作用。&lt;/p&gt;
+
+&lt;h4 id=&quot;javascript-浮点数陷阱及解法&quot;&gt;&lt;a href=&quot;https://github.com/camsong/blog/issues/9&quot; target=&quot;_blank&quot;&gt;JavaScript 浮点数陷阱及解法&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;JavaScript 浮点数运算时总会遇到浮点数误差问题， 总感觉很困惑。本文帮你理清这背后的原理以及解决方案，还会向你解释JS中的大数危机和四则运算中会遇到的坑。&lt;/p&gt;
+
+&lt;h4 id=&quot;微前端---将微服务理念延伸到前端开发中&quot;&gt;&lt;a href=&quot;http://www.cnblogs.com/zhuanzhuanfe/p/7644846.html&quot; target=&quot;_blank&quot;&gt;微前端 - 将微服务理念延伸到前端开发中&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本文描述了采用不同 JavaScript 技术框架的多个团队中协同构建一个现代化前端 Web 应用所需要的技术、策略和方法。&lt;/p&gt;
+
+&lt;h4 id=&quot;产品设计&quot;&gt;产品设计&lt;/h4&gt;
+
+&lt;h4 id=&quot;设计灵感--消息界面&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/29771780&quot; target=&quot;_blank&quot;&gt;设计灵感 | 消息界面&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;当今世界最好的前端UI设计荟萃，不可错过~&lt;/p&gt;
+
+&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;聊聊-git-改变历史&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/29497618&quot; target=&quot;_blank&quot;&gt;聊聊 Git 「改变历史」&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;聊聊 Git 怎么改变历史记录，虽然git提供这样的功能，但在多人协作的项目中最好不要用到，除非你非常有把握。「历史（记录）没有因你而变，而只是改变了历史（记录）的呈现方式」&lt;/p&gt;
+
+&lt;h4 id=&quot;http-缓存机制一二三&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/29750583&quot; target=&quot;_blank&quot;&gt;HTTP 缓存机制一二三&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;浏览器缓存也包含很多内容： HTTP 缓存、indexDB、cookie、localstorage 等等。这里我们只讨论 HTTP 缓存相关内容。&lt;/p&gt;
+
+&lt;h4 id=&quot;为什么-sql-正在击败-nosql这对未来的数据意味着什么&quot;&gt;&lt;a href=&quot;http://geek.csdn.net/news/detail/238939&quot; target=&quot;_blank&quot;&gt;为什么 SQL 正在击败 NoSQL，这对未来的数据意味着什么&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;在过去的十年里，由于 SQL 无法满足这些越来越多的要求，软件开发人员就抛弃了它，NoSQL 也就因此而渐渐发展起来：MapReduce，Bigtable，Cassandra，MongoDB 等等。然而，如今 SQL 正在复出，缘由如何，这对数据社区有什么影响，看看本文的分析。&lt;/p&gt;
+
+&lt;h4 id=&quot;架构师必须知道的架构设计原则&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;amp;mid=2650998170&amp;amp;idx=1&amp;amp;sn=6defd4f0a9fdb5cf93e6977080c61c70&quot; target=&quot;_blank&quot;&gt;架构师必须知道的架构设计原则&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;一位十多年开发者，对架构设计原则的解读 ，总结了 GRASP 通用职责分配软件模式 、 SOLID 面向对象设计原则 、 AKF 架构原则、 CAP 定理、BASE 理论以及组织和系统改进原则   。并对其主要内容作了自己的解读。&lt;/p&gt;
+
+&lt;h2 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;essential-image-optimization&quot;&gt;&lt;a href=&quot;https://images.guide/&quot; target=&quot;_blank&quot;&gt;Essential Image Optimization&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Addy Osmani 写的一本免费的电子书，为什么我们都应该自动化进行图像优化，内容涵盖了格式，解码器，高效压缩技术等。&lt;/p&gt;
+
+&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;github-正在影响你的职业生涯&quot;&gt;&lt;a href=&quot;https://juejin.im/post/59ddccd36fb9a0450e75185f&quot; target=&quot;_blank&quot;&gt;Github 正在影响你的职业生涯&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;名气决定了你在一个信用网络中的位置。换一家公司会降低你的知名度。如果你在一个小镇生活了很长一段时间，那么小镇上的每一个人都会认识你。搬到另一个地区会导致名气降低。最终，你会到一个位置，在这个位置没有人认识你，甚至没有人认识听说过你的人。
+你会失去你的一度和二度甚至是三度人脉。你与他人共事或者向私有仓库提交代码建立起来的信任也将消失。除非你通过大会演讲等方式树立自己的品牌。
+但是，假如这些工作是在 Github 上完成的，建立的信任就不会消失。因为这些工作都是在网络上公开的。&lt;/p&gt;
+
+&lt;h4 id=&quot;github-年度报告2017-年最受欢迎的编程语言&quot;&gt;&lt;a href=&quot;https://juejin.im/post/59e0352f518825541b03c5e1&quot; target=&quot;_blank&quot;&gt;GitHub 年度报告，2017 年最受欢迎的编程语言&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;2017 年 GitHub 上最流行的 15 种编程语言及前十最火热的项目排行榜，分别由JavaScript及TensorFlow登顶。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot; target=&quot;_blank&quot;&gt;IFT 小组&lt;/a&gt; 出品，汇聚一周好文章， &lt;a href=&quot;&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot; target=&quot;_blank&quot;&gt;@Curtis&lt;/a&gt; 前端中年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot; target=&quot;_blank&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工，不安分于前端开发的搬砖工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot; target=&quot;_blank&quot;&gt;@Steven&lt;/a&gt; 写 JS 的老年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot; target=&quot;_blank&quot;&gt;@mirreal&lt;/a&gt; 想当设计师的程序员不是一个好攻城狮&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot; target=&quot;_blank&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 02 Oct 2017 18:00:00 +0800</pubDate>
+        <link>http://else.vip//weekly/2017/10/02/weekly.html</link>
+        <guid isPermaLink="true">http://else.vip//weekly/2017/10/02/weekly.html</guid>
+        
+        
+        <category>weekly</category>
+        
+      </item>
     
       <item>
         <title>ELSE 技术周刊(2017.10.02期)</title>
@@ -1156,81 +1247,6 @@ LAUNCH SUCCESS
         <pubDate>Mon, 28 Aug 2017 18:00:00 +0800</pubDate>
         <link>http://else.vip//weekly/2017/08/28/weekly.html</link>
         <guid isPermaLink="true">http://else.vip//weekly/2017/08/28/weekly.html</guid>
-        
-        
-        <category>weekly</category>
-        
-      </item>
-    
-      <item>
-        <title>ELSE 技术周刊(2017.08.21期)</title>
-        <description>&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
-
-&lt;h4 id=&quot;top-level-await-now-supported-in-chrome-devtools-console&quot;&gt;&lt;a href=&quot;https://twitter.com/umaar/status/897408737694109697&quot;&gt;Top-Level ‘await’ Now Supported in Chrome DevTools’ Console&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Chrome Canary版本控制台开始支持await&lt;/p&gt;
-
-&lt;h4 id=&quot;rethinking-drag-and-drop&quot;&gt;&lt;a href=&quot;https://medium.com/@alexandereardon/rethinking-drag-and-drop-d9f5770b4e6b&quot;&gt;Rethinking drag and drop&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Atlassian 公司最近发布一个 &lt;a href=&quot;https://github.com/atlassian/react-beautiful-dnd&quot;&gt;react-beautiful-dnd&lt;/a&gt; 的拖放库，适用于 React。&lt;/p&gt;
-
-&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
-
-&lt;h4 id=&quot;emotional-artifical-intelligence&quot;&gt;&lt;a href=&quot;https://deepmoji.mit.edu/&quot;&gt;Emotional Artifical Intelligence&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;利用深度学习模型来理解语句中的情绪，该项目从 tweets 中训练出期望的模型，利用 emoji 来表达话中的情感，来玩玩看。&lt;a href=&quot;https://www.technologyreview.com/s/608387/an-algorithm-trained-on-emoji-knows-when-youre-being-sarcastic-on-twitter/&quot;&gt;相关介绍&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5NTY0MTY1OQ==&amp;amp;mid=2654510836&amp;amp;idx=1&amp;amp;sn=4cb53acf0c7f1a8cfeccd639173b2259&amp;amp;chksm=bd395ea08a4ed7b6635c7ae7f304340c2bb8fb26b07ef2ba861df6bc438dffe05bee1c433386&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0821ULT13ktL7hMR3NQF7447&amp;amp;key=be4ae3a2d743c4d2a626a89e6dc1d4cc1798bf2a08bce1d47ecc3ada0d2daf86d4849f17f3cd19db8fa90cf1ce1ee883cda16ab830646e84d300c64dacab563e534b6bc08fe0a593ac729dca4d9e0f63&amp;amp;ascene=0&amp;amp;uin=MzAwODQwMzU1&amp;amp;devicetype=iMac+MacBookPro14%2C2+OSX+OSX+10.12.5+build(16F2073)&amp;amp;version=12020810&amp;amp;nettype=WIFI&amp;amp;fontScale=100&amp;amp;pass_ticket=amDv0yi%2FY2MAFdNy3ciR%2Bs3NyX0ZUROYvtCDZNSWunV1i23YRr%2Bwbq3ems85ORBV&quot;&gt;&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;linux grep的对大数据的匹配查询实践&lt;/p&gt;
-
-&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
-
-&lt;h4 id=&quot;监控平台前端sdk开发实践&quot;&gt;&lt;a href=&quot;https://juejin.im/post/598850c9f265da3e3b66c49e&quot;&gt;监控平台前端SDK开发实践&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;一个有效的监控系统能及时上报错误，收集有效信息，并为故障跟踪排查提供依据，这里是美团团队前端 SDK 部分的实践分享。&lt;/p&gt;
-
-&lt;h4 id=&quot;移动-h5-首屏秒开优化方案探讨&quot;&gt;&lt;a href=&quot;http://blog.cnbang.net/tech/3477/&quot;&gt;移动 H5 首屏秒开优化方案探讨&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;文章总结了常用 H5 的首屏秒开的优化方案， 从前端资源文件的优化， 到客户端缓存，再到离线包的使用，以及预加载 webview、预加载数据等细节的优化， 都有很好的说明。&lt;/p&gt;
-
-&lt;h4 id=&quot;让webpackbabel支持ie8&quot;&gt;&lt;a href=&quot;https://www.maizhiying.me/posts/2017/03/01/webpack-babel-ie8-support.html&quot;&gt;让Webpack+Babel支持IE8&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;虽然Webpack2已经不支持IE8，说明需要支持IE8的时代也差不多要过去了。但是不妨碍对于IE的兼容的研究，了解关于Babel构建后的代码，例如class，Babel Polyfill的代码等。&lt;/p&gt;
-
-&lt;h4 id=&quot;how-angular-protects-us-from-xss-attacks&quot;&gt;&lt;a href=&quot;https://hackernoon.com/how-angular-protects-us-from-xss-attacks-3cb7a7d49d95&quot;&gt;How Angular Protects Us From XSS Attacks?&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;关于web常见的安全问题XSS攻击，angular在这方面是如何实现XSS攻击，框架在实现拦截攻击上又做了那些事情？&lt;/p&gt;
-
-&lt;h2 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h2&gt;
-
-&lt;h4 id=&quot;css技巧逐帧动画抖动解决方案&quot;&gt;&lt;a href=&quot;https://aotu.io/notes/2017/08/14/fix-sprite-anim/&quot;&gt;CSS技巧：逐帧动画抖动解决方案&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;基于viewport+rem在移动端上的实践，在使用sprite+animation出现图像抖动的原理是什么？文章还提供了该问题三种解决方案。&lt;/p&gt;
-
-&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
-
-&lt;h4 id=&quot;javascript-疲劳终极指南我们行业的真相&quot;&gt;&lt;a href=&quot;http://zcfy.cc/article/3914&quot;&gt;JavaScript 疲劳终极指南：我们行业的真相&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;你是否也会产生疲劳感，发现层出不穷的新概念，太多看起来都差不多的包。但要明白的是，你并不需要掌握所有东西，更重要的一点是脚踏实地从基础开始。而这所有，只是为了解决问题。&lt;/p&gt;
-
-&lt;h4 id=&quot;大公司里怎样开发和部署前端代码附实践方案&quot;&gt;&lt;a href=&quot;http://www.jianshu.com/p/35e20bb361d0&quot;&gt;大公司里怎样开发和部署前端代码？(附实践方案)&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;文章中讲解了前端工程中， 静态资源优化方案和怎么平滑部署前端代码，尤其提到的 以文件的摘要信息为依据，控制缓存更新与非覆盖式发布的细节， 也是前端工程更重要的方案。&lt;/p&gt;
-
-&lt;h4 id=&quot;割不完的韭菜&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI0MjA1Mjg2Ng==&amp;amp;mid=2649867381&amp;amp;idx=1&amp;amp;sn=72974764f20acfa562785054a6214359&amp;amp;chksm=f1075e18c670d70e7ebf14407422e6203a28184a6969d056770aae0e11d00686bd9622fc059c&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0821xHmLO6VTitX6lzPYhJO8&amp;amp;key=1a8f9280f573accce958756a2a9fdbe01bb1e983e48c8c0a9a73a6ef669e0894d6ef370b828535d5d32a3d03e56020b2db07043b9913b0e3939fafffa83a712eb0d9708442d2845cd63f225eff18d111&amp;amp;ascene=0&amp;amp;uin=MzAwODQwMzU1&amp;amp;devicetype=iMac+MacBookPro14%2C2+OSX+OSX+10.12.5+build(16F2073)&amp;amp;version=12020810&amp;amp;nettype=WIFI&amp;amp;fontScale=100&amp;amp;pass_ticket=amDv0yi%2FY2MAFdNy3ciR%2Bs3NyX0ZUROYvtCDZNSWunV1i23YRr%2Bwbq3ems85ORBV&quot;&gt;割不完的韭菜&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;创业应该是为用户创造价值，然后通过某种方式将这个价值的一部分变现出来，获取财富。但现实是，割韭菜更容易，来钱更快。作者还顺便聊聊对区块链，比特币等的看法。&lt;/p&gt;
-
-&lt;h2 id=&quot;产品设计&quot;&gt;产品设计&lt;/h2&gt;
-
-&lt;h4 id=&quot;深刻剖析500知识产品样本为你打开知识付费产品n种可能&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&amp;amp;mid=2654587337&amp;amp;idx=1&amp;amp;sn=62f391cc10d3a04424e6ff409698d10b&quot;&gt;深刻剖析500+知识产品样本，为你打开知识付费产品N种可能&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;知识产品的业务本质是什么以及我们能做什么？文章阐述了互联网知识经济的3大战略可选性。&lt;/p&gt;
-</description>
-        <pubDate>Mon, 21 Aug 2017 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2017/08/21/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2017/08/21/weekly.html</guid>
         
         
         <category>weekly</category>
