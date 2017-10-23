@@ -6,9 +6,104 @@
 </description>
     <link>http://else.vip//</link>
     <atom:link href="http://else.vip//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Oct 2017 21:35:36 +0800</pubDate>
-    <lastBuildDate>Sun, 15 Oct 2017 21:35:36 +0800</lastBuildDate>
+    <pubDate>Mon, 23 Oct 2017 13:54:12 +0800</pubDate>
+    <lastBuildDate>Mon, 23 Oct 2017 13:54:12 +0800</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>ELSE 技术周刊(2017.10.23期)</title>
+        <description>&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;vue-25-released&quot;&gt;&lt;a href=&quot;https://medium.com/the-vue-point/vue-2-5-released-14bd65bf030b&quot;&gt;Vue 2.5 released&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Vue 2.5 正式发布，作者对于该版本的优化总结：更好的TypeScript 集成，更好的错误处理，更好的单文件功能组件支持以及更好的与环境无关的SSR&lt;/p&gt;
+
+&lt;h4 id=&quot;wifi爆惊天漏洞krack可攻陷所有wifi网络&quot;&gt;&lt;a href=&quot;http://www.infoq.com/cn/news/2017/10/wifi-krack?utm_source=infoq&amp;amp;utm_medium=popular_widget&amp;amp;utm_campaign=popular_content_list&amp;amp;utm_content=homepage&quot;&gt;WiFi爆惊天漏洞！KRACK可攻陷所有WiFi网络&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;我们发现 WPA2 当中存在一项严重安全漏洞。WPA2 为目前使用范围最广的 Wi-Fi 网络保护协议。身处攻击目标周边的恶意人士能够利用密钥重装攻击（Key Reinstallation Attacks，KRACK）利用此类安全漏洞。&lt;/p&gt;
+
+&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
+
+&lt;h4 id=&quot;json-不要误会我真的不是javascript的子集&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/29958439&quot;&gt;JSON: 不要误会,我真的不是JavaScript的子集&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;这些年我们都一直在说”JSON是JavaScript的一个子集”.然而事实却不是这样的。&lt;/p&gt;
+
+&lt;h4 id=&quot;鼠标无限移动-js-api-pointer-lock简介&quot;&gt;&lt;a href=&quot;http://www.zhangxinxu.com/wordpress/2017/10/js-api-pointer-lock/&quot;&gt;鼠标无限移动 JS API Pointer Lock简介&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;让鼠标完全脱离了浏览器窗口的限制，可以完美享受沉浸式操作体验，一个API就能搞定。&lt;/p&gt;
+
+&lt;h4 id=&quot;web安全的三个攻防姿势&quot;&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000011601837&quot;&gt;Web安全的三个攻防姿势&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;关于Web安全的问题，是一个老生常谈的问题，作为离用户最近的一层，我们大前端确实需要把手伸的更远一点。&lt;/p&gt;
+
+&lt;h4 id=&quot;javascript专题之解读-v8-排序源码&quot;&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000011623637#articleHeader16&quot;&gt;JavaScript专题之解读 v8 排序源码&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本文介绍了 v8引擎 关于数组的排序完全采用了 JavaScript 实现，所采用的算法跟数组的长度有关，当数组长度小于等于 10 时，采用插入排序，大于 10 的时候，采用快速排序，文中详细的讲解了两种算法的原理、实现以及时间复杂度等。&lt;/p&gt;
+
+&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;浏览器内的事件队列&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/1iHmsIjh2mLqaOUvkR2RZA&quot;&gt;浏览器内的事件队列&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;众所周知JavaScript是单线程运行的，同时又是可以异步执行的，具备这样特性的语言一般都是基于事件来驱动的，浏览器是如何给JavaScript提供了这么一个环境呢？通过本文可以简单的了解到JavaScript的执行过程。&lt;/p&gt;
+
+&lt;h4 id=&quot;函数式编程在-reduxreact-中的应用&quot;&gt;&lt;a href=&quot;https://tech.meituan.com/functional_programming_in_redux.html&quot;&gt;函数式编程在 Redux/React 中的应用&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;本文简述了软件复杂度问题及应对策略：抽象和组合；展示了抽象和组合在函数式编程中的应用；并展示了 Redux/React 在解决前端状态管理的复杂度方面对上述理论的实践。这其中包括了一段有趣的 Redux 推导。&lt;/p&gt;
+
+&lt;h4 id=&quot;react作者的构思和演绎&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30277192?utm_source=com.daimajia.gold&amp;amp;utm_medium=social&quot;&gt;React作者的构思和演绎&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;译文中讲述了React 核心开发者，对React设计之初整个框架的构思，是如何从简单到复杂的去演绎推理一个未来的产品，也能让我们站在更高的高度思考 React 的过去、现在和未来。&lt;/p&gt;
+
+&lt;h2 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;writing-flat--declarative-code&quot;&gt;&lt;a href=&quot;https://peeke.nl/writing-flat-code&quot;&gt;Writing flat &amp;amp; declarative code&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;本文介绍了为什么应该让代码扁平化，以及如何将一些函数式编程的特性引入你的代码库。&lt;/p&gt;
+
+&lt;h4 id=&quot;如何写好一篇技术文章&quot;&gt;&lt;a href=&quot;https://juejin.im/post/59e86ee76fb9a045257739d4?from=timeline&amp;amp;isappinstalled=0&quot;&gt;如何写好一篇技术文章？&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;技术那么多，到底哪种适合写哪种不适合写？本文就如何写好一篇「值得在技术社区发布的技术文章 」阐述了一些关键的因素。&lt;/p&gt;
+
+&lt;h4 id=&quot;关键-css-和-webpack减少阻塞渲染的-css-的自动化解决方案&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/VAVT_JTJE1v2nXx8NVwP9Q&quot;&gt;关键 CSS 和 Webpack：减少阻塞渲染的 CSS 的自动化解决方案&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;文章介绍了如何以编程方式来区分关键 CSS，并通过 Webpack 的自动化流程来实现该方案，从而达到减少阻塞渲染的 CSS 的目的，提升网站性能。&lt;/p&gt;
+
+&lt;h4 id=&quot;使用vscode开发nodejs&quot;&gt;&lt;a href=&quot;http://blog.csdn.net/gezhonglei2007/article/details/50574652&quot;&gt;使用VSCode开发Nodejs&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本文本介绍是Nodejs一种轻量级的开发工具——使用VSCode。尽管VScode看起来更像是Uedit、Noteplus等强大文件编辑器，但它也提供了可扩展的、强大的提示功能（特别是文件间js引用提示），以及内置Nodejs调试功能，让它有别于一般的编辑工具。&lt;/p&gt;
+
+&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;2018前端校招总结&quot;&gt;&lt;a href=&quot;https://juejin.im/post/59e9cea151882561a05a355a&quot;&gt;2018前端校招总结&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;基本上的大公司对于前端校招同学的要求都不仅仅局限于前端领域，因为对于一般的候选人来说都是侧重潜力的考察。而小一点的公司对于候选人的技术能力以及项目经历不会有过多的要求，更多的是希望能够以比较低廉的价格签下一个愿意做切图之类工作的同学。个人觉得对于同学未来几年的发展不是很好。&lt;/p&gt;
+
+&lt;h4 id=&quot;初级程序员如何快速成长&quot;&gt;&lt;a href=&quot;https://www.zhihu.com/question/26572626/answer/246901769&quot;&gt;初级程序员如何快速成长？&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;工作前三年是职业生涯中成长最快的几年，在这段时间里你会充满激情，做事专注，也容易养成良好的习惯。在我们公司有些同学在前三年中就快速成为某一个领域的技术专家，有些同学也可能止步不前。本文和大家一起探讨下如何在三年内快速成长为一名技术专家。&lt;/p&gt;
+
+&lt;h4 id=&quot;如何成为一个技术全面的架构师&quot;&gt;&lt;a href=&quot;http://www.infoq.com/cn/articles/the-well-rounded-architect&quot;&gt;如何成为一个技术全面的架构师&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;一个好的架构师需要是技术全面的架构师，本文从六个方面探讨了成为一个技术全面的架构师所必须具备的能力：作为技术领导者、作为开发人员、聚焦系统、企业家思维、权衡策略思维与战术思维以及良好的沟通。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot;&gt;IFT 小组&lt;/a&gt; 出品，汇聚一周好文章， &lt;a href=&quot;https://zhuanlan.zhihu.com/p/x&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@Curtis&lt;/a&gt; 前端中年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工，不安分于前端开发的搬砖工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot;&gt;@Steven&lt;/a&gt; 写 JS 的老年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/sturloly&quot;&gt;@sturloly&lt;/a&gt; building apps for my future starship&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 一个程序圈的间谍&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Mon, 23 Oct 2017 18:00:00 +0800</pubDate>
+        <link>http://else.vip//weekly/2017/10/23/weekly.html</link>
+        <guid isPermaLink="true">http://else.vip//weekly/2017/10/23/weekly.html</guid>
+        
+        
+        <category>weekly</category>
+        
+      </item>
     
       <item>
         <title>ELSE 技术周刊(2017.10.16期)</title>
@@ -1161,95 +1256,6 @@ LAUNCH SUCCESS
         
         
         <category>team</category>
-        
-      </item>
-    
-      <item>
-        <title>ELSE 技术周刊(2017.08.28期)</title>
-        <description>&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
-
-&lt;h4 id=&quot;javascript-二进制的-ast&quot;&gt;&lt;a href=&quot;https://github.com/xitu/gold-miner/blob/master/TODO/binary-ast-newsletter-1.md&quot;&gt;JavaScript 二进制的 AST&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;本篇博客中，介绍了由Mozilla 和 Facebook 的一个联合小组决定开始研究一种新的机制，通过二进制 AST 执行 JavaScript 来提供应用程序的运行速度， 是一种专门为JavaScript而设计的，并为了解析速度而优化过的源代码。文中将其与现在用到的 压缩格式、压缩工具以及WebAssembl 技术进行了对比，可以很好的了解其区别。&lt;/p&gt;
-
-&lt;h4 id=&quot;腾讯祭出大招vassonic让你的h5页面首屏秒开&quot;&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000010711024?utm_source=tuicool&amp;amp;utm_medium=referral&quot;&gt;腾讯祭出大招VasSonic，让你的H5页面首屏秒开&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;为了提高用户体验，提升 H5页面首屏加载速度是必不可少的优化， 对此以前也推荐过很多方案， 本篇推荐的是鹅厂 为此做出的一套H5 秒开的架构， 由自己的业务场景演变而来， 集成了封装了一套自己的体系， 主要是为了提升WebView加载速度， 现已开源，值得关注。&lt;/p&gt;
-
-&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
-
-&lt;h4 id=&quot;how-do-you-separate-components&quot;&gt;&lt;a href=&quot;https://reactarmory.com/answers/how-should-i-separate-components&quot;&gt;How do you separate components?&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;一个React组件，state能被影响的操作越多，组件的代码量就会越大。对于组件代码量的控制能提高代码的阅读性，文章介绍了View components，Control components，Controllers，Container components这四种组件如何从一个代码量大的组件中分离以及业务中常见的运用场景都进行了详细的阐述。&lt;/p&gt;
-
-&lt;h4 id=&quot;the-nine-principles-of-design-implementation&quot;&gt;&lt;a href=&quot;https://www.smashingmagazine.com/2017/08/nine-principles-design-implementation/&quot;&gt;The Nine Principles Of Design Implementation&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;文章分享 CSS 设计的九大通用原则，通过结构化、模组化、抽象、可扩展性等编写更容易维护的代码，并最终呈现出一种高效、准确的效果，保持可复用性，可配置性。&lt;/p&gt;
-
-&lt;h4 id=&quot;javascript-es6一些内建方法的探索&quot;&gt;&lt;a href=&quot;https://hackernoon.com/javascript-es6-exploring-the-new-built-in-methods-b62583b0a8e6&quot;&gt;Javascript ES6 — 一些内建方法的探索&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Amongst the new features released with the new ES6 standard in Javascript are a bounty of new built-in methods. These new methods aim to simplify and standardize some familiar scenarios that developers encounter when working with JS data types like Numbers, Strings, Object and Arrays.&lt;/p&gt;
-
-&lt;h4 id=&quot;这些zepto中实用的方法集&quot;&gt;&lt;a href=&quot;https://github.com/qianlongo/zepto-analysis/issues/5&quot;&gt;这些Zepto中实用的方法集&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;本文介绍分析了一些在Zepto基础模块中，比较实用的部分内部方法，在我们日常工作或者学习中也会用的到。&lt;/p&gt;
-
-&lt;h4 id=&quot;css-百分比-padding-实现比例固定图片自适应布局&quot;&gt;&lt;a href=&quot;http://www.zhangxinxu.com/wordpress/2017/08/css-percent-padding-image-layout/&quot;&gt;CSS 百分比 padding 实现比例固定图片自适应布局&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;利用百分比 padding 来实现一些特殊的缩放需求，保持应用的健壮。&lt;/p&gt;
-
-&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
-
-&lt;h4 id=&quot;freewheel-前后端分离改造实践&quot;&gt;&lt;a href=&quot;http://www.infoq.com/cn/articles/freewheel-refactoring&quot;&gt;FreeWheel 前后端分离改造实践&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;文章以 FreeWheel 从单体应用改造为前后端分离的实践为例，着重介绍其间前端所遇到的挑战和解决方案。在使用社区库的过程中，结合自身需求造了不少新轮子。&lt;/p&gt;
-
-&lt;h4 id=&quot;漫画什么是-bitmap-算法&quot;&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s/96Iv8ZKAm6ozob4YCnFWqA&quot;&gt;漫画：什么是 Bitmap 算法？&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;本片的漫画中， 简单的介绍了Bitmap算法，及其 它的特性和用法。&lt;/p&gt;
-
-&lt;h4 id=&quot;这些javascript编程黑科技装逼指南高逼格代码让你惊叹不已&quot;&gt;&lt;a href=&quot;https://juejin.im/entry/5998f8396fb9a0247c6ec9cd?utm_source=gold_browser_extension&quot;&gt;这些JavaScript编程黑科技，装逼指南，高逼格代码，让你惊叹不已&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;通过诙谐的动画及表情包介绍了一些JavaScript冷知识&lt;/p&gt;
-
-&lt;h2 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h2&gt;
-
-&lt;h4 id=&quot;chrome-devtools-动画演示提高你的网页开发技能&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/28741678&quot;&gt;Chrome DevTools 动画演示，提高你的网页开发技能&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Chrome是前端开发最常用的浏览器，因为它给开发者提供了一整套完整的调试工具，文章列举了几个冷门又好用的的调试功能(如代码利用率及截屏等)。更多功能可以阅读&lt;a href=&quot;https://umaar.com/dev-tips/&quot;&gt;这篇文章&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;truthy-and-falsy-when-all-is-not-equal-in-javascript&quot;&gt;&lt;a href=&quot;https://www.sitepoint.com/javascript-truthy-falsy/&quot;&gt;Truthy and Falsy: When All is Not Equal in JavaScript&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Truthy and falsy values allow you to write terse JavaScript conditions and ternary operators. However, always consider the edge cases. A rogue empty array or NaN variable could lead to many hours of debugging grief!&lt;/p&gt;
-
-&lt;h4 id=&quot;那些不起眼的小工具&quot;&gt;&lt;a href=&quot;https://github.com/qianlongo/underscore-analysis/issues/5&quot;&gt;那些不起眼的小工具？&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;一个经久不衰，为程序猿们所称道的库，框架的背后自然也有不少看起来不起眼，甚至你都懒得正眼瞧他的”小工具”存在。正是这些背后的无名英雄为类库和框架的形成，贡献了不可磨灭的力量。&lt;/p&gt;
-
-&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
-
-&lt;h4 id=&quot;程序员如何高效学习&quot;&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000010805365&quot;&gt;程序员如何高效学习&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;文章中作者分享了自己最近的学习经验，其中提到的两点还是蛮重要的：
-1、反馈  对自己最近学习情况一种俯视与检测
-2、戒急戒躁的心态  这也很可能是决定一个人能走多远的重要因素&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot;&gt;IFT 小组&lt;/a&gt; 出品，汇聚一周好文章， &lt;a href=&quot;https://zhuanlan.zhihu.com/p/28835231&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@Curtis&lt;/a&gt; 前端中年人&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工，不安分于前端开发的搬砖工&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot;&gt;@Steven&lt;/a&gt; 写 JS 的老年人&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/sturloly&quot;&gt;@sturloly&lt;/a&gt; building apps for my future starship&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 一个程序圈的间谍&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章，期待你们。&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Mon, 28 Aug 2017 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2017/08/28/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2017/08/28/weekly.html</guid>
-        
-        
-        <category>weekly</category>
         
       </item>
     
