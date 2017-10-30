@@ -6,9 +6,93 @@
 </description>
     <link>http://else.vip//</link>
     <atom:link href="http://else.vip//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Oct 2017 07:36:57 +0800</pubDate>
-    <lastBuildDate>Tue, 24 Oct 2017 07:36:57 +0800</lastBuildDate>
+    <pubDate>Mon, 30 Oct 2017 10:19:44 +0800</pubDate>
+    <lastBuildDate>Mon, 30 Oct 2017 10:19:44 +0800</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>ELSE 技术周刊(2017.10.30期)</title>
+        <description>&lt;h2 id=&quot;本期推荐&quot;&gt;本期推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;写在-2017-的前端数据层不完全指北&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30050350&quot; target=&quot;_blank&quot;&gt;写在 2017 的前端数据层不完全指北&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;在前端技术的发展中，各个层面演进出不同的技术方案，如数据类型层面的 TypeScript，Flow，PropTypes，应用架构层面的 MVC，MVP，MVVM，还是应用状态层面的 Redux，MobX，RxJS，都各自有不同的观点，但这些方案所要解决的问题是共同的。本篇文章中以 MVVM 架构为例，逐层剖析前端数据层的共同痛点。&lt;/p&gt;
+
+&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;node-调试指南--inspector-协议&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30264842&quot; target=&quot;_blank&quot;&gt;Node 调试指南 —— Inspector 协议&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;v8 Inspector Protocol 是 node v6.3 新加入的调试协议，通过 websocket 与 Client/IDE 交互，同时基于 Chrome/Chromium 浏览器的 devtools 提供了图形化的调试界面。&lt;/p&gt;
+
+&lt;h4 id=&quot;爱奇艺视频组件化之路&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzI0MjczMjM2NA==&amp;amp;mid=2247483846&amp;amp;idx=1&amp;amp;sn=be10e857dc4415d6adb4edbe5bf04152&quot; target=&quot;_blank&quot;&gt;爱奇艺视频组件化之路&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;爱奇艺在组件化上的尝试，用以解决业务间的耦合问题以及方便模块的相互调用。使得多业务线在复杂架构情况下能够独立开发测试，互不干扰，并统一调用接口。&lt;/p&gt;
+
+&lt;h4 id=&quot;你真的了解-for-循环吗一道-for-循环-java-面试题引发的思考&quot;&gt;&lt;a href=&quot;https://my.oschina.net/lt0314/blog/1554809&quot; target=&quot;_blank&quot;&gt;你真的了解 for 循环吗？一道 for 循环 Java 面试题引发的思考&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;语言对基本的语法实现都差不多，本篇借助字节码理解 Java 中的 for 循环，还是非常不错的。&lt;/p&gt;
+
+&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
+
+&lt;h4 id=&quot;无头浏览器-puppeteer-初探&quot;&gt;&lt;a href=&quot;https://juejin.im/post/59e5a86c51882578bf185dba&quot; target=&quot;_blank&quot;&gt;无头浏览器 Puppeteer 初探&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Headless Broswer有很多，&lt;a href=&quot;https://github.com/GoogleChrome/puppeteer&quot;&gt;Puppeteer&lt;/a&gt; 有什么不一样？这里有篇 Puppeteer 入门文。&lt;/p&gt;
+
+&lt;h4 id=&quot;react-作者的构思和演绎&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30277192&quot; target=&quot;_blank&quot;&gt;React 作者的构思和演绎&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;这是 React 作者在 React 设计之初，对整个框架的思考，知其然也要知其所以然。&lt;/p&gt;
+
+&lt;h4 id=&quot;vue2-原理浅谈&quot;&gt;&lt;a href=&quot;http://www.imhjm.com/article/59b902107dd03248a2e8d584&quot; target=&quot;_blank&quot;&gt;Vue2 原理浅谈&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;作者根据对 vue 的理解，浅谈了一些 vue 中几个主要模块的原理阐述。包含了数据响应原理、数据与视图如何联系、Virtual DOM 等特性的讲解。&lt;/p&gt;
+
+&lt;h4 id=&quot;html-web-component-using-vanilla-javascript&quot;&gt;&lt;a href=&quot;https://ayushgp.github.io/html-web-components-using-vanilla-js/&quot; target=&quot;_blank&quot;&gt;HTML Web Component using Vanilla JavaScript&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;在 react，vue 等框架越来越流行流行的同时，可能很多人已经忘记 Web Component。这项标准还有很多问题，浏览器的支持仍然优先，但是可以使用 polyfills，这篇教程将介绍如何创建自己的 HTML 标签作为组件。&lt;/p&gt;
+
+&lt;h4 id=&quot;lyft-的-typescript-实践&quot;&gt;&lt;a href=&quot;http://www.infoq.com/cn/news/2017/10/TypeScript-practice-Lyft&quot; target=&quot;_blank&quot;&gt;Lyft 的 TypeScript 实践&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;来自 Lyft 的工程师介绍了向 TypeScript 转型的过程，说明 JavaScript 类型系统的重要性，对比 Flow 和 TypeScript 的差异点，以及他们的实践经验。&lt;/p&gt;
+
+&lt;h2 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;napajs&quot;&gt;&lt;a href=&quot;https://github.com/Microsoft/napajs/wiki/introduction&quot; target=&quot;_blank&quot;&gt;napajs&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;微软团队发布的 Node 多线程库。该wiki是对库的几个核心概念的简介，让你对库工作原理有个全局的了解。&lt;/p&gt;
+
+&lt;h4 id=&quot;a-list-of-everything-that-could-go-in-the-head-of-your-document&quot;&gt;&lt;a href=&quot;http://gethead.info/&quot; target=&quot;_blank&quot;&gt;A list of everything that could go in the head of your document&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;一份很详尽的 Head 指南大全，包含任何可以写入到文档中 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 的清单。&lt;/p&gt;
+
+&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;百度主任架构师谭待如何让不带团队的程序员负责重大项目&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzUyODMzMjY3OQ==&amp;amp;mid=2247483702&amp;amp;idx=1&amp;amp;sn=3b3a57694c38e23f712d89dbd5e46c5e&quot; target=&quot;_blank&quot;&gt;百度主任架构师谭待：如何让不带团队的程序员负责重大项目？&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;一般的管理都是与职权挂钩的，否则很多直接有效的调节手段就没法用，比如薪酬绩效，比如需要项目团队加班时直接下规定说谁不来就扣钱，我没有这样做，我能做是谈天聊心。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot; target=&quot;_blank&quot;&gt;IFT 小组&lt;/a&gt; 出品，汇聚一周好文章， &lt;a href=&quot;https://zhuanlan.zhihu.com/p/30547811/&quot; target=&quot;_blank&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot; target=&quot;_blank&quot;&gt;@Curtis&lt;/a&gt; 前端中年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot; target=&quot;_blank&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工，不安分于前端开发的搬砖工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot; target=&quot;_blank&quot;&gt;@Steven&lt;/a&gt; 写 JS 的老年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/sturloly&quot; target=&quot;_blank&quot;&gt;@sturloly&lt;/a&gt; building apps for my future starship&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot; target=&quot;_blank&quot;&gt;@mirreal&lt;/a&gt; 想当设计师的程序员不是一个好攻城狮&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot; target=&quot;_blank&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 30 Oct 2017 18:00:00 +0800</pubDate>
+        <link>http://else.vip//weekly/2017/10/30/weekly.html</link>
+        <guid isPermaLink="true">http://else.vip//weekly/2017/10/30/weekly.html</guid>
+        
+        
+        <category>weekly</category>
+        
+      </item>
     
       <item>
         <title>ELSE 技术周刊(2017.10.23期)</title>
@@ -1086,176 +1170,6 @@ LAUNCH SUCCESS
         
         
         <category>weekly</category>
-        
-      </item>
-    
-      <item>
-        <title>一天学会Chrome插件开发</title>
-        <description>&lt;h2 id=&quot;开门见山一个chrome插件会包含哪些文件及文件夹&quot;&gt;开门见山：一个chrome插件会包含哪些文件及文件夹&lt;/h2&gt;
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;D:.
-│  manifest.json
-│
-├─html
-│      index.html
-│
-├─images
-│      icon-128.png
-│      icon-16.png
-│
-├─scripts
-│      background.js
-│
-├─styles
-│      main.css
-│
-└─_locales
-    ├─en
-    │      messages.json
-    │
-    └─zh_CN
-            messages.json
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;简单说明一下：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;html：存放html页面&lt;/li&gt;
-  &lt;li&gt;images：存放插件图标&lt;/li&gt;
-  &lt;li&gt;scripts：存放js文件&lt;/li&gt;
-  &lt;li&gt;styles: 存放样式&lt;/li&gt;
-  &lt;li&gt;_locales: 存放多语言文件&lt;/li&gt;
-  &lt;li&gt;manifest.json：一些关于插件的元数据，作为chrome入口文件&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;看目录结构，像不像一个网站？Bingo! Chrome插件就是一个网站类的应用，它是用html、javascript、css组成的一个webapp; 相比于通常的webapp, Chrome插件还可以调用更多浏览器层面的api,包括书签、历史记录、网络请求拦截、截获用户输入等等。（PS：插件不要随便乱装哦，很危险滴！）&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;重点说一说这个文件manifestjson&quot;&gt;重点说一说这个文件：manifest.json&lt;/h2&gt;
-
-&lt;p&gt;如前所述，它包含了一些插件的元数据，作为chrome的入口文件，可以理解为插件的程序清单，那么它到底做了什么事情呢？
-结合示例，我们细细来看：&lt;/p&gt;
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;manifest_version&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;清单版本号，建议使用&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;版本&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，版本&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;是旧的，已弃用，不建议使用&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;chome-plugin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;插件名称&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1.8.6&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;插件版本&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;This is an extension for your chrome&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;这里写些废话，举个栗子，‘应产品要求，杀个程序祭天’&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;icons&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;16&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/custom/16x16.png&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;48&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/custom/48x48.png&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;128&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/custom/128x128.png&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//browser_action和page_action只能添加一个&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;browser_action&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//浏览器级别行为，所有页面均生效&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;default_icon&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/custom/16x16.png&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//图标的图片&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;default_title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello ELSE&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//鼠标移到图标显示的文字&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;default_popup&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;html/popup.html&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//单击图标后弹窗页面&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;page_action&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//页面级别的行为，只在特定页面下生效&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;default_icon&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;24&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/custom/24x24.png&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;38&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;images/custom/38x38.png&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;default_popup&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;html/popup.html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;default_title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello ELSE&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;可选&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ELSE TEAM&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;automation&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;   
-
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;background&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;scripts/background.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;scripts/devtools-page.js&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;devtools_page&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;html/devtools-page.html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;定义对页面内容进行操作的脚本&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;content_scripts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;js/else-insert.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;css&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;css/else-insert.css&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-      &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;matches&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;all_urls&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;只在这些站点下&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;content_scripts会运行&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;数组，声明插件所需要的权限，这里就是很危险的存在了，想干坏事的你是不是很激动！&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;permissions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;cookies&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://*/*&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;management&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;tabs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;contextMenus&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;开发示例&quot;&gt;开发示例&lt;/h2&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;代码来了：https://github.com/StevenX911/share/tree/master/source-read/chrome-plugin/no-socializing&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/image/2017-08-29-articlex1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;加载并运行插件&quot;&gt;加载并运行插件&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;在您的浏览器中访问 chrome://extensions（或者单击多功能框最右边的按钮：打开 Chrome 浏览器菜单，并选择工具(L)菜单下的扩展程序(E)，进入相同的页面）。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;确保右上角开发者模式复选框已选中。 Ensure that the Developer mode checkbox in the top right-hand corner is checked.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;单击加载正在开发的扩展程序…，弹出文件选择对话框。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;浏览至您的扩展程序文件所在的目录，并选定。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;您也可以将扩展程序文件所在的目录拖放到浏览器中的 chrome://extensions 上加载它。&lt;/p&gt;
-
-&lt;p&gt;如果扩展程序有效的话，它将被加载并且立刻处于活动状态！如果无效的话，页面顶部将显示错误消息，请纠正错误再重试。&lt;/p&gt;
-
-&lt;h2 id=&quot;打包发布&quot;&gt;打包发布&lt;/h2&gt;
-&lt;p&gt;开发插件的目的是为了贡献自己的一点技术力量，为人类的永恒与和平略尽绵力，当然这都是胡扯！大部分的开发者都想赚些个零花，不过首先你得向google上交五美金！&lt;/p&gt;
-
-&lt;p&gt;注册开发者账户自不必说，墙都翻不出去的程序员当不了好厨子。&lt;/p&gt;
-
-&lt;p&gt;点击链接https://chrome.google.com/webstore/developer/dashboard/进入google开发者控制台，你会看到下图，提示交5美元注册开发者。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/image/2017-08-29-articlex.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;在输入信用卡信息环节，注意选香港，然后再地址中加上“转大陆”字样就可以。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/image/2017-08-29-articlex2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;注册开发者身份成功后，将webpp文件打包提交&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/image/2017-08-29-articlex3.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;发布成功后效果如下图&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/image/2017-08-29-articlex4.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;常用插件推荐&quot;&gt;常用插件推荐&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/search/adblock&quot;&gt;AdBlock&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/search/postman&quot;&gt;Postman&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/search/GliffyDiagrams&quot;&gt;Gliffy Diagrams&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/search/EditThisCookie&quot;&gt;EditThisCookie&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;更多&quot;&gt;更多&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Chrome插件开发文档：https://developer.chrome.com/extensions&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 29 Aug 2017 18:00:00 +0800</pubDate>
-        <link>http://else.vip//team/2017/08/29/team.html</link>
-        <guid isPermaLink="true">http://else.vip//team/2017/08/29/team.html</guid>
-        
-        
-        <category>team</category>
         
       </item>
     
