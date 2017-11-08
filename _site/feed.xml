@@ -6,66 +6,66 @@
 </description>
     <link>http://else.vip//</link>
     <atom:link href="http://else.vip//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Nov 2017 14:02:11 +0800</pubDate>
-    <lastBuildDate>Wed, 08 Nov 2017 14:02:11 +0800</lastBuildDate>
+    <pubDate>Wed, 08 Nov 2017 16:17:51 +0800</pubDate>
+    <lastBuildDate>Wed, 08 Nov 2017 16:17:51 +0800</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
-        <title>ELSE 技术周刊(2017.11.01期)</title>
+        <title>ELSE 技术周刊(2017.11.07期)</title>
         <description>&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
 
-&lt;h4 id=&quot;news-nodejs-8-moves-into-long-term-support-and-nodejs-9-becomes-the-new-current-release-line&quot;&gt;&lt;a href=&quot;https://medium.com/the-node-js-collection/news-node-js-8-moves-into-long-term-support-and-node-js-9-becomes-the-new-current-release-line-74cf754a10a0&quot;&gt;NEWS: Node.js 8 Moves into Long-Term Support and Node.js 9 Becomes the New Current Release Line&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;news-nodejs-8-moves-into-long-term-support-and-nodejs-9-becomes-the-new-current-release-line&quot;&gt;&lt;a href=&quot;https://medium.com/the-node-js-collection/news-node-js-8-moves-into-long-term-support-and-node-js-9-becomes-the-new-current-release-line-74cf754a10a0&quot; target=&quot;_blank&quot;&gt;NEWS: Node.js 8 Moves into Long-Term Support and Node.js 9 Becomes the New Current Release Line&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Node 8成为LTS版本，当前发布版本为Node 9。Node的版本发布越来越快了。&lt;/p&gt;
 
-&lt;h4 id=&quot;version-500-of-angular-now-available&quot;&gt;&lt;a href=&quot;https://blog.angular.io/version-5-0-0-of-angular-now-available-37e414935ced&quot;&gt;Version 5.0.0 of Angular Now Available&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;version-500-of-angular-now-available&quot;&gt;&lt;a href=&quot;https://blog.angular.io/version-5-0-0-of-angular-now-available-37e414935ced&quot; target=&quot;_blank&quot;&gt;Version 5.0.0 of Angular Now Available&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Angular 5.0.0 已经发布。作为一个包含新功能和错误修复的主要版本，继续专注于使 Angular 更小更快，更易于使用。&lt;/p&gt;
 
 &lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
-&lt;h4 id=&quot;译js-中的内存管理及常见的-4-种内存泄露处理方式&quot;&gt;&lt;a href=&quot;http://elevenbeans.github.io/2017/10/13/js-memory-management/&quot;&gt;【译】JS 中的内存管理及常见的 4 种内存泄露处理方式&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;译js-中的内存管理及常见的-4-种内存泄露处理方式&quot;&gt;&lt;a href=&quot;http://elevenbeans.github.io/2017/10/13/js-memory-management/&quot; target=&quot;_blank&quot;&gt;【译】JS 中的内存管理及常见的 4 种内存泄露处理方式&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;从 0 开始梳理内存管理以及回收问题，浅显易懂&lt;/p&gt;
 
-&lt;h4 id=&quot;编写扁平化的代码&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30667142&quot;&gt;编写扁平化的代码&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;编写扁平化的代码&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30667142&quot; target=&quot;_blank&quot;&gt;编写扁平化的代码&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;给你的代码增加一点点函数式编程的特性，使用声明式编程编写更可读的代码。&lt;/p&gt;
 
-&lt;h4 id=&quot;8大前端安全问题&quot;&gt;&lt;a href=&quot;http://insights.thoughtworks.cn/eight-security-problems-in-front-end-2/&quot;&gt;8大前端安全问题&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;8大前端安全问题&quot;&gt;&lt;a href=&quot;http://insights.thoughtworks.cn/eight-security-problems-in-front-end-2/&quot; target=&quot;_blank&quot;&gt;8大前端安全问题&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;本文对前端安全问题进行了一次梳理，介绍了8个典型的前端安全问题，包括它们发生的原因以及防御办法。上篇点&lt;a href=&quot;http://insights.thoughtworks.cn/eight-security-problems-in-front-end/&quot;&gt;这里&lt;/a&gt;。&lt;/p&gt;
 
-&lt;h4 id=&quot;you-are-managing-state-think-twice&quot;&gt;&lt;a href=&quot;http://krasimirtsonev.com/blog/article/managing-state-in-javascript-with-state-machines-stent&quot;&gt;You are managing state? Think twice.&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;you-are-managing-state-think-twice&quot;&gt;&lt;a href=&quot;http://krasimirtsonev.com/blog/article/managing-state-in-javascript-with-state-machines-stent&quot; target=&quot;_blank&quot;&gt;You are managing state? Think twice.&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;文章讲述了作者对于flux和redux的思考，它们是否是状态管理，或者说更像是数据(流)管理？举例一个简单表单的各种交互状态，如何更好的管理它们。&lt;/p&gt;
 
-&lt;h4 id=&quot;es6模块nodejs和michael-jackson办法&quot;&gt;&lt;a href=&quot;http://zcfy.cc/article/es6-modules-node-js-and-the-michael-jackson-solution-4023.html?hmsr=toutiao.io&amp;amp;utm_medium=toutiao.io&amp;amp;utm_source=toutiao.io&quot;&gt;ES6模块，Node.js和Michael Jackson办法&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;es6模块nodejs和michael-jackson办法&quot;&gt;&lt;a href=&quot;http://zcfy.cc/article/es6-modules-node-js-and-the-michael-jackson-solution-4023.html?hmsr=toutiao.io&amp;amp;utm_medium=toutiao.io&amp;amp;utm_source=toutiao.io&quot; target=&quot;_blank&quot;&gt;ES6模块，Node.js和Michael Jackson办法&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;JavaScript的模块化发展也可以说经历一段曲折，从 AMD/CMD、 CommonJs 规范开始 到现在的 ES6模块规定，以及后续一些新的提案来看，JavaScript的模块化应该逐步完善。本文中简述了 CommonJs 和 ES模块的区别，着重介绍了 ES6模块是如何工作的。&lt;/p&gt;
 
-&lt;h4 id=&quot;打造丝般顺滑的-h5-翻页库&quot;&gt;&lt;a href=&quot;http://fex.baidu.com/blog/2017/10/build-a-silky-smooth-slide-library/&quot;&gt;打造丝般顺滑的 H5 翻页库&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;打造丝般顺滑的-h5-翻页库&quot;&gt;&lt;a href=&quot;http://fex.baidu.com/blog/2017/10/build-a-silky-smooth-slide-library/&quot; target=&quot;_blank&quot;&gt;打造丝般顺滑的 H5 翻页库&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;本文讲述了一个「丝般顺滑」的 H5 翻页库的开发过程中遇到的一些问题和对应的解决方法。基本的滑动翻页模型建立之后，重点关注了性能的问题，分为手指离开屏幕前和手指离开屏幕后两个阶段。前一阶段主要聚焦于减少 DOM 操作。后一阶段聚焦于动画的性能，并且对比了 js 动画和 css 动画的性能数据，最后得出了在手指离开屏幕后使用 css 动画的结论。此外，我们还基于「数据驱动」的思想，在翻页效果和动画函数两部分进行了扩展，增强了翻页库的功能，也丰富了 H5 的展现效果。&lt;/p&gt;
 
-&lt;h4 id=&quot;jquery前端国际化解决方案填坑日记&quot;&gt;&lt;a href=&quot;http://blog.csdn.net/qq3401247010/article/details/78084229&quot;&gt;jquery前端国际化解决方案“填坑日记&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;jquery前端国际化解决方案填坑日记&quot;&gt;&lt;a href=&quot;http://blog.csdn.net/qq3401247010/article/details/78084229&quot; target=&quot;_blank&quot;&gt;jquery前端国际化解决方案“填坑日记&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;“前言：最近，新的平台还没有开发完成，原来的老项目又提出了新的需求：系统国际化。如果是前后端完全分离的开发模式，要做国际化，真的太简单了，有现成的解决方案，基于Node构建的时下热门的任何一种技术选型都有成熟的方案，比如：”&lt;/p&gt;
 
-&lt;h4 id=&quot;前端性能的几个关键指标分析&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649086295&amp;amp;idx=1&amp;amp;sn=9086a65721d179b2b0d617e160f64594&amp;amp;chksm=be5bfefa892c77ec8a8fd39b92932334bcc4625d6f55b9687ad391540ab0382c2a1d32202665&amp;amp;mpshare=1&amp;amp;scene=23&amp;amp;srcid=10290UdAa5XlNvTvt8I2tE5n#rd&quot;&gt;前端性能的几个关键指标分析&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;前端性能的几个关键指标分析&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5MDA2MTI1MA==&amp;amp;mid=2649086295&amp;amp;idx=1&amp;amp;sn=9086a65721d179b2b0d617e160f64594&amp;amp;chksm=be5bfefa892c77ec8a8fd39b92932334bcc4625d6f55b9687ad391540ab0382c2a1d32202665&amp;amp;mpshare=1&amp;amp;scene=23&amp;amp;srcid=10290UdAa5XlNvTvt8I2tE5n#rd&quot; target=&quot;_blank&quot;&gt;前端性能的几个关键指标分析&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;“对于一个网站如果希望抓住用户，网站的速度以及稳定性是非常重要的。&lt;br /&gt;
 从各式各样的前端监控平台中，你都可以获得页面很多的性能指标。本文将介绍几个几个比较关键的指标，并给出相应的优化思路。”&lt;/p&gt;
 
 &lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
-&lt;h4 id=&quot;重磅消息kotlin要支持ios开发和web开发了&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;amp;mid=2651113865&amp;amp;idx=1&amp;amp;sn=6a2153fc5eb16c7d2c31e05c83dd6e7a&amp;amp;chksm=844c6054b33be9428fa788a2a2df33c98303131360a68548c67fafe44f63bf11cb2acc0aa57d&amp;amp;mpshare=1&amp;amp;scene=23&amp;amp;srcid=1104By2P97WkjzPC2Opt4lc2#rd&quot;&gt;重磅消息！Kotlin要支持iOS开发和Web开发了！&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;重磅消息kotlin要支持ios开发和web开发了&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;amp;mid=2651113865&amp;amp;idx=1&amp;amp;sn=6a2153fc5eb16c7d2c31e05c83dd6e7a&amp;amp;chksm=844c6054b33be9428fa788a2a2df33c98303131360a68548c67fafe44f63bf11cb2acc0aa57d&amp;amp;mpshare=1&amp;amp;scene=23&amp;amp;srcid=1104By2P97WkjzPC2Opt4lc2#rd&quot; target=&quot;_blank&quot;&gt;重磅消息！Kotlin要支持iOS开发和Web开发了！&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;“主题演讲当中提出的第一项重要公告，正是 Kotlin 1.2 候选发行版（简称 RC）的公布。此版本中囊括一系列新功能，包括对多个多平台项目的实验性支持、允许开发者在针对 JVM 与 JavaScript 的模块之间进行代码共享，同时涉及多项语言改进——包括支持在注释中使用数组字面量。”&lt;/p&gt;
 
-&lt;h4 id=&quot;深入解读-java-9-新特性&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/ivj2SmTZqr5qVfPbauPZxg&quot;&gt;深入解读 Java 9 新特性&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;深入解读-java-9-新特性&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/ivj2SmTZqr5qVfPbauPZxg&quot; target=&quot;_blank&quot;&gt;深入解读 Java 9 新特性&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Java 9 终于在 9 月 21 日发布了,  在一个多月里时间大家想必已经都了解其有新特性， 本文可以带大家进一步了解Java 9 的新特性。&lt;/p&gt;
 
-&lt;h4 id=&quot;从chrome源码看浏览器如何加载资源&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30558018&quot;&gt;从Chrome源码看浏览器如何加载资源&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;从chrome源码看浏览器如何加载资源&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30558018&quot; target=&quot;_blank&quot;&gt;从Chrome源码看浏览器如何加载资源&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;以开源项目Chromium为实验对象，认识浏览器对各类请求资源分类的逻辑，每个资源请求的预处理及安全策略的检查，资源优先级等。&lt;/p&gt;
 
 &lt;h2 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h2&gt;
-&lt;h4 id=&quot;人见人爱的-visual-studio-code&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30558463&quot;&gt;人见人爱的 Visual Studio Code&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;人见人爱的-visual-studio-code&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/30558463&quot; target=&quot;_blank&quot;&gt;人见人爱的 Visual Studio Code&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;如果你也用Visual Studio Code，这些插件可能会对你有帮助&lt;/p&gt;
 &lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
 
-&lt;h4 id=&quot;it工程师的自我管理&quot;&gt;&lt;a href=&quot;http://insights.thoughtworks.cn/self-management/?utm_source=tuicool&amp;amp;utm_medium=referral&quot;&gt;IT工程师的自我管理&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;it工程师的自我管理&quot;&gt;&lt;a href=&quot;http://insights.thoughtworks.cn/self-management/?utm_source=tuicool&amp;amp;utm_medium=referral&quot; target=&quot;_blank&quot;&gt;IT工程师的自我管理&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;从文章标题来看，很容易让大家认为是一篇 工程师自我提升到大加的管理课， 其实不然，作者阐述了 如何 运用项目管理的技能来 管理自己的生活的故事，从生活中不同的方面（收集反馈、决策、时间和任务管理、情绪管理）来阐述这些问题和解决方案， 其中包含作者的思考逻辑，管理哲学的运用以及实施中使用的管理工具， 很有意思!&lt;/p&gt;
 
-&lt;h4 id=&quot;how-and-why-to-speak-at-tech-conferences&quot;&gt;&lt;a href=&quot;https://hackernoon.com/how-and-why-to-speak-at-tech-conferences-1d50a3f548e0&quot;&gt;How and Why to Speak at Tech Conferences&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;how-and-why-to-speak-at-tech-conferences&quot;&gt;&lt;a href=&quot;https://hackernoon.com/how-and-why-to-speak-at-tech-conferences-1d50a3f548e0&quot; target=&quot;_blank&quot;&gt;How and Why to Speak at Tech Conferences&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;在技术会议上演讲不是一件容易的事，本文介绍了为什么应该去演讲，以及如何去完成一场演讲。&lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Nov 2017 18:00:00 +0800</pubDate>
