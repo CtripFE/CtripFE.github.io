@@ -155,6 +155,28 @@
   
   <li>
     <h2>
+      <a class="post-link" href="/translator/2017/06/02/writing-modern-javascript-code.html">编写现代 JavaScript 代码</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p><blockquote> <p>原文作者：<a href="https://twitter.com/scastiel">Sébastien Castiel</a></p> <p>原文链接：<a href="https://dev.to/scastiel/writing-modern-javascript-code">Writing modern JavaScript code</a></p> <p>说点什么：这是一篇很朴素的文章，讲的道理都懂，但实际上，在工作中遇到类似的情形却未必如此，编写可维护，可阅读，更安全的代码是我们应有的责任。</p> </blockquote> <p>是不是还认为 JavaScript 是一门用于在光标悬浮时改变页面元素的语言？这些日子已经不复存在，每一种语言都在随着时间推移而发展，我们使用语言的方式同样也在发展。看一下你一两年前写的代码：会感到羞愧吗？如果是的话，这篇文章应该很适合你。</p> <p>这里会列出一些所谓的最佳实践，目的是让你的 JavaScript 代码更容易编写，阅读和维护。</p> <h2 id="使用可格式化代码的-linter">使用可格式化代码的 linter</h2> <p>第一个建议是使用 linter 工具，可以帮助你检查在不同文件是否遵守一致的规则，尤其是当不同开发人员在同一个项目上工作：缩进，括号中的空格，替换 <code class="highlighter-rouge">==</code> 为 <code class="highlighter-rouge">===</code> …</p> <p>但更重要的是，尽可能使用 linter 工具自动修复代码。<a href="http://eslint.org/">ESLint</a> 就做得很好（带有 <code class="highlighter-rouge">--fix</code> 选项），而且与所有主流 IDE 完美集成，可以在保存时自动修复文件。</p> <p>还可以使用 <a href="https://github.com/prettier/prettier">Prettier</a>，不过这款工具更注重格式化而不是静态检查，但处理后的结果基本相同。</p> <p>下一步将介绍与 linter 工具一起使用的规则：</p> <h2 id="为你的-linter-定制现代化的规则">为你的 linter 定制现代化的规则</h2> <p>如果不知道你的代码需要什么样的规则，可以参考：<a...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">mirreal , June 2, 2017 </div>
+      <div class="post-categories">
+       category : 
+        
+        <a href="/category/translator">Translator</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
       <a class="post-link" href="/weekly/2017/06/02/weekly.html">ELSE 技术周刊(2017.06.02期)</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
@@ -228,28 +250,6 @@
     </section>
     <section class="post-meta">
       <div class="post-date">风清洋 , May 26, 2017 </div>
-      <div class="post-categories">
-       category : 
-        
-        <a href="/category/weekly">Weekly</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/weekly/2017/05/19/weekly.html">ELSE 技术周刊(2017.05.19期)</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p><h2 id="业界动态">业界动态</h2> <h4 id="jest-20-released-facebooks-javascript-testing-framework"><a href="https://facebook.github.io/jest/blog/2017/05/06/jest-20-delightful-testing-multi-project-runner.html">Jest 20 Released: Facebook’s JavaScript Testing Framework</a></h4> <p>facebook发布了 Jest20，支持多项目同时运行</p> <h2 id="技术纵横">技术纵横</h2> <h4 id="浅谈-http2-server-push"><a href="https://zhuanlan.zhihu.com/p/26757514?utm_source=tuicool&amp;utm_medium=referral">浅谈 HTTP/2 Server Push</a></h4> <p>Server push 的意义很简单，说白了就是为了提前推送响应。这里面包含两个问题——推什么和怎么推。</p> <h4 id="webassembly-简明漫画介绍"><a href="https://www.smashingmagazine.com/2017/05/abridged-cartoon-introduction-webassembly/">WebAssembly 简明漫画介绍</a></h4> <p>文章采用漫画的形式生动地介绍 WebAssembly 到底是什么，以及为什么它可以那么快。</p> <h4 id="我理解中的大前端大无线"><a href="https://blog.souche.com/wo-li-jie-zhong-de-da-qian-duan-da-wu-xian/">我理解中的“大前端”/“大无线”</a></h4> <p>怎么实现技术的核心价值,而不是为了用而使用，笔者通过团队的中几个技术栈的演进，为我们展示了他对“大前端”/”大无线”的理解，也诠释了“不一味追求潮流,基于场景讨论问题”的思考。</p> <h4 id="美团点评酒旅前端的技术体系"><a href="http://tech.meituan.com/hotel-fe-tech-system.html">美团点评酒旅前端的技术体系</a></h4> <p>对于边界越来越模糊的前端开发，一个完备的技术体系应当包括流程规范，技术工具栈，构建工具栈，自动化测试，部署流程和部署平台，监控体系，文章分享了团队技术体系的细节以及对当前整个架构的思考。</p> <h2 id="前端技术">前端技术</h2> <h4 id="译-为何-typescript-愈发流行了"><a href="https://juejin.im/post/59152911a22b9d0058fd5fe8">[译] 为何 TypeScript 愈发流行了</a></h4> <p>这篇文章试图探讨驱使TypeScript 愈来愈流行的因素，除了 Angular2，以及微软在企业级应用的影响等，其真实原因可能是现如今...</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">stoneYong , May 19, 2017 </div>
       <div class="post-categories">
        category : 
         
