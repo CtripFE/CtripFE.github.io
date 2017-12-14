@@ -96,6 +96,10 @@ crews:
     url: 'https://github.com/CurtisCBS'
     intro: '中年人'
 
+  - name: 'Gyingguo'
+    profile: "/assets/team/yy.png"
+    url: 'https://github.com/Gyingguo'
+    intro: 'CATCH fish'
 
 social:
   - name: zhihu
