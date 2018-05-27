@@ -12,7 +12,7 @@
 ">
   
   <meta name="author" content="ELSE">
-  <meta name="copyright" content="&copy; ELSE 2017">
+  <meta name="copyright" content="&copy; ELSE 2018">
   
 
   <!-- External libraries -->
@@ -45,11 +45,11 @@
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
 " />
-  <meta property="og:url" content="http://else.vip/" />
+  <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="ELSE" />
   <meta property="og:title" content="ELSE" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://else.vip//assets/logo.png" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -61,16 +61,16 @@
   <meta name="twitter:title" content="ELSE">
   <meta name="twitter:description" content="坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
 ">
-  <meta name="twitter:image" content="http://else.vip//assets/logo.png">
-  <meta name="twitter:url" content="http://else.vip/">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
+  <meta name="twitter:url" content="http://localhost:4000">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://else.vip//page6/">
-  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://else.vip//feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/page6/">
+  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -132,6 +132,16 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       </ul>
     </nav>
   </div>
@@ -145,7 +155,7 @@
   <div class="scrim has-cover">
     <header class="site-header">
       <h1 class="title">ELSE</h1>
-      <p class="subtitle">Welcome to ELSE team blog</p>
+      <p class="subtitle">Welcome to ELSE</p>
     </header>
   </div>
 </div> -->
@@ -155,57 +165,13 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/team/2017/06/05/remove-strict-node.html">移除在 ESM 模式生成的严格模式</a>
+      <a class="post-link" href="/weekly/2017/11/20/weekly.html">ELSE 技术周刊(2017.11.20期)</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <p><h2 id="起源">起源</h2> <p>项目升级构建方式，以前的代码采用 AMD 风格组织代码，并使用 <code class="highlighter-rouge">r.js</code> 完成打包优化工作。后续成员选择采用 ES6 的风格编写代码，然后 webpack + babel 完成打包构建。迁移工作并不如想象中那么容易，终于完成各种配置，测试时候发现问题：抛出一个语法错误。错误很快被定位，属于历史代码的不规范写法，之所以现在暴露出来是因为新的构建方式会加入 <code class="highlighter-rouge">"use strict"</code>。</p> <h2 id="严格模式">严格模式</h2> <p>在编写代码的过程中，我们使用 <code class="highlighter-rouge">strict mode</code> 是一种很好的方式，严格模式会将 JavaScript 陷阱直接变成明显的错误，比如未声明导致的全局变量，可以让我们开发过程中就发现错误。</p> <p>众所周知，JavaScript 这门语言之前存在大量不好的设计，使用严格模式意味着在采用一种限制性更高的方式编写代码，同时更 “安全”。但这里所谓的安全在生产环境又可能是另外一回事，尤其是对于那些上了年纪的历史代码，我们更倾向于在生产环境去除严格模式。</p> <h2 id="es2015">ES2015+</h2> <p>现在大部分人已经在使用更强大，更具有表现力的 <code class="highlighter-rouge">ES2015+</code> 编写代码。可能还会使用到 babel 来转化成用于生产环境运行的代码，在使用 <code class="highlighter-rouge">preset es2015</code> 时，会自动加入 <code class="highlighter-rouge">“use strict”</code>。</p> <p>babel 的处理方式是将 ES2015 模块转换成 <code class="highlighter-rouge">CommonJS</code> 格式的，然后再统一处理，即 <code class="highlighter-rouge">transform-es2015-modules-commonjs</code>，这个插件位于 <code class="highlighter-rouge">preset es2015</code> 中，并且依赖于 <code class="highlighter-rouge">transform-strict-mode</code></p> <h2 id="也许你会想去掉严格模式">也许你会想去掉严格模式</h2> <p>也许你会想去掉严格模式，毕竟对于一些历史代码，很难预测加入严格模式会导致什么异常。</p> <!-- 可以从两个方面来考虑： --> <ul>...</p>
+      <p><h2 id="业界动态">业界动态</h2> <h4 id="introducing-the-new-firefox-firefox-quantum"><a href="https://blog.mozilla.org/blog/2017/11/14/introducing-firefox-quantum/">Introducing the New Firefox: Firefox Quantum</a></h4> <p>FireFox 发布重大更新，“新版本建立在一个全新的的引擎 Quantum 之上，速度是 6 个月前的两倍”。<a href="https://hacks.mozilla.org/2017/11/entering-the-quantum-era-how-firefox-got-fast-again-and-where-its-going-to-get-faster/">这篇文章</a>介绍为什么 FireFox 可以变得这么快。</p> <h4 id="nodejs-新计划使用-v8-snapshot-将启动速度提升-8-倍"><a href="https://segmentfault.com/a/1190000012051041">Node.js 新计划：使用 V8 snapshot 将启动速度提升 8 倍</a></h4> <p>昨天 V8 开发者 @hashseed Node.js 提交了一个 issue ：<a href="https://github.com/nodejs/node/issues/17058">RFC: speeding up Node.js startup using V8 snapshot#17058</a>， 旨在通过使用 V8 snapshot 让Node.js 的启动的更快， issue...</p>
     </section>
     <section class="post-meta">
-      <div class="post-date">mirreal , June 5, 2017 </div>
-      <div class="post-categories">
-       category : 
-        
-        <a href="/category/team">Team</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/translator/2017/06/02/writing-modern-javascript-code.html">编写现代 JavaScript 代码</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p><blockquote> <p>原文作者：<a href="https://twitter.com/scastiel">Sébastien Castiel</a></p> <p>原文链接：<a href="https://dev.to/scastiel/writing-modern-javascript-code">Writing modern JavaScript code</a></p> <p>说点什么：这是一篇很朴素的文章，讲的道理都懂，但实际上，在工作中遇到类似的情形却未必如此，编写可维护，可阅读，更安全的代码是我们应有的责任。</p> </blockquote> <p>是不是还认为 JavaScript 是一门用于在光标悬浮时改变页面元素的语言？这些日子已经不复存在，每一种语言都在随着时间推移而发展，我们使用语言的方式同样也在发展。看一下你一两年前写的代码：会感到羞愧吗？如果是的话，这篇文章应该很适合你。</p> <p>这里会列出一些所谓的最佳实践，目的是让你的 JavaScript 代码更容易编写，阅读和维护。</p> <h2 id="使用可格式化代码的-linter">使用可格式化代码的 linter</h2> <p>第一个建议是使用 linter 工具，可以帮助你检查在不同文件是否遵守一致的规则，尤其是当不同开发人员在同一个项目上工作：缩进，括号中的空格，替换 <code class="highlighter-rouge">==</code> 为 <code class="highlighter-rouge">===</code> …</p> <p>但更重要的是，尽可能使用 linter 工具自动修复代码。<a href="http://eslint.org/">ESLint</a> 就做得很好（带有 <code class="highlighter-rouge">--fix</code> 选项），而且与所有主流 IDE 完美集成，可以在保存时自动修复文件。</p> <p>还可以使用 <a href="https://github.com/prettier/prettier">Prettier</a>，不过这款工具更注重格式化而不是静态检查，但处理后的结果基本相同。</p> <p>下一步将介绍与 linter 工具一起使用的规则：</p> <h2 id="为你的-linter-定制现代化的规则">为你的 linter 定制现代化的规则</h2> <p>如果不知道你的代码需要什么样的规则，可以参考：<a...</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">mirreal , June 2, 2017 </div>
-      <div class="post-categories">
-       category : 
-        
-        <a href="/category/translator">Translator</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/weekly/2017/06/02/weekly.html">ELSE 技术周刊(2017.06.02期)</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p><h2 id="业界动态">业界动态</h2> <h4 id="node-8-released"><a href="https://nodejs.org/en/blog/release/v8.0.0/">Node 8 Released</a></h4> <p>Node 8 已经发布，带来一系列重大变化和更新，同时 NPM 也更新到 5.0.0。</p> <h4 id="what-are-the-differences-between-the-lockfiles-of-yarn-and-npm-5"><a href="https://yarnpkg.com/blog/2017/05/31/determinism/">What are the differences between the lockfiles of Yarn and npm 5?</a></h4> <p>NPM 5 重新设计 shrinkwrap，命名为锁包，跟 Yarn 的锁文件有什么区别呢？</p> <h4 id="tiobe-index-for-may-2017"><a href="https://www.tiobe.com/tiobe-index/">TIOBE Index for May 2017</a></h4> <p>值得关注的是 Go 的排名，从前一年的第 42 名上升到第 16 名！</p> <h2 id="技术纵横">技术纵横</h2> <h4...</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">冉余 , June 2, 2017 </div>
+      <div class="post-date">Steven Wang , November 20, 2017 </div>
       <div class="post-categories">
        category : 
         
@@ -221,17 +187,17 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/translator/2017/05/29/the-state-of-javascript.html">JavaScript 模块化现状</a>
+      <a class="post-link" href="/weekly/2017/11/13/weekly.html">ELSE 技术周刊(2017.11.13期)</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <p><blockquote> <p>原文作者：Johannes Ewald <a href="https://twitter.com/Jhnnns">@Jhnnns</a></p> <p>原文链接：<a href="https://medium.com/webpack/the-state-of-javascript-modules-4636d1774358">The state of JavaScript modules</a></p> <p>已获原作者授权翻译及发布</p> </blockquote> <p>ESM, CJS, UMD, AMD — 到底应该选择哪一个？</p> <p>最近 <a href="https://twitter.com/addyosmani/status/859296190323597313">在 twitter</a> 上有很多关于 <a href="http://2ality.com/2014/09/es6-modules-final.html">ES Module</a> 现状的讨论，<a href="https://twitter.com/bradleymeck/status/863061949021650944">尤其是在 Node.js 上</a>，他们计划引入新的文件扩展名 <code class="highlighter-rouge">*.mjs</code>。人们有足够理由对此感到 <a href="https://twitter.com/tankredhase/status/861864123922907136">担忧和不确定</a>，因为这个话题异常复杂，接下来会尽力阐述清楚问题。</p> <h2 id="来自远古的恐惧">来自远古的恐惧</h2> <p>大多数前端开发者应该还记得 <a href="https://medium.com/@trek/last-week-i-had-a-small-meltdown-on-twitter-about-npms-future-plans-around-front-end-packaging-b424dd8d367a">Javascript 依赖管理的黑暗时期</a>。那个时候，你需要把一个库复制粘贴到 vendor 文件夹，然后作为一个全局变量引入，要自己去按次序组合所有东西，可能还要管理命名空间。</p> <p>在过去的那些年，我们能深刻体会到公共模块格式化和中央模块管理的价值。</p> <p>在今天，不管是发布还是使用一个库都要容易得多，只需要使用 <code class="highlighter-rouge">npm publish</code> 和 <code class="highlighter-rouge">npm install</code>...</p>
+      <p><h2 id="团队分享">团队分享</h2> <h4 id="魔幻语言-javascript-系列之-callbind-以及上下文"><a href="https://zhuanlan.zhihu.com/p/30902765" target="_blank">魔幻语言 JavaScript 系列之 call、bind 以及上下文</a></h4> <p>从一行代码来看看 JavaScript 是一门多么魔幻的语言，顺便谈谈 JavaScript 中的 call、apply 和 bind 以及上下文。</p> <h2 id="前端开发">前端开发</h2> <h4 id="preact一个备胎的自我修养"><a href="https://zhuanlan.zhihu.com/p/30796007" target="_blank">Preact：一个备胎的自我修养</a></h4> <p>本文着重作者介绍了Preact的工作流程以及其中各个模块的一些工作细节，对于不熟悉 Preact 同学来说是个很好的入门篇， 对于Preact的工作流程和 主要功能模块都有自己的详细解说， 也可以和React 对比学习。</p> <h4 id="面向未来的前端数据流框架---dob"><a href="https://github.com/ascoders/blog/issues/22" target="_blank">面向未来的前端数据流框架 - dob</a></h4> <p>在前端数据流框架， dob 利用 proxy 实现的数据依赖追踪工具， 主要核心思想大量借鉴于 mobx, 但是从实现原理、使用便捷性，以及调试工具都做了大量优化， 可以利用 dob-react 与 react...</p>
     </section>
     <section class="post-meta">
-      <div class="post-date">mirreal , May 29, 2017 </div>
+      <div class="post-date">stoneYong , November 13, 2017 </div>
       <div class="post-categories">
        category : 
         
-        <a href="/category/translator">Translator</a>
+        <a href="/category/weekly">Weekly</a>
         
       
       </div>
@@ -243,17 +209,61 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/translator/2017/05/28/my-atom-editor-setup-for-js-react.html">JS/React 开发者的 Atom 终极配置</a>
+      <a class="post-link" href="/weekly/2017/11/07/weekly.html">ELSE 技术周刊(2017.11.07期)</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <p><blockquote> <p>原文作者：Elad Ossadon</p> <p>原文链接：<a href="https://medium.com/productivity-freak/my-atom-editor-setup-for-js-react-9726cd69ad20">The Ultimate Atom Editor Setup (+for JS/React)</a></p> </blockquote> <p>根据多年以来不断完善 Sublime Text 配置的经验，决定这次给 Atom 也来一个大改造。这个过程花费了好几个月的时间，但成果还是很卓有成效的，我现在非常满意这份配置。</p> <p>这份清单将分为实用工具和 React 专用，并涉及到快捷键绑定。</p> <h2 id="实用工具">实用工具</h2> <h3 id="atom-beautify"><a href="https://atom.io/packages/atom-beautify">atom-beautify</a></h3> <p>可以在 Atom 中 美化 HTML，CSS，JavaScript，PHP，Python，Ruby，Java，C，C ++，C＃，Objective-C，CoffeeScript，TypeScript，Coldfusion，SQL等。</p> <p>快捷键：<code class="highlighter-rouge">⌃+⌥+B</code></p> <h3 id="prettier-atom"><a href="https://atom.io/packages/prettier-atom">prettier-atom</a></h3> <p>使用 Prettier 来格式化 JavaScript 代码，配有强大的 ESlint 集成。</p> <p>快捷键：<code class="highlighter-rouge">⌃+⌥+F</code></p> <h3 id="atom-transpose"><a href="https://atom.io/packages/atom-transpose">atom-transpose</a></h3> <p>Atom...</p>
+      <p><h2 id="业界动态">业界动态</h2> <h4 id="news-nodejs-8-moves-into-long-term-support-and-nodejs-9-becomes-the-new-current-release-line"><a href="https://medium.com/the-node-js-collection/news-node-js-8-moves-into-long-term-support-and-node-js-9-becomes-the-new-current-release-line-74cf754a10a0" target="_blank">NEWS: Node.js 8 Moves into Long-Term Support and Node.js 9 Becomes the New Current Release Line</a></h4> <p>Node 8成为LTS版本，当前发布版本为Node 9。Node的版本发布越来越快了。</p> <h4 id="version-500-of-angular-now-available"><a href="https://blog.angular.io/version-5-0-0-of-angular-now-available-37e414935ced" target="_blank">Version 5.0.0 of Angular Now Available</a></h4> <p>Angular 5.0.0 已经发布。作为一个包含新功能和错误修复的主要版本，继续专注于使 Angular 更小更快，更易于使用。</p> <h2 id="前端开发">前端开发</h2> <h4 id="译js-中的内存管理及常见的-4-种内存泄露处理方式"><a href="http://elevenbeans.github.io/2017/10/13/js-memory-management/" target="_blank">【译】JS 中的内存管理及常见的 4 种内存泄露处理方式</a></h4> <p>从 0 开始梳理内存管理以及回收问题，浅显易懂</p>...</p>
     </section>
     <section class="post-meta">
-      <div class="post-date">mirreal , May 28, 2017 </div>
+      <div class="post-date">Curtis , November 7, 2017 </div>
       <div class="post-categories">
        category : 
         
-        <a href="/category/translator">Translator</a>
+        <a href="/category/weekly">Weekly</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/weekly/2017/10/30/weekly.html">ELSE 技术周刊(2017.10.30期)</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p><h2 id="本期推荐">本期推荐</h2> <h4 id="写在-2017-的前端数据层不完全指北"><a href="https://zhuanlan.zhihu.com/p/30050350" target="_blank">写在 2017 的前端数据层不完全指北</a></h4> <p>在前端技术的发展中，各个层面演进出不同的技术方案，如数据类型层面的 TypeScript，Flow，PropTypes，应用架构层面的 MVC，MVP，MVVM，还是应用状态层面的 Redux，MobX，RxJS，都各自有不同的观点，但这些方案所要解决的问题是共同的。本篇文章中以 MVVM 架构为例，逐层剖析前端数据层的共同痛点。</p> <h2 id="技术纵横">技术纵横</h2> <h4 id="node-调试指南--inspector-协议"><a href="https://zhuanlan.zhihu.com/p/30264842" target="_blank">Node 调试指南 —— Inspector 协议</a></h4> <p>v8 Inspector Protocol 是 node v6.3 新加入的调试协议，通过 websocket 与 Client/IDE 交互，同时基于 Chrome/Chromium 浏览器的 devtools 提供了图形化的调试界面。</p> <h4 id="爱奇艺视频组件化之路"><a href="https://mp.weixin.qq.com/s?__biz=MzI0MjczMjM2NA==&amp;mid=2247483846&amp;idx=1&amp;sn=be10e857dc4415d6adb4edbe5bf04152" target="_blank">爱奇艺视频组件化之路</a></h4> <p>爱奇艺在组件化上的尝试，用以解决业务间的耦合问题以及方便模块的相互调用。使得多业务线在复杂架构情况下能够独立开发测试，互不干扰，并统一调用接口。</p> <h4 id="你真的了解-for-循环吗一道-for-循环-java-面试题引发的思考"><a href="https://my.oschina.net/lt0314/blog/1554809" target="_blank">你真的了解 for 循环吗？一道...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">冉余 , October 30, 2017 </div>
+      <div class="post-categories">
+       category : 
+        
+        <a href="/category/weekly">Weekly</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/weekly/2017/10/23/weekly.html">ELSE 技术周刊(2017.10.23期)</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p><h2 id="业界动态">业界动态</h2> <h4 id="vue-25-released"><a href="https://medium.com/the-vue-point/vue-2-5-released-14bd65bf030b" target="_blank">Vue 2.5 released</a></h4> <p>Vue 2.5 正式发布，作者对于该版本的优化总结：更好的TypeScript 集成，更好的错误处理，更好的单文件功能组件支持以及更好的与环境无关的SSR</p> <h4 id="wifi爆惊天漏洞krack可攻陷所有wifi网络"><a href="http://www.infoq.com/cn/news/2017/10/wifi-krack?utm_source=infoq&amp;utm_medium=popular_widget&amp;utm_campaign=popular_content_list&amp;utm_content=homepage" target="_blank">WiFi爆惊天漏洞！KRACK可攻陷所有WiFi网络</a></h4> <p>我们发现 WPA2 当中存在一项严重安全漏洞。WPA2 为目前使用范围最广的 Wi-Fi 网络保护协议。身处攻击目标周边的恶意人士能够利用密钥重装攻击（Key Reinstallation Attacks，KRACK）利用此类安全漏洞。</p> <h2 id="前端开发">前端开发</h2> <h4 id="json-不要误会我真的不是javascript的子集"><a href="https://zhuanlan.zhihu.com/p/29958439" target="_blank">JSON: 不要误会,我真的不是JavaScript的子集</a></h4> <p>这些年我们都一直在说”JSON是JavaScript的一个子集”.然而事实却不是这样的。</p> <h4 id="鼠标无限移动-js-api-pointer-lock简介"><a href="http://www.zhangxinxu.com/wordpress/2017/10/js-api-pointer-lock/" target="_blank">鼠标无限移动 JS API Pointer Lock简介</a></h4> <p>让鼠标完全脱离了浏览器窗口的限制，可以完美享受沉浸式操作体验，一个API就能搞定。</p> <h4 id="web安全的三个攻防姿势"><a href="https://segmentfault.com/a/1190000011601837" target="_blank">Web安全的三个攻防姿势</a></h4> <p>关于Web安全的问题，是一个老生常谈的问题，作为离用户最近的一层，我们大前端确实需要把手伸的更远一点。</p> <h4 id="javascript专题之解读-v8-排序源码"><a href="https://segmentfault.com/a/1190000011623637#articleHeader16" target="_blank">JavaScript专题之解读...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">sturloly , October 23, 2017 </div>
+      <div class="post-categories">
+       category : 
+        
+        <a href="/category/weekly">Weekly</a>
         
       
       </div>
@@ -275,7 +285,7 @@
 			</a>
 			
 		
-		<span class="page-number">6 / 7</span>
+		<span class="page-number">6 / 12</span>
 		
 		<a class="newer-posts" href="/page7">
       <span class="fa-stack fa-lg">
@@ -327,6 +337,16 @@
         
         
           <li class="nav-link"><a href="/category/team/">team</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

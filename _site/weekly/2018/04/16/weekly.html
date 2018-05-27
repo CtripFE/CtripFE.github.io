@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <!-- <base target="_blank"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ELSE 技术周刊(2018.04.16期)</title>
+  <meta name="description" content="团队分享">
+  
+  <meta name="author" content="ELSE">
+  <meta name="copyright" content="&copy; ELSE 2018">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="团队分享" />
+  <meta property="og:url" content="http://localhost:4000" />
+  <meta property="og:site_name" content="ELSE" />
+  <meta property="og:title" content="ELSE 技术周刊(2018.04.16期)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ELSE 技术周刊(2018.04.16期)">
+  <meta name="twitter:description" content="团队分享">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
+  <meta name="twitter:url" content="http://localhost:4000">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/weekly/2018/04/16/weekly.html">
+  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://localhost:4000/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <img src="/assets/logo.png" alt="ELSE">
+      <span class='main-title'>ELSE</span>
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        
+          
+          <li class="nav-link"><a href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li class="nav-link"><a href="/posts/">Posts</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/weekly/">weekly</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/translator/">translator</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/team/">team</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+<div class="post-header-container origin-setting">
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">ELSE 技术周刊(2018.04.16期)</h1>
+      <p class="info">by <strong>Steven Wang</strong></p>
+    </header>
+  </div>
+</div>
+
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">April 16, 2018</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/category/weekly">Weekly</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <h2 id="团队分享">团队分享</h2>
+
+<h4 id="魔幻语言-javascript-系列之类型转换宽松相等以及原始值"><a href="https://zhuanlan.zhihu.com/p/35566906">魔幻语言 JavaScript 系列之类型转换、宽松相等以及原始值</a></h4>
+
+<p>从两个题目来介绍类型转换、宽松相等以及原始值的概念: [1] + [2] – [3] === 9，以及如何让 a == true &amp;&amp; a == false 的值为 true，很是体现 JavaScript 的魔幻之处。</p>
+
+<h2 id="前端开发">前端开发</h2>
+
+<h4 id="如何评价阿里开源的企业级-nodejs-框架-eggjs"><a href="https://www.zhihu.com/question/50526101">如何评价阿里开源的企业级 Node.js 框架 EggJS？</a></h4>
+
+<p>“egg最核心的东西，其实就是一套约定和规范，这个规范不仅仅是开发目录的约定，还包括了开发过程中，从提案讨论，编码风格，code review等等方面的规范。</p>
+
+<p>其实大家的基础框架用不用egg真的无所谓，最重要是有一套适合团队的约定。”</p>
+
+<h4 id="从命令式-javascript-class-到声明函数式的华丽转身"><a href="https://zhuanlan.zhihu.com/p/35503164">从命令式 JavaScript class 到声明函数式的华丽转身</a></h4>
+
+<p>通过 8 个步骤，将 EventEmitter 的实现从面相对象的 class 风格转变为声明式函数式风格。</p>
+
+<h4 id="从零开始写一个-promise-库"><a href="https://zhuanlan.zhihu.com/p/35697919">从零开始写一个 Promise 库</a></h4>
+
+<p>文章介绍了从零开始实现一个简单的 promise 库，以及如何跟 async/await 结合使用。</p>
+
+<h4 id="how-to-escape-asyncawait-hell"><a href="https://medium.freecodecamp.org/avoiding-the-async-await-hell-c77a0fb71c4c">How to escape async/await hell</a></h4>
+
+<p>async/await freed us from callback hell, but people have started abusing it — leading to the birth of async/await hell.</p>
+
+<p>In this article, I will try to explain what async/await hell is, and I’ll also share some tips to escape it.</p>
+
+<h4 id="闭包是真的美"><a href="https://github.com/prettyEcho/deep-js/issues/4">闭包，是真的美</a></h4>
+<p>闭包， 对于前端开发人员来说一定很熟悉， 但能完全它讲清楚，还是有不少人难以解释全的，可以像本文作者一样尝试着总结一下加深理解。</p>
+
+<h4 id="javascript-装饰器极速指南"><a href="http://www.cnblogs.com/xuanhun/p/8735524.html">Javascript 装饰器极速指南</a></h4>
+<p>文会对Decorators做详细的讲解，相信你会体验到它给编程带来便利和优雅。</p>
+
+<h4 id="lazy-loading-images-and-video"><a href="https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/?utm_source=CSS-Weekly&amp;utm_campaign=Issue-310&amp;utm_medium=web">Lazy Loading Images and Video</a></h4>
+
+<p>多媒体资源的Lazy Loading是对页面的降低初始页面负载和加载时间的解决方案，对于图片的解决方案能经常看到，而对视频，还需要注意几个属性的设置。</p>
+
+<h4 id="mvvm-前端数据流框架精讲"><a href="https://mp.weixin.qq.com/s?__biz=MjM5MDI3MjA5MQ==&amp;mid=2697266952&amp;idx=2&amp;sn=a3389d1db237c2b23f523061da3b2359">MVVM 前端数据流框架精讲</a></h4>
+
+<p>MVVM 是指双向数据流，即 View-Model 之间的双向通信，由 ViewModel 作桥接。本文将带大家了解什么是 mvvm，mvvm 的原理，以及近几年产生了哪些演变。</p>
+
+<h4 id="深入研究css字体度量及css-盒子"><a href="https://hiyangguo.github.io/2018/04/09/in-depth-study-font-size-line-height-and-vertical-align/">深入研究CSS字体度量及CSS 盒子</a></h4>
+<p>这篇文章主要研究：</p>
+<ul>
+  <li>font 的工作原理及度量参数</li>
+  <li>CSS box models 的类型、定义</li>
+</ul>
+
+<h2 id="实用推荐">实用推荐</h2>
+
+<h4 id="能让你开发效率翻倍的-vscode-插件配置"><a href="https://zhuanlan.zhihu.com/p/35661521">能让你开发效率翻倍的 VSCode 插件配置</a></h4>
+<p>这篇文章是《能让你开发效率翻倍的 VSCode 插件配置（上）》的续篇，包括 VSCode 外观增强、功能增强、编码效率等方面的 10 个插件，其中有部分插件也是我发布上篇文章之后在评论里学到的（这可能是写技术文章的最大好处了，哈哈），试用之后觉得不错，现在也列出来（同时也感谢愿意评论交流的同学），希望对读到这篇文章的同学有所帮助。</p>
+
+<h2 id="技术纵横">技术纵横</h2>
+
+<h4 id="为什么-kubernetes-天然适合微服务"><a href="https://zhuanlan.zhihu.com/p/35642088">为什么 kubernetes 天然适合微服务</a></h4>
+
+<p>本文从应用架构、数据架构、IT架构来阐述K8S作为微服务的种种优势。</p>
+
+<h2 id="程序人生">程序人生</h2>
+
+<h4 id="why-you-should-start-a-side-project"><a href="https://medium.com/ideas-at-igenius/why-you-should-start-a-side-project-and-how-8e63a33187e5">Why you should start a side project </a></h4>
+
+<p>为什么应该自己去玩一些边缘项目，并从中获益，理由有很多，比如可以尝试新技术，成为社区的一部分，与社区互动，以及从零开始打造一个项目。</p>
+
+<h4 id="how-to-think-like-a-programmerlessons-in-problem-solving"><a href="https://medium.freecodecamp.org/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2">How to think like a programmer — lessons in problem solving</a></h4>
+<p>Problem-solving is an incredible skill to cultivate (the meta-skill). Thinking like a programmer is an effective way to train your ability to solve problems.</p>
+
+<h4 id="工程师如何在工作中提升自己"><a href="https://zhuanlan.zhihu.com/p/35608666">工程师如何在工作中提升自己</a></h4>
+<p>像标题一样，本文主要是笔者作为工程师的一些经验，去思考和汇总学习方法论，绘制出优秀架架构师能力模型 的观点， 如何在工作中提升自己， 做到“一边工作， 一边学习”的分享。</p>
+
+<blockquote>
+  <p>ELSE 技术周刊由 <a href="https://github.com/CtripFE">IFT 小组</a> 出品，汇聚一周好文章， <a href="">周刊原文</a>。本期编辑：</p>
+
+  <p><a href="https://github.com/CurtisCBS">@Curtis</a> 前端中年人</p>
+
+  <p><a href="https://github.com/stoneyong">@StoneZou</a> 前端搬砖工，不安分于前端开发的搬砖工</p>
+
+  <p><a href="https://github.com/StevenX911">@Steven</a> 前端老兵</p>
+
+  <p><a href="https://github.com/mirreal">@mirreal</a> 想当设计师的程序员不是一个好攻城狮</p>
+
+  <p><a href="https://github.com/Jade05">@Jade</a> 以前想多点后端sense写前端，现在想多点产品sense写前端</p>
+
+  <p><a href="https://github.com/CtripFE/fe-weekly/issues">点击这里</a> 向我们推荐你读到的好文章。</p>
+</blockquote>
+
+</article>
+
+
+
+
+
+<section class="rss">
+  <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+</section>
+
+<section class="share">
+  <span>Share: </span>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+      <a href="//www.facebook.com/sharer.php?t=ELSE+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%282018.04.16%E6%9C%9F%29&u=http%3A%2F%2Flocalhost%3A4000%2Fweekly%2F2018%2F04%2F16%2Fweekly.html"
+        onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fweekly%2F2018%2F04%2F16%2Fweekly.html"
+        onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
+        <i class="fa fa-linkedin-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <a href="//plus.google.com/share?title=ELSE+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%282018.04.16%E6%9C%9F%29&url=http%3A%2F%2Flocalhost%3A4000%2Fweekly%2F2018%2F04%2F16%2Fweekly.html"
+        onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
+        <i class="fa fa-google-plus-square fa-lg"></i>
+      </a>
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+      <a href="//www.pinterest.com/pin/create/button/?description=ELSE+%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%282018.04.16%E6%9C%9F%29&url=http%3A%2F%2Flocalhost%3A4000%2Fweekly%2F2018%2F04%2F16%2Fweekly.html&media=http://localhost:4000/assets/header_image.jpg"
+        onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
+        <i class="fa fa-pinterest-square fa-lg"></i>
+      </a>
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://localhost:4000/weekly/2018/04/16/weekly.html') + '&title=ELSE 技术周刊(2018.04.16期)'; return false">
+        <i class="fa fa-reddit-square fa-lg"></i>
+      </a>
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</section>
+
+
+<div id="gitment-container"></div>
+<link rel="stylesheet" href="/js/gitment/style/default.css">
+<script src="/js/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    id: location.pathname,
+    owner: 'StevenX911',
+    repo: 'else-site-comments',
+    oauth: {
+      client_id: 'ca6900778cfe3509f1b6',
+      client_secret: '0b9939124803bad0b3a35d6899ffba57ddbe255e',
+    },
+  })
+  gitment.render('gitment-container')
+</script>
+
+</div>
+</div>
+
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">ELSE</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/about/">About</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/posts/">Posts</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/weekly/">weekly</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/translator/">translator</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/team/">team</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:wgyngbh@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">wgyngbh@gmail.com</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://zhuanlan.zhihu.com/itech" title="Follow me on Zhihu">
+              <i class="fa fa-coffee"></i>
+              <span class="username">ELSE知乎专栏</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+          <li>
+            <a href="https://github.com/CtripFE" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">CtripFE</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-50689045-3', 'auto');
+  ga('send', 'pageview', {
+    'page': '/weekly/2018/04/16/weekly.html',
+    'title': 'ELSE 技术周刊(2018.04.16期)'
+  });
+</script>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8eb075a2200713af43ef2376e0235f86";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+  </body>
+
+</html>

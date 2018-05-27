@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <!-- <base target="_blank"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ELSE</title>
+  <meta name="description" content="坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
+">
+  
+  <meta name="author" content="ELSE">
+  <meta name="copyright" content="&copy; ELSE 2018">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <!-- Facebook OGP cards -->
+  <meta property="og:description" content="坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
+" />
+  <meta property="og:url" content="http://localhost:4000" />
+  <meta property="og:site_name" content="ELSE" />
+  <meta property="og:title" content="ELSE" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="605" />
+  
+
+  
+  <!-- Twitter: card tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ELSE">
+  <meta name="twitter:description" content="坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
+">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
+  <meta name="twitter:url" content="http://localhost:4000">
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/page8/">
+  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://localhost:4000/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      
+      <img src="/assets/logo.png" alt="ELSE">
+      <span class='main-title'>ELSE</span>
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        
+          
+          <li class="nav-link"><a href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li class="nav-link"><a href="/posts/">Posts</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/weekly/">weekly</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/translator/">translator</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/team/">team</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="home">
+
+<!-- <div class="site-header-container has-cover" style="background-image: url(/assets/header_image.jpg);">
+  <div class="scrim has-cover">
+    <header class="site-header">
+      <h1 class="title">ELSE</h1>
+      <p class="subtitle">Welcome to ELSE</p>
+    </header>
+  </div>
+</div> -->
+
+<div class="wrapper">
+<ul class="post-list">
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/weekly/2017/09/04/weekly.html">ELSE 技术周刊(2017.09.04期)</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p><h2 id="业界动态">业界动态</h2> <h4 id="react-就开源许可证风波进行回复"><a href="https://code.facebook.com/posts/112130496157735/explaining-react-s-license/">React 就开源许可证风波进行回复</a></h4> <p>数周前，Apache 基金会决定禁止旗下项目使用 React，因为其在标准的 BSD 许可证之外添加了专利声明；此举引发了社区的广泛讨论，希望 React 能够更新其开源许可证。经过数周的讨论，近日 Facebook 正式做出了回复，不过令人遗憾的是最终还是拒绝更新许可证，以避免未来可能遇到的专利冲突；Facebook 在开源许可证中声明，使用 React 进行开发的商业项目，不可以专利反诉 Facebook</p> <h2 id="前端开发">前端开发</h2> <h4 id="how-can-i-use-css-in-js-securely"><a href="https://reactarmory.com/answers/how-can-i-use-css-in-js-securely?utm_campaign=React%2BNewsletter&amp;utm_medium=web&amp;utm_source=React_Newsletter_83">How can I use CSS-in-JS securely?</a></h4> <p>css in js是通过JavaScript来插入css样式，能够使样式紧跟组件本身，组件之间样式不会相互影响。但也带来了一些安全上的问题，如css注入攻击，如果你的网站允许用户自定义css，那么这篇描述的一些会发生安全问题使用场景可以给你提供一些参考。</p> <h4 id="react-native按需加载-手q狼人杀探索之路"><a href="https://mp.weixin.qq.com/s/mUzq4NaBHeF3T-NStLzuRw?utm_source=tuicool&amp;utm_medium=referral">React Native按需加载 手Q狼人杀探索之路</a></h4> <p>文章中分享了手Q狼人杀RN项目的优化之路， 从分析可优化点，到采取的优化方案都很详细，主要讲述了怎么让RN实现按需加载和打包工具的改造。</p> <h4 id="奇技淫巧学-v8-之五对象属性的快速删除"><a href="https://zhuanlan.zhihu.com/p/28872382">奇技淫巧学 V8 之五，对象属性的快速删除</a></h4> <p>先划重点：沿着属性添加的反方向删除属性时，对象不会退化为字典模式。记住这点无疑对开发Node服务端程序大有帮助</p> <h4 id="不可变和es6中的const"><a href="https://mathiasbynens.be/notes/es6-const">不可变和ES6中的const</a></h4> <p>面试时，我也常常会问面试者如何理解const，但通常不会获得很满意的答案，而通过阅读这篇文章，我相信你会对const关键字有更深的理解</p> <h4...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">风清洋 , September 4, 2017 </div>
+      <div class="post-categories">
+       category : 
+        
+        <a href="/category/weekly">Weekly</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/weekly/2017/08/28/weekly.html">ELSE 技术周刊(2017.08.28期)</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p><h2 id="业界动态">业界动态</h2> <h4 id="javascript-二进制的-ast"><a href="https://github.com/xitu/gold-miner/blob/master/TODO/binary-ast-newsletter-1.md">JavaScript 二进制的 AST</a></h4> <p>本篇博客中，介绍了由Mozilla 和 Facebook 的一个联合小组决定开始研究一种新的机制，通过二进制 AST 执行 JavaScript 来提供应用程序的运行速度， 是一种专门为JavaScript而设计的，并为了解析速度而优化过的源代码。文中将其与现在用到的 压缩格式、压缩工具以及WebAssembl 技术进行了对比，可以很好的了解其区别。</p> <h4 id="腾讯祭出大招vassonic让你的h5页面首屏秒开"><a href="https://segmentfault.com/a/1190000010711024?utm_source=tuicool&amp;utm_medium=referral">腾讯祭出大招VasSonic，让你的H5页面首屏秒开</a></h4> <p>为了提高用户体验，提升 H5页面首屏加载速度是必不可少的优化， 对此以前也推荐过很多方案， 本篇推荐的是鹅厂 为此做出的一套H5 秒开的架构， 由自己的业务场景演变而来， 集成了封装了一套自己的体系， 主要是为了提升WebView加载速度， 现已开源，值得关注。</p> <h2 id="前端开发">前端开发</h2> <h4 id="how-do-you-separate-components"><a href="https://reactarmory.com/answers/how-should-i-separate-components">How do you separate components?</a></h4> <p>一个React组件，state能被影响的操作越多，组件的代码量就会越大。对于组件代码量的控制能提高代码的阅读性，文章介绍了View components，Control components，Controllers，Container components这四种组件如何从一个代码量大的组件中分离以及业务中常见的运用场景都进行了详细的阐述。</p> <h4 id="the-nine-principles-of-design-implementation"><a href="https://www.smashingmagazine.com/2017/08/nine-principles-design-implementation/">The Nine Principles Of...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">风清洋 , August 28, 2017 </div>
+      <div class="post-categories">
+       category : 
+        
+        <a href="/category/weekly">Weekly</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/weekly/2017/08/21/weekly.html">ELSE 技术周刊(2017.08.21期)</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p><h2 id="业界动态">业界动态</h2> <h4 id="top-level-await-now-supported-in-chrome-devtools-console"><a href="https://twitter.com/umaar/status/897408737694109697">Top-Level ‘await’ Now Supported in Chrome DevTools’ Console</a></h4> <p>Chrome Canary版本控制台开始支持await</p> <h4 id="rethinking-drag-and-drop"><a href="https://medium.com/@alexandereardon/rethinking-drag-and-drop-d9f5770b4e6b">Rethinking drag and drop</a></h4> <p>Atlassian 公司最近发布一个 <a href="https://github.com/atlassian/react-beautiful-dnd">react-beautiful-dnd</a> 的拖放库，适用于 React。</p> <h2 id="技术纵横">技术纵横</h2> <h4 id="emotional-artifical-intelligence"><a href="https://deepmoji.mit.edu/">Emotional Artifical Intelligence</a></h4> <p>利用深度学习模型来理解语句中的情绪，该项目从 tweets 中训练出期望的模型，利用 emoji 来表达话中的情感，来玩玩看。<a href="https://www.technologyreview.com/s/608387/an-algorithm-trained-on-emoji-knows-when-youre-being-sarcastic-on-twitter/">相关介绍</a></p> <h4><a href="https://mp.weixin.qq.com/s?__biz=MjM5NTY0MTY1OQ==&amp;mid=2654510836&amp;idx=1&amp;sn=4cb53acf0c7f1a8cfeccd639173b2259&amp;chksm=bd395ea08a4ed7b6635c7ae7f304340c2bb8fb26b07ef2ba861df6bc438dffe05bee1c433386&amp;mpshare=1&amp;scene=1&amp;srcid=0821ULT13ktL7hMR3NQF7447&amp;key=be4ae3a2d743c4d2a626a89e6dc1d4cc1798bf2a08bce1d47ecc3ada0d2daf86d4849f17f3cd19db8fa90cf1ce1ee883cda16ab830646e84d300c64dacab563e534b6bc08fe0a593ac729dca4d9e0f63&amp;ascene=0&amp;uin=MzAwODQwMzU1&amp;devicetype=iMac+MacBookPro14%2C2+OSX+OSX+10.12.5+build(16F2073)&amp;version=12020810&amp;nettype=WIFI&amp;fontScale=100&amp;pass_ticket=amDv0yi%2FY2MAFdNy3ciR%2Bs3NyX0ZUROYvtCDZNSWunV1i23YRr%2Bwbq3ems85ORBV"></a></h4> <p>linux grep的对大数据的匹配查询实践</p> <h2 id="前端开发">前端开发</h2> <h4 id="监控平台前端sdk开发实践"><a href="https://juejin.im/post/598850c9f265da3e3b66c49e">监控平台前端SDK开发实践</a></h4> <p>一个有效的监控系统能及时上报错误，收集有效信息，并为故障跟踪排查提供依据，这里是美团团队前端 SDK...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">风清洋 , August 21, 2017 </div>
+      <div class="post-categories">
+       category : 
+        
+        <a href="/category/weekly">Weekly</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/weekly/2017/08/14/weekly.html">ELSE 技术周刊(2017.08.14期)</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p><h2 id="团队分享">团队分享</h2> <h4 id="译javascript-中的匿名递归"><a href="https://zhuanlan.zhihu.com/p/28421224">[译]JavaScript 中的匿名递归</a></h4> <p>闭包、自执行函数、函数式编程模式不是什么黑魔法，它们遵循一套易于理解的简单原则。理解这些基本技术对于创建清晰优雅的解决方案以及提升自我是至关重要的，也可能会成为重构中一些好点子。</p> <h2 id="业界动态">业界动态</h2> <h4 id="atom-119---improved-responsiveness-and-memory-usage"><a href="http://blog.atom.io/2017/08/08/atom-1-19.html">Atom 1.19 - Improved Responsiveness and Memory Usage</a></h4> <p>Atom 主要架构升级，同时 Electron 也作了升级。新版本引进原生 <a href="https://github.com/atom/superstring">C++ 文本缓存实现</a> 提升反应速度和内存使用，并重写编辑器渲染层，许多因为性能问题放弃 Atom 的朋友可以试试这个版本。</p> <h2 id="技术纵横">技术纵横</h2> <h4 id="编写高质量代码的思考"><a href="http://blog.xiaohansong.com/2017/08/09/high-quality-code/">编写高质量代码的思考</a></h4> <p>怎么写高质量的代码是一个很大的话题，这里只是抛砖引玉，其实面向对象设计的很多原则都能够给我们写代码的时候提供指导，写代码的时候要时刻记得学以致用，而不是敷衍了事，专业的软件工程师必然要能写得一手好代码。</p> <h2 id="前端开发">前端开发</h2> <h4 id="测试-javascript-函数的性能"><a href="http://web.jobbole.com/91969/">测试 JavaScript 函数的性能</a></h4> <p>在软件中，性能一直扮演着重要的角色。在Web应用中，性能变得更加重要，因为如果页面速度很慢的话，用户就会很容易转去访问我们的竞争对手的网站。作为专业的web开发人员，我们必须要考虑这个问题。有很多“古老”的关于性能优化的最佳实践在今天依然可行，例如最小化请求数目，使用CDN以及不编写阻塞页面渲染的代码。然而，随着越来越多的web应用都在使用JavaScript，确保我们的代码运行的很快就变得很重要。</p> <h4 id="一行-javascript-代码的逆向工程"><a href="http://mp.weixin.qq.com/s/O7bl44UHDm6tpjxxVpJ65w">一行 JavaScript 代码的逆向工程</a></h4> <p>这是由一行代码引发的故事， 逆向工程出来的东西，着实让人眼前一亮，...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">风清洋 , August 14, 2017 </div>
+      <div class="post-categories">
+       category : 
+        
+        <a href="/category/weekly">Weekly</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/weekly/2017/08/07/weekly.html">ELSE 技术周刊(2017.08.07期)</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p><h2 id="前端开发">前端开发</h2> <h4 id="用nextjs快速上手react服务器渲染"><a href="http://mp.weixin.qq.com/s/JL_33s6Si05V1Whe8mYCdw?utm_source=tuicool&amp;utm_medium=referral">用Next.js快速上手React服务器渲染</a></h4> <p>Next.js 是一个用于在服务端渲染 React 应用程序的简单框架， 让服务器渲染的前端项目更简单。文章从零搭建项目，很详细的讲解了 Next.js用法和特性。</p> <h4 id="let-const-and-var-in-javascript"><a href="https://arjunjs.wordpress.com/2017/08/06/let-const-and-var-in-javascript/">let, const and var in javascript</a></h4> <p>ECMAScript 6 introduced let and const to the javascript engine. So, lets see what is the real difference between let ,const and var.</p> <h4 id="http10http11-和-http20-的区别"><a href="https://mp.weixin.qq.com/s/GICbiyJpINrHZ41u_4zT-A">HTTP1.0、HTTP1.1 和 HTTP2.0 的区别</a></h4> <p>作为前端工程师，了解HTTP以及各版本之间的差异，无疑对前端开发是事半功倍的</p> <h4...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">风清洋 , August 7, 2017 </div>
+      <div class="post-categories">
+       category : 
+        
+        <a href="/category/weekly">Weekly</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  
+</ul>
+
+<nav class="pagination" role="navigation">
+	<p>
+    
+			
+			<a class="newer-posts" href="/page7">
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-square fa-stack-2x"></i>
+					<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+			
+		
+		<span class="page-number">8 / 12</span>
+		
+		<a class="newer-posts" href="/page9">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+		
+	</p>
+</nav>
+
+</div>
+</div>
+
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">ELSE</h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        
+        
+          <li class="nav-link"><a href="/about/">About</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/posts/">Posts</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/weekly/">weekly</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/translator/">translator</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/team/">team</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:wgyngbh@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">wgyngbh@gmail.com</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://zhuanlan.zhihu.com/itech" title="Follow me on Zhihu">
+              <i class="fa fa-coffee"></i>
+              <span class="username">ELSE知乎专栏</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+          <li>
+            <a href="https://github.com/CtripFE" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">CtripFE</span>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="/feed.xml">via RSS</a></strong></p>
+      <p class="text">坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-50689045-3', 'auto');
+  ga('send', 'pageview', {
+    'page': '/page8/',
+    'title': 'ELSE'
+  });
+</script>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8eb075a2200713af43ef2376e0235f86";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+  </body>
+
+</html>

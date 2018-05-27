@@ -10,7 +10,7 @@ exclude:
 
 # Site settings
 title: ELSE
-subtitle: "Welcome to ELSE team blog"
+subtitle: "Welcome to ELSE"
 email: wgyngbh@gmail.com
 name: ELSE
 description: >
@@ -85,11 +85,6 @@ crews:
     profile: "/assets/team/cy.jpeg"
     url: 'https://github.com/stoneyong'
     intro: '前端搬砖工, 不安分于前端开发的搬砖工'
-
-  - name: 'sturloly'
-    profile: "/assets/team/jw.png"
-    url: 'https://github.com/sturloly'
-    intro: 'building apps for my future starship'
 
   - name: 'Curtis'
     profile: "/assets/team/bs.png"
