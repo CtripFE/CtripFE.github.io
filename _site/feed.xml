@@ -6,9 +6,96 @@
 </description>
     <link>http://else.vip//</link>
     <atom:link href="http://else.vip//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 May 2018 22:48:02 +0800</pubDate>
-    <lastBuildDate>Sun, 27 May 2018 22:48:02 +0800</lastBuildDate>
+    <pubDate>Mon, 28 May 2018 22:42:19 +0800</pubDate>
+    <lastBuildDate>Mon, 28 May 2018 22:42:19 +0800</lastBuildDate>
     <generator>Jekyll v3.8.2</generator>
+    
+      <item>
+        <title>ELSE 技术周刊(2018.05.28期)</title>
+        <description>&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;google力推的那些前端技术最近都有哪些进展&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/-hYSPI67M_R7Gcff37oiyA&quot;&gt;Google力推的那些前端技术，最近都有哪些进展？&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Google I/O 2018 已于上周落下帷幕，普通民众看的是新产品，开发者们关注的是新技术。透过这次大会，我们不难发现，Google 已经从 mobile first 转向 AI first，AI 之后，就是移动和前端技术了，移动无非是 Android P 和 Flutter 等，前端涵盖的技术从 Web 框架到 Web 工具，包括 Angular、PWA、polymer、AMP 等，下面让我来为大家捋一捋 Google 力推的这些前端技术最近都有哪些进展。&lt;/p&gt;
+
+&lt;h4 id=&quot;web-push-notifications-demo&quot;&gt;&lt;a href=&quot;https://webpushdemo.azurewebsites.net/&quot;&gt;Web Push Notifications demo&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Microsoft Edge 已经支持通过 Push API 进行网络推送通知，Edge 团队对相关概念作了详尽的介绍，并一步步完成一个示例。&lt;/p&gt;
+
+&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
+
+&lt;h4 id=&quot;从chrome源码看websocket&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/37350346&quot;&gt;从Chrome源码看WebSocket&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本篇主要讨论了WebSocket存在的意义，给浏览器开放一个socket的API，并进行标准化，除了浏览器，APP等也都可以按照这个标准实现，弥补了HTTP单向传输的缺点。还讨论了WebSocket报文帧的格式，以及怎么用Node.js读取这个报文帧，客户端会把它发送的内容进行掩码处理，服务端收到的也需要进行掩码还原。&lt;/p&gt;
+
+&lt;h4 id=&quot;页面可视化搭建工具前生今世&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/pcUbnYyVHSebOelDlHA27g&quot;&gt;页面可视化搭建工具前生今世&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;页面可视化工具让开发人员从无穷无尽的活动页中解放出来。&lt;/p&gt;
+
+&lt;h4 id=&quot;react-16-加载性能优化指南&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/KxJttCVuCoIrm9RAjRBrdg&quot;&gt;React 16 加载性能优化指南&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;随着 React 16 和 Webpack 4.0 的发布，很多过去的优化手段其实都或多或少有些“过时”了,这篇文章对新的优化方案做了总结。&lt;/p&gt;
+
+&lt;h4 id=&quot;react-fiber架构&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/37095662&quot;&gt;React Fiber架构&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;React16启用了全新的架构，叫做Fiber，其最大的使命是解决大型React项目的性能问题，再顺手解决之前的一些痛点。&lt;/p&gt;
+
+&lt;h4 id=&quot;nodejs-流stream你需要知道的一切&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/36728655&quot;&gt;Node.js 流（stream）：你需要知道的一切&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;文章简述了 Node.js 中 Stream 模块， 介绍了其四种基本的流类型和一些处理流的API， 简单地实现了流的操作。&lt;/p&gt;
+
+&lt;h4 id=&quot;css3d的魅力&quot;&gt;&lt;a href=&quot;http://www.cnblogs.com/1wen/p/9064011.html&quot;&gt;css3D的魅力&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;一起体验下 CSS 3D的魅力吧，主要是 css属性中 transform-style，transform-origin，transform, perspective的运用。&lt;/p&gt;
+
+&lt;h4 id=&quot;看图学-https&quot;&gt;&lt;a href=&quot;http://blog.liuxuan.site/2018/05/21/learn_https_through_photos/&quot;&gt;看图学 HTTPS&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;通过图形生动介绍 HTTPS 的基本工作原理。&lt;/p&gt;
+
+&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;md4md5sha1hmachmac_sha1区别&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/30jzMVnSya-S9ZJa5juceQ&quot;&gt;MD4、MD5、SHA1、HMAC、HMAC_SHA1区别&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;总结了几种常见的加密算法，了解下它们都有哪些不同。&lt;/p&gt;
+
+&lt;h4 id=&quot;如何用-c-语言画小猪佩奇&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/37031514&quot;&gt;如何用 C 语言画小猪佩奇&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;使用 C 语言利用 ASCII 字符完成精致的猪猪女孩。&lt;/p&gt;
+
+&lt;h4 id=&quot;indexeddb-打造靠谱-web-离线数据库&quot;&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000014950564&quot;&gt;IndexedDB 打造靠谱 Web 离线数据库&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;IndexedDB 目前在前端慢慢得到普及和应用。它正朝着前端离线数据库技术的步伐前进。以前一开始是 manifest、localStorage、cookie 再到 webSQL，现在 IndexedDB 逐渐被各大浏览器认可。我们也可以针对它来进行技术上创新的开发。比如，现在小视频非常流行，那么我们可以在用户观看时，通过 cacheStorage 缓存，然后利用 WebRTC 技术实现 P2P 分发的控制。&lt;/p&gt;
+
+&lt;h4 id=&quot;使用nginx缓存服务器上的静态文件&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5af38e0c518825670c45ef6e&quot;&gt;使用nginx缓存服务器上的静态文件&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本文详细介绍使用nignx作为静态文件缓存服务器的配置，非常实用。&lt;/p&gt;
+
+&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;一个程序员的成长之路---剖析别人总结自己&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s?__biz=MjM5NTY0MTY1OQ==&amp;amp;mid=2654510955&amp;amp;idx=1&amp;amp;sn=7ce6bacde78e787f01ee0143c2002999&quot;&gt;一个程序员的成长之路 - 剖析别人，总结自己&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;张云龙在中国前端开发者千人峰会上的主题分享，分享了他的个人成长之路，以及程序员的中年危机，相信能给大家在前端职业规划上一些参考和启发。&lt;/p&gt;
+
+&lt;h4 id=&quot;breaking-a-myth-data-shows-you-dont-actually-need-a-co-founder&quot;&gt;&lt;a href=&quot;https://techcrunch.com/2016/08/26/co-founders-optional/&quot;&gt;Breaking a myth: Data shows you don’t actually need a co-founder&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;一个人也可以创业，无数文章告诉你，创业需要一个团队，你需要找联合创始人。但是，不一定非如此不可，数据表明没有联合创始人也是可以的。&lt;/p&gt;
+
+&lt;p&gt;我查了 CrunchBase API 里面的 7,348家公司，每家公司募集了超过1000万美元。几乎一半的公司只有一个创始人，不到三分之一的公司有两位创始人，只有22％的公司有三位或更多的创始人。创始人的平均数量是 1.85。&lt;/p&gt;
+
+&lt;p&gt;我又查了成功退出的公司的数据，这次包括筹集不到1000万美元的公司。这组数据包括6,191家公司，但独立创始人的优势更明显。超过一半的公司是由独立创始人创立的。只有三分之一有两位创始人，约18％有三位或更多的创始人。创始人的平均数量是1.72。&lt;/p&gt;
+
+&lt;h4 id=&quot;在ibm学到的东西到底对我的程序生涯产生了多大的影响&quot;&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000015035771&quot;&gt;在IBM学到的东西，到底对我的程序生涯产生了多大的影响&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;通读本文，你会明白程序员和工程师之间的微妙差异。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot;&gt;IFT 小组&lt;/a&gt; 出品，汇聚一周好文章， &lt;a href=&quot;&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@Curtis&lt;/a&gt; 前端中年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工，不安分于前端开发的搬砖工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot;&gt;@Steven&lt;/a&gt; 写 JS 的老年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 想当设计师的程序员不是一个好攻城狮&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/Jade05&quot;&gt;@Jade&lt;/a&gt; 以前想多点后端sense写前端，现在想多点产品sense写前端&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 21 May 2018 18:00:00 +0800</pubDate>
+        <link>http://else.vip//weekly/2018/05/21/weekly.html</link>
+        <guid isPermaLink="true">http://else.vip//weekly/2018/05/21/weekly.html</guid>
+        
+        
+        <category>weekly</category>
+        
+      </item>
     
       <item>
         <title>ELSE 技术周刊(2018.05.21期)</title>
@@ -795,106 +882,6 @@
         <pubDate>Mon, 26 Mar 2018 18:00:00 +0800</pubDate>
         <link>http://else.vip//weekly/2018/03/26/weekly.html</link>
         <guid isPermaLink="true">http://else.vip//weekly/2018/03/26/weekly.html</guid>
-        
-        
-        <category>weekly</category>
-        
-      </item>
-    
-      <item>
-        <title>ELSE 技术周刊(2018.03.19期)</title>
-        <description>&lt;h2 id=&quot;本期推荐&quot;&gt;本期推荐&lt;/h2&gt;
-
-&lt;h4 id=&quot;译10-个技巧让你更专业地使用-console-进行-js-调试&quot;&gt;&lt;a href=&quot;http://elevenbeans.github.io/2018/03/10/10-Tips-for-JS-Debugging-with-Console/&quot;&gt;【译】10 个技巧，让你更专业地使用 console 进行 JS 调试&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;在过去的十年中，我热衷的事情之一是前端开发（特别是 JavaScript）。作为一名“工匠”，我喜欢学习市面上的新工具。在这个故事中，我将给你们一些很棒的、更专业的技巧，去使用好用又“古老”的 console。&lt;/p&gt;
-
-&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
-
-&lt;h4 id=&quot;从-shuffle-看代码品味&quot;&gt;&lt;a href=&quot;https://www.rayjune.me/2018/03/13/see-code-taste-from-shuffle/&quot;&gt;从 shuffle 看代码品味&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;一个关于数组随机函数shuffle 可以体现出什么代码品味。&lt;/p&gt;
-
-&lt;h4 id=&quot;我们需要注意的-immutable-操作&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/34536771?utm_medium=social&amp;amp;utm_source=wechat_session&amp;amp;from=timeline&amp;amp;isappinstalled=0&quot;&gt;我们需要注意的 immutable 操作&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;immutable 是什么？不变的、一成不变的。在 Javascript 中一般指一个变量在经过一个 function 处理之后，可以保持入参数据不变。&lt;/p&gt;
-
-&lt;h4 id=&quot;developing-the-star-wars-opening-crawl-in-htmlcss&quot;&gt;&lt;a href=&quot;https://dev.to/christopherkade/developing-the-star-wars-opening-crawl-in-htmlcss-2j9e&quot;&gt;Developing the Star Wars opening crawl in HTML/CSS&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;喜歡星際大戰的片頭文字動畫嗎？試看看自己使用 HTML、CSS 和 JS 打造一個吧！&lt;/p&gt;
-
-&lt;h4 id=&quot;http的连接管理&quot;&gt;&lt;a href=&quot;https://github.com/Pines-Cheng/blog/issues/42&quot;&gt;HTTP的连接管理&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;对于HTTP协议连接管理是很关键的问题， 打开和保持连接在很大程度上影响着网站和 Web 应用程序的性能。本文阐述了几种连接特性和优缺点， 以及如何有效的使用它们。&lt;/p&gt;
-
-&lt;h4 id=&quot;typescript-实践&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5a9c004a6fb9a028b92c9e91&quot;&gt;TypeScript 实践&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;TypeScript 是有类型定义的 JS 的超集，可以说是为大规模 JS 应用而生的， 在团队协作迭代开发中，对于代码可读性、可维护性、健壮性等方面有着显著的提升， 从而提升整个团队的协作效率， 本文主要分享了 React 体系和 TypeScript 结合使用的经验。&lt;/p&gt;
-
-&lt;h4 id=&quot;译用javascript写一个区块链&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/34522746&quot;&gt;【译】用JavaScript写一个区块链&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;随着比特币和以太币这样的加密货币红火， 隐藏在它们背后的技术—— 区块链 ， 大家应该也有所了解，那么如何用JavaScript来创建一个简单的区块链呢？本文将给我们一个全面的演示。&lt;/p&gt;
-
-&lt;h4 id=&quot;前端黑魔法之远程控制地址栏&quot;&gt;&lt;a href=&quot;http://www.freebuf.com/articles/web/164711.html&quot;&gt;前端黑魔法之远程控制地址栏&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;在使用 target=”_blank“ 可以通过 window.opener 来控制源页面进行攻击，这里提供另一种与 target 有关的钓鱼攻击。&lt;/p&gt;
-
-&lt;h4 id=&quot;对-cyclejs-的一些思考&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/34394256&quot;&gt;对 Cycle.js 的一些思考&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;本文介绍了 Cycle 对于应用输入/输出的定义，并围绕该定义分析了 Stream 容器的引入对应用开发带来的思路转变，探究了 Cycle 官方模块出现的原因以及其作用。&lt;/p&gt;
-
-&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
-
-&lt;h4 id=&quot;漫谈计算机编码&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5aa9d7936fb9a028dc40bc27&quot;&gt;漫谈计算机编码&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;可以这么说，所有的乱码都是源于解码方式与编码方式的不一致。就好像我用英文给你写了一封信（我要表达的信息用英文这种方式 [编码] 了），而你只懂中文，你用中文去读信的内容（用中文 [解码]），于是整封信在你看来就是所谓的 [乱码]。其实，所谓的乱码不是什么复杂的问题，仅仅就是解码的方式不同于编码的方式而已，只要换成合适的解码方式就好了。&lt;/p&gt;
-
-&lt;h4 id=&quot;十多年研发架构经验老司机的技术选型哲学&quot;&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;amp;mid=2651001790&amp;amp;idx=1&amp;amp;sn=664c6e3ca4d9ec4d02fb08909145366e&amp;amp;chksm=bdbeebed8ac962fb9c08f56d116017460653b15037557253df76cae74c8c9ae2e442646f8882&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0315iz87k4w6xtBotcbdvsQQ#rd&quot;&gt;十多年研发、架构经验老司机的技术选型哲学&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;架构师只有深刻理解软件的本质复杂性，才能站在解决实际业务问题的角度，更好的做出技术选型，否则易陷入唯技术工具论的陷阱。&lt;/p&gt;
-
-&lt;h4 id=&quot;web-开发者使用-javascript-进行机器学习指南&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/34329223&quot;&gt;Web 开发者使用 JavaScript 进行机器学习指南&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;JavaScript可能不是最适合的机器学习编程语言，但是作为从事web开发的你来说，我觉得JavaScript将是你最有效的语言。&lt;/p&gt;
-
-&lt;h4 id=&quot;别人家的产品经理她管理着facebook-40人团队参加过北美中国好声音&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/L2HjhKLeYk2LacNiqk5-jA&quot;&gt;别人家的产品经理：她管理着Facebook 40人团队，参加过北美中国好声音&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;产品经理和研发工程师的关系经常被大家调侃，可偏偏就有同时受到研发和设计都喜欢的“别人家的产品经理”，沟通协调、对接需求、把控方向面面俱到还有好人缘。有没有人天生就是产品经理？产品经理的工作就是写需求写需求和写需求么？顶级公司的产品经理都是如何锻炼技能，提升思考能力的？别人家的产品经理长啥样？&lt;/p&gt;
-
-&lt;h2 id=&quot;实用推荐&quot;&gt;实用推荐&lt;/h2&gt;
-
-&lt;h4 id=&quot;技术写作指南---起&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/34290382&quot;&gt;技术写作指南 - 起&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;这篇指南将会将你如何创建从手册到工作指南的任何内容。我们将帮你避免所有最常见的技术写作陷阱——从不良计划到过时出版。&lt;/p&gt;
-
-&lt;h4 id=&quot;提升个人效率从写日志开始&quot;&gt;&lt;a href=&quot;https://www.yejianye.com/2018/03/04/journaling/&quot;&gt;提升个人效率从写日志开始&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;作者分享了一种使用日志来进行时间管理的方式，并介绍设计日志系统的方法，以及写日志的工具。&lt;/p&gt;
-
-&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
-
-&lt;h4 id=&quot;为什么我从-google-辞职而为自己工作&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5aa873786fb9a028cc60e7ed&quot;&gt;为什么我从 Google 辞职而为自己工作&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;在过去四年时间里，我在Google担任软件开发工程师。2月1日，我辞职了。因为他们拒绝给我买圣诞礼物。
-好吧，其实里面还有更深层次的原因。&lt;/p&gt;
-
-&lt;p&gt;PS: 学好技术，然后为自己工作。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot;&gt;IFT 小组&lt;/a&gt; 出品，汇聚一周好文章， &lt;a href=&quot;&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@Curtis&lt;/a&gt; 前端中年人&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工，不安分于前端开发的搬砖工&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot;&gt;@Steven&lt;/a&gt; 写 JS 的老年人&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 想当设计师的程序员不是一个好攻城狮&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/Jade05&quot;&gt;@Jade&lt;/a&gt; 以前想多点后端sense写前端，现在想多点产品sense写前端&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章。&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Mon, 19 Mar 2018 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/03/19/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/03/19/weekly.html</guid>
         
         
         <category>weekly</category>
