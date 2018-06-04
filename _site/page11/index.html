@@ -45,11 +45,11 @@
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
 " />
-  <meta property="og:url" content="http://else.vip/" />
+  <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="ELSE" />
   <meta property="og:title" content="ELSE" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://else.vip//assets/logo.png" />
+  <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -61,16 +61,16 @@
   <meta name="twitter:title" content="ELSE">
   <meta name="twitter:description" content="坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
 ">
-  <meta name="twitter:image" content="http://else.vip//assets/logo.png">
-  <meta name="twitter:url" content="http://else.vip/">
+  <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
+  <meta name="twitter:url" content="http://localhost:4000">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://else.vip//page11/">
-  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://else.vip//feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/page11/">
+  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -114,6 +114,10 @@
         
           
           <li class="nav-link"><a href="/category/team/">team</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/weekly/">Weekly</a>
           
         
           
@@ -162,6 +166,28 @@
 
 <div class="wrapper">
 <ul class="post-list">
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/team/2017/06/05/remove-strict-node.html">移除在 ESM 模式生成的严格模式</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p><h2 id="起源">起源</h2> <p>项目升级构建方式，以前的代码采用 AMD 风格组织代码，并使用 <code class="highlighter-rouge">r.js</code> 完成打包优化工作。后续成员选择采用 ES6 的风格编写代码，然后 webpack + babel 完成打包构建。迁移工作并不如想象中那么容易，终于完成各种配置，测试时候发现问题：抛出一个语法错误。错误很快被定位，属于历史代码的不规范写法，之所以现在暴露出来是因为新的构建方式会加入 <code class="highlighter-rouge">"use strict"</code>。</p> <h2 id="严格模式">严格模式</h2> <p>在编写代码的过程中，我们使用 <code class="highlighter-rouge">strict mode</code> 是一种很好的方式，严格模式会将 JavaScript 陷阱直接变成明显的错误，比如未声明导致的全局变量，可以让我们开发过程中就发现错误。</p> <p>众所周知，JavaScript 这门语言之前存在大量不好的设计，使用严格模式意味着在采用一种限制性更高的方式编写代码，同时更 “安全”。但这里所谓的安全在生产环境又可能是另外一回事，尤其是对于那些上了年纪的历史代码，我们更倾向于在生产环境去除严格模式。</p> <h2 id="es2015">ES2015+</h2> <p>现在大部分人已经在使用更强大，更具有表现力的 <code class="highlighter-rouge">ES2015+</code> 编写代码。可能还会使用到 babel 来转化成用于生产环境运行的代码，在使用 <code class="highlighter-rouge">preset es2015</code> 时，会自动加入 <code class="highlighter-rouge">“use strict”</code>。</p> <p>babel 的处理方式是将 ES2015 模块转换成 <code class="highlighter-rouge">CommonJS</code> 格式的，然后再统一处理，即 <code class="highlighter-rouge">transform-es2015-modules-commonjs</code>，这个插件位于 <code class="highlighter-rouge">preset es2015</code> 中，并且依赖于 <code class="highlighter-rouge">transform-strict-mode</code></p> <h2 id="也许你会想去掉严格模式">也许你会想去掉严格模式</h2> <p>也许你会想去掉严格模式，毕竟对于一些历史代码，很难预测加入严格模式会导致什么异常。</p> <!-- 可以从两个方面来考虑： --> <ul>...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">mirreal , June 5, 2017 </div>
+      <div class="post-categories">
+       category : 
+        
+        <a href="/category/team">Team</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
   
   <li>
     <h2>
@@ -248,28 +274,6 @@
     </section>
   </li>
   
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/weekly/2017/05/26/weekly.html">ELSE 技术周刊(2017.05.26 期)</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p><h2 id="业界动态">业界动态</h2> <h4 id="gitlab-92-发布简化多人协作增强本地化"><a href="http://link.zhihu.com/?target=https%3A//github.com/gitlabhq/gitlabhq/blob/master/CHANGELOG.md">GitLab 9.2 发布，简化多人协作&amp;增强本地化</a></h4> <p>GitLab 9.2 发布了，新版本旨在让团队的每个人都能够贡献他们力量，不管是远程或在同个房间。</p> <h4 id="the-state-of-javascript-modules"><a href="http://link.zhihu.com/?target=https%3A//medium.com/webpack/the-state-of-javascript-modules-4636d1774358">The state of JavaScript modules</a></h4> <p>文章介绍 ES Modules 在浏览器以及 Node.js 的现状。不同浏览器的最新版已经开始不同程度的支持，但具体规则还有待统一完善，而在 Node 的不确定性更多。但我们现在仍然可以使用 ESM 编写代码，再利用 Webpack，Rollup 以及 babel 等工具适配不同的环境。</p> <h4 id="workbox-javascript-libraries-for-progressive-web-apps"><a href="http://link.zhihu.com/?target=https%3A//workboxjs.org/">Workbox: JavaScript Libraries for Progressive Web Apps</a></h4> <p>Workbox 是对 Google 以前的 service worker 库的重新思考，重点是模块化。</p> <h4 id="this-is-what-microsoft-said-about-progressive-web-apps-at-build"><a href="http://link.zhihu.com/?target=https%3A//www.thurrott.com/windows/windows-10/116101/microsoft-said-progressive-web-apps-build">This...</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">风清洋 , May 26, 2017 </div>
-      <div class="post-categories">
-       category : 
-        
-        <a href="/category/weekly">Weekly</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
   
 </ul>
 
@@ -337,6 +341,10 @@
         
         
           <li class="nav-link"><a href="/category/team/">team</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/weekly/">Weekly</a>
         
         
         

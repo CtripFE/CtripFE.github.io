@@ -4,11 +4,86 @@
     <title>ELSE</title>
     <description>坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
 </description>
-    <link>http://else.vip//</link>
-    <atom:link href="http://else.vip//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 May 2018 22:44:28 +0800</pubDate>
-    <lastBuildDate>Mon, 28 May 2018 22:44:28 +0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 04 Jun 2018 12:25:01 +0800</pubDate>
+    <lastBuildDate>Mon, 04 Jun 2018 12:25:01 +0800</lastBuildDate>
     <generator>Jekyll v3.8.2</generator>
+    
+      <item>
+        <title>ELSE 技术周刊(2018.06.04期)</title>
+        <description>&lt;h2 id=&quot;本期推荐&quot;&gt;本期推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;workbox-源码阅读&quot;&gt;&lt;a href=&quot;http://sensai.powerpigger.cc/sensai/site/article/334&quot;&gt;workbox 源码阅读&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;记录了阅读 workbox 源码的心路历程，深入理解 workbox 的整体设计思路。&lt;/p&gt;
+
+&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;node之父ry发布新项目-deno下一代-node&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/1LcO3EqGV2iRlZ1aIrQeqw&quot;&gt;Node之父ry发布新项目 deno：下一代 Node&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;近日，Node 之父 Ryan Dahl 发布新的开源项目 deno，使用 Go 语言代替 C++ 重新编写跨平台底层内核驱动，上层仍然使用 V8 引擎，最终提供一个安全的 TypeScript 运行时。&lt;/p&gt;
+
+&lt;h4 id=&quot;如何评价ryryan-dahl的新项目-deno&quot;&gt;&lt;a href=&quot;https://www.zhihu.com/question/279208326/answer/408601019&quot;&gt;如何评价ry(Ryan Dahl)的新项目 deno&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;deno 是一个非常伟大的项目，但却不是“下一代 Node.js”。&lt;/p&gt;
+
+&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
+
+&lt;h4 id=&quot;js-linter-进化史&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/34656263&quot;&gt;JS Linter 进化史&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;据说在 C 语言刚刚开始起步的时候，有若干常见的代码问题不能被编译器捕获，因此有人开发了一款名为 Lint 的附加程序，用于扫描源代码以捕获这些问题。因此后续类似的工具都叫 Lint 或 Linter。本文主要介绍下 JS Linter 进化史中的三个里程碑式的工具：JSLint、JSHint 和 ESLint。&lt;/p&gt;
+
+&lt;h4 id=&quot;beyond-spas-alternative-architectures-for-your-pwa&quot;&gt;&lt;a href=&quot;https://developers.google.com/web/updates/2018/05/beyond-spa&quot;&gt;Beyond SPAs: Alternative Architectures for Your PWA&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;构建 PWA Web app 不一定是构建在单页应用程序之上，在此了解以 PWA 为中心的其他架构。&lt;/p&gt;
+
+&lt;h4 id=&quot;typescript-28-下的终极-react-组件模式&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5b07caf16fb9a07aa83f2977&quot;&gt;TypeScript 2.8 下的终极 React 组件模式&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;文章主要介绍了如何运用 TypeScript 的新功能，写出能够以安全类型的方式创建常见的 React 组件模式。&lt;/p&gt;
+
+&lt;h4 id=&quot;现代-javascript-框架存在的根本原因&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5b111436e51d4506d06205fd&quot;&gt;现代 JavaScript 框架存在的根本原因&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;深入思考为何前端需要框架，以及 web components 是否可以代替前端框架。&lt;/p&gt;
+
+&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;阿里七层流量入口-tengine硬件加速探索之路&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/37539359&quot;&gt;阿里七层流量入口 Tengine硬件加速探索之路&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;所有的阿里集团流量通过四层LVS，到达统一接入层，统一接入层根据不同的维度域名转发到对应的后端APP，并且提供智能的流量分发策略。因为抽象出一层，通用的安全防攻击、链路追踪等高级功能，都可以在这一层统一实现。&lt;/p&gt;
+
+&lt;h4 id=&quot;android-内存溢出-oom常见内存泄漏&quot;&gt;&lt;a href=&quot;http://www.sunnyang.com/765.html&quot;&gt;Android 内存溢出 OOM：常见内存泄漏&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;本文总结了 Android 开发者在开发中比较常见的几种内存泄漏，并给出了相对应的防止内存泄漏的解决方式。&lt;/p&gt;
+
+&lt;h4 id=&quot;w3c未来的网站注册流程&quot;&gt;&lt;a href=&quot;https://www.w3.org/TR/webauthn/&quot;&gt;W3C：未来的网站注册流程&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;目前，W3C 正在设计一个基于密钥的网站注册流程，以后，注册用户时不需要密码，也不用担心破解。&lt;/p&gt;
+
+&lt;h4 id=&quot;https-的故事&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5b10aa22e51d4506c5568f1d&quot;&gt;HTTPS 的故事&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;通过故事中讲述从原始的 HTTP 到 HTTPS 的演进过程，大体上还原其中的通信原理和部分细节。&lt;/p&gt;
+
+&lt;h2 id=&quot;实用工具&quot;&gt;实用工具&lt;/h2&gt;
+
+&lt;h4 id=&quot;javascript-算法与数据结构&quot;&gt;&lt;a href=&quot;https://github.com/trekhleb/javascript-algorithms&quot;&gt;JavaScript 算法与数据结构&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;一个包含了多种基于 JavaScript 的算法与数据结构的仓库。&lt;/p&gt;
+
+&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;github-的用法与礼仪&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/37599617&quot;&gt;GitHub 的用法与礼仪&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;作者以一个在 GitHub 浪迹多年的人的角度，介绍应该如何参与开源社区，避免出现类似滥用 issue 等行为。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 Jun 2018 20:23:23 +0800</pubDate>
+        <link>http://localhost:4000/weekly/2018/06/04/weekly.html</link>
+        <guid isPermaLink="true">http://localhost:4000/weekly/2018/06/04/weekly.html</guid>
+        
+        
+        <category>Weekly</category>
+        
+      </item>
     
       <item>
         <title>ELSE 技术周刊(2018.05.28期)</title>
@@ -89,8 +164,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 28 May 2018 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/05/28/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/05/28/weekly.html</guid>
+        <link>http://localhost:4000/weekly/2018/05/28/weekly.html</link>
+        <guid isPermaLink="true">http://localhost:4000/weekly/2018/05/28/weekly.html</guid>
         
         
         <category>weekly</category>
@@ -172,8 +247,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 21 May 2018 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/05/21/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/05/21/weekly.html</guid>
+        <link>http://localhost:4000/weekly/2018/05/21/weekly.html</link>
+        <guid isPermaLink="true">http://localhost:4000/weekly/2018/05/21/weekly.html</guid>
         
         
         <category>weekly</category>
@@ -261,8 +336,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 14 May 2018 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/05/14/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/05/14/weekly.html</guid>
+        <link>http://localhost:4000/weekly/2018/05/14/weekly.html</link>
+        <guid isPermaLink="true">http://localhost:4000/weekly/2018/05/14/weekly.html</guid>
         
         
         <category>weekly</category>
@@ -326,8 +401,8 @@
 &lt;p&gt;重构不是对以前代码的全盘否定，而是利用更好的方式，写出更好，更有维护性代码。不断的追求与学习，才有更多的进步。&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 May 2018 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/05/07/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/05/07/weekly.html</guid>
+        <link>http://localhost:4000/weekly/2018/05/07/weekly.html</link>
+        <guid isPermaLink="true">http://localhost:4000/weekly/2018/05/07/weekly.html</guid>
         
         
         <category>weekly</category>
@@ -409,8 +484,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 30 Apr 2018 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/04/30/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/04/30/weekly.html</guid>
+        <link>http://localhost:4000/weekly/2018/04/30/weekly.html</link>
+        <guid isPermaLink="true">http://localhost:4000/weekly/2018/04/30/weekly.html</guid>
         
         
         <category>weekly</category>
@@ -504,8 +579,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 23 Apr 2018 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/04/23/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/04/23/weekly.html</guid>
+        <link>http://localhost:4000/weekly/2018/04/23/weekly.html</link>
+        <guid isPermaLink="true">http://localhost:4000/weekly/2018/04/23/weekly.html</guid>
         
         
         <category>weekly</category>
@@ -603,8 +678,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 16 Apr 2018 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/04/16/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/04/16/weekly.html</guid>
+        <link>http://localhost:4000/weekly/2018/04/16/weekly.html</link>
+        <guid isPermaLink="true">http://localhost:4000/weekly/2018/04/16/weekly.html</guid>
         
         
         <category>weekly</category>
@@ -694,8 +769,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 09 Apr 2018 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/04/09/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/04/09/weekly.html</guid>
+        <link>http://localhost:4000/weekly/2018/04/09/weekly.html</link>
+        <guid isPermaLink="true">http://localhost:4000/weekly/2018/04/09/weekly.html</guid>
         
         
         <category>weekly</category>
@@ -789,99 +864,8 @@
 
 </description>
         <pubDate>Mon, 02 Apr 2018 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/04/02/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/04/02/weekly.html</guid>
-        
-        
-        <category>weekly</category>
-        
-      </item>
-    
-      <item>
-        <title>ELSE 技术周刊(2018.03.26期)</title>
-        <description>&lt;h2 id=&quot;本期推荐&quot;&gt;本期推荐&lt;/h2&gt;
-
-&lt;h4 id=&quot;十倍效能提升--web-基础研发体系的建立&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/34790596&quot;&gt;十倍效能提升 —— Web 基础研发体系的建立&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;文章介绍 Web 基础研发体系的构成部分，以及如何配合这套研发体系，在组织结构上做出一些调整，通过管理手段进一步挖掘团队潜力，打造更高效的组织。效能提升不仅仅是技术或管理某一方面的事情，而是要综合各个方面来寻求个人和公司发展的共赢。&lt;/p&gt;
-
-&lt;h2 id=&quot;团队分享&quot;&gt;团队分享&lt;/h2&gt;
-
-&lt;h4 id=&quot;amp项目实战分享&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/34751588&quot;&gt;AMP项目实战分享&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;携程国际业务研发部的 AMP 项目实践经验，内容涵盖踩过的”坑”，如何优化AMP SEO页面等，满满的干货。&lt;/p&gt;
-
-&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
-
-&lt;h4 id=&quot;stack-overflow-2018-开发者调查报告出炉&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5ab5a9f96fb9a028e0146b20&quot;&gt;Stack Overflow 2018 开发者调查报告出炉&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Stack Overflow 作为全球最大的程序设计领域的问答网站，每年都会出据一份开发者调查报告。近日，Stack Overflow 公布了其第八次年度开发者调查报告，这份报告基于对10万 Stack Overflow 用户的调查。&lt;a href=&quot;https://insights.stackoverflow.com/survey/2018/&quot;&gt;原文&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;这次没跳票java-10正式发布带来了这些新特性&quot;&gt;&lt;a href=&quot;http://www.infoq.com/cn/news/2018/03/Java-10-new-features&quot;&gt;这次没跳票！Java 10正式发布，带来了这些新特性&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;这是 Java 大版本周期变化后的第一个正式发布版本， 让我们了解一下Java 10 带来了哪些新特性。&lt;/p&gt;
-
-&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
-
-&lt;h4 id=&quot;精读-immerjs-源码&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/34691516&quot;&gt;精读 Immer.js 源码&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;了解 mobx 的同学可能会发现，Immer 就是更底层的 Mobx，它将 Mobx 特性发扬光大，得以结合到任何数据流框架，使用起来非常优雅。本文作者阅读过源代码后， 从原理的角度带我们认识 Immer。&lt;/p&gt;
-
-&lt;h4 id=&quot;不要混淆-nodejs-和浏览器中的-event-loop&quot;&gt;&lt;a href=&quot;https://cnodejs.org/topic/5a9108d78d6e16e56bb80882&quot;&gt;不要混淆 nodejs 和浏览器中的 event loop&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;event loop 是一个执行模型，在不同的地方有不同的实现， 浏览器和 nodejs 基于不同的技术实现了各自的 event loop。 本文主要对 nodejs 中的 event loop 作了简洁的讲解，相信理解了 event loop 后你对 setTimeout、setInterval、 promise、 process.nextTick 的执行顺序有进一步的了解。&lt;/p&gt;
-
-&lt;h4 id=&quot;elegant-patterns-in-modern-javascript-ice-factory&quot;&gt;&lt;a href=&quot;https://medium.freecodecamp.org/elegant-patterns-in-modern-javascript-ice-factory-4161859a0eee&quot;&gt;Elegant patterns in modern JavaScript: Ice Factory&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;在 JavaScript 中的 class 只是一种语法糖，使用起来可能不是如你期望那般，在这里介绍一种 Ice Factory 的对象创建模式。&lt;/p&gt;
-
-&lt;h4 id=&quot;loading-third-party-javascript&quot;&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/&quot;&gt;Loading Third-Party JavaScript&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;如何正确的使用第三方库。&lt;/p&gt;
-
-&lt;h4 id=&quot;vant-10-正式发布轻量可靠的移动端-vue-组件库&quot;&gt;&lt;a href=&quot;https://tech.youzan.com/vant-1-release/&quot;&gt;Vant 1.0 正式发布：轻量、可靠的移动端 Vue 组件库&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Vant 是有赞前端团队维护的移动端 Vue 组件库，提供了一整套 UI 基础组件和业务组件。&lt;/p&gt;
-
-&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
-
-&lt;h4 id=&quot;教程--如何成为区块链开发者&quot;&gt;&lt;a href=&quot;https://ethfans.org/posts/blockchain-developer-crash-course&quot;&gt;教程 | 如何成为区块链开发者&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;我们现在正处于“区块链时代”，区块链对我们的未来有着巨大的影响。那么，你应该如何加入“区块链大潮”呢？如果你想成为一名区块链开发者，那么有几个小目标你必须达成。&lt;/p&gt;
-
-&lt;h4 id=&quot;从冷战到深度学习一篇图文并茂的机器翻译史&quot;&gt;&lt;a href=&quot;https://www.jiqizhixin.com/articles/2018-03-16-5&quot;&gt;从冷战到深度学习：一篇图文并茂的机器翻译史&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;一篇图文并茂的机器翻译史，从早期的基于规则的机器翻译到如今广泛应用的神经机器翻译，很多科学家都为这一梦想贡献自己的时间和心力。&lt;/p&gt;
-
-&lt;h4 id=&quot;对标小程序--快应用开发入门指南&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5ab26a1e6fb9a028b547c675&quot;&gt;对标小程序 ? “快应用”开发入门指南&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;读完之后的感觉是，node.js有了新的战场！对前端开发来说无疑是一件非常棒的事情。&lt;/p&gt;
-
-&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
-
-&lt;h4 id=&quot;阅读源码的三种境界&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/PDhEKM2XG_qzOmBjWb-M7Q&quot;&gt;阅读源码的三种境界&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;作者分享他如何积累起现在的知识结构，学习过程的血和泪，职业发展的经验和教训，日常的所思所想，希望能帮助大家少走点儿弯路。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot;&gt;IFT 小组&lt;/a&gt; 出品，汇聚一周好文章， &lt;a href=&quot;https://zhuanlan.zhihu.com/p/34909353&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@Curtis&lt;/a&gt; 前端中年人&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工，不安分于前端开发的搬砖工&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot;&gt;@Steven&lt;/a&gt; 写 JS 的老年人&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 想当设计师的程序员不是一个好攻城狮&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/Jade05&quot;&gt;@Jade&lt;/a&gt; 以前想多点后端sense写前端，现在想多点产品sense写前端&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章。&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Mon, 26 Mar 2018 18:00:00 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/03/26/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/03/26/weekly.html</guid>
+        <link>http://localhost:4000/weekly/2018/04/02/weekly.html</link>
+        <guid isPermaLink="true">http://localhost:4000/weekly/2018/04/02/weekly.html</guid>
         
         
         <category>weekly</category>
