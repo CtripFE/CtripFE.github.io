@@ -45,11 +45,11 @@
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
 " />
-  <meta property="og:url" content="http://localhost:4000" />
+  <meta property="og:url" content="http://else.vip/" />
   <meta property="og:site_name" content="ELSE" />
   <meta property="og:title" content="ELSE" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
+  <meta property="og:image" content="http://else.vip//assets/logo.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="612" />
   <meta property="og:image:height" content="605" />
@@ -61,16 +61,16 @@
   <meta name="twitter:title" content="ELSE">
   <meta name="twitter:description" content="坐标上海，专注前端，基于Node全栈开发，欢迎加入我们.
 ">
-  <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
-  <meta name="twitter:url" content="http://localhost:4000">
+  <meta name="twitter:image" content="http://else.vip//assets/logo.png">
+  <meta name="twitter:url" content="http://else.vip/">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/page11/">
-  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://localhost:4000/feed.xml" />
+  <link rel="canonical" href="http://else.vip//page11/">
+  <link rel="alternate" type="application/rss+xml" title="ELSE" href="http://else.vip//feed.xml" />
 </head>
 
 
@@ -146,6 +146,10 @@
         
           
         
+          
+        
+          
+        
       </ul>
     </nav>
   </div>
@@ -169,57 +173,13 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/team/2017/06/05/remove-strict-node.html">移除在 ESM 模式生成的严格模式</a>
+      <a class="post-link" href="/weekly/2017/08/07/weekly.html">ELSE 技术周刊(2017.08.07期)</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <p><h2 id="起源">起源</h2> <p>项目升级构建方式，以前的代码采用 AMD 风格组织代码，并使用 <code class="highlighter-rouge">r.js</code> 完成打包优化工作。后续成员选择采用 ES6 的风格编写代码，然后 webpack + babel 完成打包构建。迁移工作并不如想象中那么容易，终于完成各种配置，测试时候发现问题：抛出一个语法错误。错误很快被定位，属于历史代码的不规范写法，之所以现在暴露出来是因为新的构建方式会加入 <code class="highlighter-rouge">"use strict"</code>。</p> <h2 id="严格模式">严格模式</h2> <p>在编写代码的过程中，我们使用 <code class="highlighter-rouge">strict mode</code> 是一种很好的方式，严格模式会将 JavaScript 陷阱直接变成明显的错误，比如未声明导致的全局变量，可以让我们开发过程中就发现错误。</p> <p>众所周知，JavaScript 这门语言之前存在大量不好的设计，使用严格模式意味着在采用一种限制性更高的方式编写代码，同时更 “安全”。但这里所谓的安全在生产环境又可能是另外一回事，尤其是对于那些上了年纪的历史代码，我们更倾向于在生产环境去除严格模式。</p> <h2 id="es2015">ES2015+</h2> <p>现在大部分人已经在使用更强大，更具有表现力的 <code class="highlighter-rouge">ES2015+</code> 编写代码。可能还会使用到 babel 来转化成用于生产环境运行的代码，在使用 <code class="highlighter-rouge">preset es2015</code> 时，会自动加入 <code class="highlighter-rouge">“use strict”</code>。</p> <p>babel 的处理方式是将 ES2015 模块转换成 <code class="highlighter-rouge">CommonJS</code> 格式的，然后再统一处理，即 <code class="highlighter-rouge">transform-es2015-modules-commonjs</code>，这个插件位于 <code class="highlighter-rouge">preset es2015</code> 中，并且依赖于 <code class="highlighter-rouge">transform-strict-mode</code></p> <h2 id="也许你会想去掉严格模式">也许你会想去掉严格模式</h2> <p>也许你会想去掉严格模式，毕竟对于一些历史代码，很难预测加入严格模式会导致什么异常。</p> <!-- 可以从两个方面来考虑： --> <ul>...</p>
+      <p><h2 id="前端开发">前端开发</h2> <h4 id="用nextjs快速上手react服务器渲染"><a href="http://mp.weixin.qq.com/s/JL_33s6Si05V1Whe8mYCdw?utm_source=tuicool&amp;utm_medium=referral">用Next.js快速上手React服务器渲染</a></h4> <p>Next.js 是一个用于在服务端渲染 React 应用程序的简单框架， 让服务器渲染的前端项目更简单。文章从零搭建项目，很详细的讲解了 Next.js用法和特性。</p> <h4 id="let-const-and-var-in-javascript"><a href="https://arjunjs.wordpress.com/2017/08/06/let-const-and-var-in-javascript/">let, const and var in javascript</a></h4> <p>ECMAScript 6 introduced let and const to the javascript engine. So, lets see what is the real difference between let ,const and var.</p> <h4 id="http10http11-和-http20-的区别"><a href="https://mp.weixin.qq.com/s/GICbiyJpINrHZ41u_4zT-A">HTTP1.0、HTTP1.1 和 HTTP2.0 的区别</a></h4> <p>作为前端工程师，了解HTTP以及各版本之间的差异，无疑对前端开发是事半功倍的</p> <h4...</p>
     </section>
     <section class="post-meta">
-      <div class="post-date">mirreal , June 5, 2017 </div>
-      <div class="post-categories">
-       category : 
-        
-        <a href="/category/team">Team</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/translator/2017/06/02/writing-modern-javascript-code.html">编写现代 JavaScript 代码</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p><blockquote> <p>原文作者：<a href="https://twitter.com/scastiel">Sébastien Castiel</a></p> <p>原文链接：<a href="https://dev.to/scastiel/writing-modern-javascript-code">Writing modern JavaScript code</a></p> <p>说点什么：这是一篇很朴素的文章，讲的道理都懂，但实际上，在工作中遇到类似的情形却未必如此，编写可维护，可阅读，更安全的代码是我们应有的责任。</p> </blockquote> <p>是不是还认为 JavaScript 是一门用于在光标悬浮时改变页面元素的语言？这些日子已经不复存在，每一种语言都在随着时间推移而发展，我们使用语言的方式同样也在发展。看一下你一两年前写的代码：会感到羞愧吗？如果是的话，这篇文章应该很适合你。</p> <p>这里会列出一些所谓的最佳实践，目的是让你的 JavaScript 代码更容易编写，阅读和维护。</p> <h2 id="使用可格式化代码的-linter">使用可格式化代码的 linter</h2> <p>第一个建议是使用 linter 工具，可以帮助你检查在不同文件是否遵守一致的规则，尤其是当不同开发人员在同一个项目上工作：缩进，括号中的空格，替换 <code class="highlighter-rouge">==</code> 为 <code class="highlighter-rouge">===</code> …</p> <p>但更重要的是，尽可能使用 linter 工具自动修复代码。<a href="http://eslint.org/">ESLint</a> 就做得很好（带有 <code class="highlighter-rouge">--fix</code> 选项），而且与所有主流 IDE 完美集成，可以在保存时自动修复文件。</p> <p>还可以使用 <a href="https://github.com/prettier/prettier">Prettier</a>，不过这款工具更注重格式化而不是静态检查，但处理后的结果基本相同。</p> <p>下一步将介绍与 linter 工具一起使用的规则：</p> <h2 id="为你的-linter-定制现代化的规则">为你的 linter 定制现代化的规则</h2> <p>如果不知道你的代码需要什么样的规则，可以参考：<a...</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">mirreal , June 2, 2017 </div>
-      <div class="post-categories">
-       category : 
-        
-        <a href="/category/translator">Translator</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/weekly/2017/06/02/weekly.html">ELSE 技术周刊(2017.06.02期)</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p><h2 id="业界动态">业界动态</h2> <h4 id="node-8-released"><a href="https://nodejs.org/en/blog/release/v8.0.0/">Node 8 Released</a></h4> <p>Node 8 已经发布，带来一系列重大变化和更新，同时 NPM 也更新到 5.0.0。</p> <h4 id="what-are-the-differences-between-the-lockfiles-of-yarn-and-npm-5"><a href="https://yarnpkg.com/blog/2017/05/31/determinism/">What are the differences between the lockfiles of Yarn and npm 5?</a></h4> <p>NPM 5 重新设计 shrinkwrap，命名为锁包，跟 Yarn 的锁文件有什么区别呢？</p> <h4 id="tiobe-index-for-may-2017"><a href="https://www.tiobe.com/tiobe-index/">TIOBE Index for May 2017</a></h4> <p>值得关注的是 Go 的排名，从前一年的第 42 名上升到第 16 名！</p> <h2 id="技术纵横">技术纵横</h2> <h4...</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">冉余 , June 2, 2017 </div>
+      <div class="post-date">风清洋 , August 7, 2017 </div>
       <div class="post-categories">
        category : 
         
@@ -235,17 +195,17 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/translator/2017/05/29/the-state-of-javascript.html">JavaScript 模块化现状</a>
+      <a class="post-link" href="/weekly/2017/07/31/weekly.html">ELSE 技术周刊(2017.07.31期)</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <p><blockquote> <p>原文作者：Johannes Ewald <a href="https://twitter.com/Jhnnns">@Jhnnns</a></p> <p>原文链接：<a href="https://medium.com/webpack/the-state-of-javascript-modules-4636d1774358">The state of JavaScript modules</a></p> <p>已获原作者授权翻译及发布</p> </blockquote> <p>ESM, CJS, UMD, AMD — 到底应该选择哪一个？</p> <p>最近 <a href="https://twitter.com/addyosmani/status/859296190323597313">在 twitter</a> 上有很多关于 <a href="http://2ality.com/2014/09/es6-modules-final.html">ES Module</a> 现状的讨论，<a href="https://twitter.com/bradleymeck/status/863061949021650944">尤其是在 Node.js 上</a>，他们计划引入新的文件扩展名 <code class="highlighter-rouge">*.mjs</code>。人们有足够理由对此感到 <a href="https://twitter.com/tankredhase/status/861864123922907136">担忧和不确定</a>，因为这个话题异常复杂，接下来会尽力阐述清楚问题。</p> <h2 id="来自远古的恐惧">来自远古的恐惧</h2> <p>大多数前端开发者应该还记得 <a href="https://medium.com/@trek/last-week-i-had-a-small-meltdown-on-twitter-about-npms-future-plans-around-front-end-packaging-b424dd8d367a">Javascript 依赖管理的黑暗时期</a>。那个时候，你需要把一个库复制粘贴到 vendor 文件夹，然后作为一个全局变量引入，要自己去按次序组合所有东西，可能还要管理命名空间。</p> <p>在过去的那些年，我们能深刻体会到公共模块格式化和中央模块管理的价值。</p> <p>在今天，不管是发布还是使用一个库都要容易得多，只需要使用 <code class="highlighter-rouge">npm publish</code> 和 <code class="highlighter-rouge">npm install</code>...</p>
+      <p><h2 id="业界动态">业界动态</h2> <h4 id="react-16-beta"><a href="https://github.com/facebook/react/issues/10294?utm_campaign=React%2BNewsletter&amp;utm_medium=web&amp;utm_source=React_Newsletter_79">React 16 beta</a></h4> <p>React 16 beta对外开放，开发者通过@next即可安装最新版。值得一提的是，新版使用了Map和Set的集合数据结构，使用需全局引入babel-polyfill。新版在组件报错处理，部分生命周期等特性上都发生了一些变化。</p> <h4 id="error-handling-in-react-16"><a href="https://facebook.github.io/react/blog/2017/07/26/error-handling-in-react-16.html?utm_campaign=React%2BNewsletter&amp;utm_medium=web&amp;utm_source=React_Newsletter_79">Error Handling in React 16</a></h4> <p>随着<a href="https://github.com/facebook/react/issues/10294?utm_campaign=React%2BNewsletter&amp;utm_medium=web&amp;utm_source=React_Newsletter_79">React 16</a>发布日期的靠近，官方博客对于组件错误处理的相关特性文章也发布了。新版引入了“错误边界”的概念，主要是捕获，记录子组件树的JavaScript错误并显示相应的UI，而不会使整个应用因错误异常被阻塞。</p> <h4 id="4-important-changes-in-vuejs-240"><a href="https://vuejsdevelopers.com/2017/07/17/vue-js-2-4-important-features/">4 Important Changes In Vue.js 2.4.0</a></h4> <p>vue2.4.0版本新增的4个重要特性：支持异步组件的服务端渲染；子组件对父级属性的默认继承；异步组件对于webpack3的支持；html片段的注释保留；</p> <h2 id="技术纵横">技术纵横</h2> <h4 id="浅谈-nodejs-安全"><a href="https://zhuanlan.zhihu.com/p/28105239">浅谈 Node.js 安全</a></h4> <p>随着 Node.js 的应用慢慢的变多，RESTful API 也好 RPC 也好，在应用广泛的同时，特别是 npm 仓库上存在大量质量参差不齐，年久失修的库，Node.js 的安全问题慢慢变得严峻起来，这里主要简单谈论一些 HTTP 相关的安全问题。</p> <h4 id="再见flashadobe将于2020年停止其开发和更新"><a...</p>
     </section>
     <section class="post-meta">
-      <div class="post-date">mirreal , May 29, 2017 </div>
+      <div class="post-date">风清洋 , July 31, 2017 </div>
       <div class="post-categories">
        category : 
         
-        <a href="/category/translator">Translator</a>
+        <a href="/category/weekly">Weekly</a>
         
       
       </div>
@@ -257,17 +217,61 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/translator/2017/05/28/my-atom-editor-setup-for-js-react.html">JS/React 开发者的 Atom 终极配置</a>
+      <a class="post-link" href="/weekly/2017/07/24/weekly.html">ELSE 技术周刊(2017.07.24期)</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <p><blockquote> <p>原文作者：Elad Ossadon</p> <p>原文链接：<a href="https://medium.com/productivity-freak/my-atom-editor-setup-for-js-react-9726cd69ad20">The Ultimate Atom Editor Setup (+for JS/React)</a></p> </blockquote> <p>根据多年以来不断完善 Sublime Text 配置的经验，决定这次给 Atom 也来一个大改造。这个过程花费了好几个月的时间，但成果还是很卓有成效的，我现在非常满意这份配置。</p> <p>这份清单将分为实用工具和 React 专用，并涉及到快捷键绑定。</p> <h2 id="实用工具">实用工具</h2> <h3 id="atom-beautify"><a href="https://atom.io/packages/atom-beautify">atom-beautify</a></h3> <p>可以在 Atom 中 美化 HTML，CSS，JavaScript，PHP，Python，Ruby，Java，C，C ++，C＃，Objective-C，CoffeeScript，TypeScript，Coldfusion，SQL等。</p> <p>快捷键：<code class="highlighter-rouge">⌃+⌥+B</code></p> <h3 id="prettier-atom"><a href="https://atom.io/packages/prettier-atom">prettier-atom</a></h3> <p>使用 Prettier 来格式化 JavaScript 代码，配有强大的 ESlint 集成。</p> <p>快捷键：<code class="highlighter-rouge">⌃+⌥+F</code></p> <h3 id="atom-transpose"><a href="https://atom.io/packages/atom-transpose">atom-transpose</a></h3> <p>Atom...</p>
+      <p><h2 id="业界动态">业界动态</h2> <h4 id="webstorm-20172-released"><a href="https://blog.jetbrains.com/webstorm/2017/07/webstorm-2017-2/">WebStorm 2017.2 released</a></h4> <p>作为最强大的前端 IDE 又有更新了。支持从 ESLint 配置导入代码风格，增强了 Karma 和Mocha 的测试功能，对 webpack 更好的支持，支持单个组件的 CSS Modules，等等。</p> <h2 id="团队分享">团队分享</h2> <h4 id="译面向初学者的高阶组件教程"><a href="https://zhuanlan.zhihu.com/p/27985956">[译]面向初学者的高阶组件教程</a></h4> <p>一篇面向初学者的 HOC 介绍。高阶组件听起来挺唬人的，只看名字恐怕不是那么容易明白究竟是何物，而且通常来讲高阶组件并不是组件，而是接受组件作为参数，并且返回组件的函数。早期利用 ES5 的 mixin 语法来做的事，基本都可以使用高阶组件代替，而且能做的还有更多。</p> <h4 id="译高性能react-3个工具提高你app的速度"><a href="https://zhuanlan.zhihu.com/p/27978106">[译]高性能React: 3个工具提高你app的速度</a></h4> <p>文章详细介绍了提高React速度的工具和技术，以及如何去使用它们排查和优化代码。</p> <h4 id="译为什么我选择-react-而不是-vue"><a href="http://elevenbeans.github.io/2017/07/19/Why-React/">[译]为什么我选择 React 而不是 Vue</a></h4> <p>文章可以看出小伙伴（农药队长）对React 还是很偏爱的，作者阐述了对React喜爱的“倾向性”原因， 虽然多少有点酸醋味，但小编以为仅仅是个人喜爱事物的呵护和解读， 不可作为框架好坏对比的参照。</p> <h2 id="技术纵横">技术纵横</h2> <h4 id="亚马逊推荐系统二十年"><a...</p>
     </section>
     <section class="post-meta">
-      <div class="post-date">mirreal , May 28, 2017 </div>
+      <div class="post-date">风清洋 , July 24, 2017 </div>
       <div class="post-categories">
        category : 
         
-        <a href="/category/translator">Translator</a>
+        <a href="/category/weekly">Weekly</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/weekly/2017/07/10/weekly.html">ELSE 技术周刊(2017.07.10期)</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p><h2 id="业界动态">业界动态</h2> <h4 id="prettier-代码格式化工具发布-15-版本"><a href="https://github.com/prettier/prettier/releases/tag/1.5.0">Prettier 代码格式化工具发布 1.5 版本</a></h4> <p>引入对 GraphQL, CSS-in-JS 以及 JSON 的支持。</p> <h2 id="技术纵横">技术纵横</h2> <h4 id="整洁代码之道重构"><a href="http://www.infoq.com/cn/articles/clean-code-refactor">整洁代码之道——重构</a></h4> <p>一份比较详实的重构技巧与案例。借此，探讨如何通过有效的重构技巧去写成优秀的整洁代码。代码整洁之道就是要将重构始终贯穿在整个开发过程中，不断的持续的渐进重构，从而将以前的技术债全部还完。</p> <h4 id="大前端开发者需要了解的基础编译原理和语言知识"><a href="http://fullstack.blog/2017/06/24/%E5%A4%A7%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E8%80%85%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%9F%BA%E7%A1%80%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E5%92%8C%E8%AF%AD%E8%A8%80%E7%9F%A5%E8%AF%86/">大前端开发者需要了解的基础编译原理和语言知识</a></h4> <p>从编译原理、解释器、运行时的概念到 JavaScript 以及 WebAssembly，了解这些相信会对你有所帮助。</p> <h2 id="前端开发">前端开发</h2> <h4 id="mastering-async-await-in-nodejs"><a href="https://blog.risingstack.com/mastering-async-await-in-nodejs/">Mastering Async Await in Node.js</a></h4> <p>Node.js 已经支持 async/await 有段时间，还没有使用过的可以看看这篇文章，将介绍如何使用异步函数来简化回调以及基于Promise 的 Node.js 应用程序。</p> <h4 id="lsloader通用移动端-web-app-离线化方案"><a href="https://tech.meituan.com/LsLoader.html">LsLoader——通用移动端 Web App 离线化方案</a></h4> <p>主要介绍利用...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">风清洋 , July 10, 2017 </div>
+      <div class="post-categories">
+       category : 
+        
+        <a href="/category/weekly">Weekly</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/weekly/2017/07/03/weekly.html">ELSE 技术周刊(2017.07.03期)</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p><h2 id="业界动态">业界动态</h2> <h4 id="chrome再出招-呈现api将仅支持https"><a href="https://www.sslchina.com/chrome-presentation-api/">Chrome再出招 呈现API将仅支持HTTPS</a></h4> <p>谷歌工程师宣布将在2018年第二季度发布的Chrome 67中禁止一切使用不安全来源的呈现API(Presentation API)。</p> <h4 id="tc39-ecmascript-and-the-future-of-javascript"><a href="https://ponyfoo.com/articles/tc39-ecmascript-proposals-future-of-javascript">TC39, ECMAScript, and the Future of JavaScript</a></h4> <p>从 T39 的工作流程，到 ECMAScript 现在的发展模式，以及未来即将引入的一些很酷的特性，作为开发人员，我们也要持续更新自己的知识体系。</p> <h2 id="前端技术">前端技术</h2> <h4 id="react-组件设计和分解思考"><a href="https://juejin.im/post/59522e57f265da6c3b27ab62">React 组件设计和分解思考</a></h4> <ul> <li>切割 render()</li> <li>合理分隔子组件(组件职责单一化，复用性强)</li> <li>模版化组件(个人十分推荐)</li> <li>高阶玩法</li> </ul> <h4 id="2017年前端框架类库工具大比拼"><a href="http://www.cnblogs.com/powertoolsteam/p/front_end_framework_2017.html">2017年前端框架、类库、工具大比拼</a></h4> <p>本文讨论了目前最为流行的客户端JavaScript框架、类库和工具以及它们之间的基本差异，可以了解下它们各自的好处，选择适合自己项目的。</p> <h2 id="实用技巧">实用技巧</h2> <h4 id="我是如何实现electron的在线升级热更新功能的"><a href="http://www.zhangxinxu.com/wordpress/2017/06/how-electron-online-update-hot-fix/">我是如何实现electron的在线升级热更新功能的？</a></h4> <p>利用简单的package.json文件版本比较和http请求，实现最简单的electron应用热更新。</p> <h4 id="刨根问底http和websocket协议二"><a href="http://www.jianshu.com/p/f666da1b1835">刨根问底HTTP和WebSocket协议(二）</a></h4> <p>本片中作者对...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">风清洋 , July 3, 2017 </div>
+      <div class="post-categories">
+       category : 
+        
+        <a href="/category/weekly">Weekly</a>
         
       
       </div>
@@ -289,7 +293,7 @@
 			</a>
 			
 		
-		<span class="page-number">11 / 12</span>
+		<span class="page-number">11 / 14</span>
 		
 		<a class="newer-posts" href="/page12">
       <span class="fa-stack fa-lg">
@@ -345,6 +349,10 @@
         
         
           <li class="nav-link"><a href="/category/weekly/">Weekly</a>
+        
+        
+        
+        
         
         
         
