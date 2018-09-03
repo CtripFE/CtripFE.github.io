@@ -6,9 +6,108 @@
 </description>
     <link>http://else.vip//</link>
     <atom:link href="http://else.vip//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Aug 2018 09:51:56 +0800</pubDate>
-    <lastBuildDate>Thu, 30 Aug 2018 09:51:56 +0800</lastBuildDate>
+    <pubDate>Mon, 03 Sep 2018 22:19:13 +0800</pubDate>
+    <lastBuildDate>Mon, 03 Sep 2018 22:19:13 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>ELSE 技术周刊(2018.09.03期))</title>
+        <description>&lt;h2 id=&quot;本期推荐&quot;&gt;本期推荐&lt;/h2&gt;
+
+&lt;h4 id=&quot;life-of-a-pixel让你更透彻知道浏览器是如何工作&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/87OYpou4ynpvYlcExEO40w&quot;&gt;Life of a Pixel，让你更透彻知道浏览器是如何工作&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Life of a Pixel这个演讲一开始是Chrome组新人入职的学习资料，给新人一个从高层次去看Chromium如何从HTML / CSS / JS 显示到屏幕的网页。这个演讲一直在更新，所以大家可以通过看这个演讲更新自己对Chromium的理解。展示Chromium从HTML到DomTree，整合CSS到LayoutTree，排版到PaintTree之后转成LayerTree转到compositing线程分块，光栅化到GPU，最后显示到屏幕。&lt;/p&gt;
+
+&lt;h4 id=&quot;使用-javascript-的代价&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/0RMTdFa82kTjXdJ_x6vYWg&quot;&gt;使用 JavaScript 的代价！&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;建立交互式网站包括向用户发送 JavaScript 。通常，太多了。你是否经历过在一个手机页面上，它看起来已经加载好了，但是点击一个链接或者试图滚动页面的时候，什么也没发生？
+一字节又一字节，JavaScript 仍然是我们发送给手机的代价最大的资源，因为它会很大程度上延迟交互。
+现在我们讨论一些策略，可以让你高效地传送 JavaScript ，同时给用户提供一个有价值的体验。&lt;/p&gt;
+
+&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
+
+&lt;h4 id=&quot;babel-7-released&quot;&gt;&lt;a href=&quot;https://babeljs.io/blog/2018/08/27/7.0.0&quot;&gt;Babel 7 Released&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;babel 7 版本发布，并提供工具自动完成升级。更快的速度，以及一系列新特性，新的 JavaScript 配置文件，对 TypeScript 的支持等。&lt;/p&gt;
+
+&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
+
+&lt;h4 id=&quot;javascript集成sentry&quot;&gt;&lt;a href=&quot;http://www.bugs.cc/2018/08/24/JavaScript%E9%9B%86%E6%88%90Sentry/&quot;&gt;JavaScript集成Sentry&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Sentry是一套用于捕获产品错误的开源项目，其下支持很多语言、框架。Sentry让开发人员快速准确的定位到问题的根源所在，以达到快速修复，让开发人员更注重于开发新的功能上面。减少时间资源上的浪费。&lt;/p&gt;
+
+&lt;h4 id=&quot;react-firereact-dom-的改造计划使其更现代化&quot;&gt;&lt;a href=&quot;https://www.oschina.net/news/99528/react-fire-modernizing-react-dom&quot;&gt;React Fire：React DOM 的改造计划，使其更现代化&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;React 开发者，同时也是 Redux 和 Create React App 作者之一的 Dan Abramov gaearon 昨日在 React 的 GitHub 仓库提了一个这样的 issue —— React Fire: Modernizing React DOM（React Fire：使 React DOM 现代化）。他表示目前随着对 React 的底层基础改造工作越来越接近尾声，维护团队开始考虑如何使 React 更好地与 DOM 的工作方式保持一致，并重新审视了过去一些导致大量问题的有争议的决策，同时希望使 React 变得更小更快。&lt;/p&gt;
+
+&lt;h4 id=&quot;一口很长的气了解-babel&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/43249121&quot;&gt;一口（很长的）气了解 babel&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;说到 babel，一连串名词会蹦出来：&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;babel-cli
+babel-core
+babel-runtime
+babel-node
+babel-polyfill
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;这些都是 babel 吗？他们分别是做什么的？有区别吗？&lt;/p&gt;
+
+&lt;h4 id=&quot;前端监控和前端埋点方案设计&quot;&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000015864670&quot;&gt;前端监控和前端埋点方案设计&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;文章总结了 前端埋点的场景和常用埋点方案， 包括对埋点方案选型和前端上报方案设计。&lt;/p&gt;
+
+&lt;h4 id=&quot;揭密react-setstate&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/43522965&quot;&gt;揭密React setState&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;学过react的人都知道，setState在react里是一个很重要的方法，使用它可以更新我们数据的状态，本篇文章从简单使用到深入到setState的内部，全方位为你揭开setState的神秘面纱~&lt;/p&gt;
+
+&lt;h4 id=&quot;复杂-react-应用中的typescript-30实践&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/42141179&quot;&gt;复杂 React 应用中的TypeScript 3.0实践&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;本篇描述了如何使用 TypeScript 来高效编写复杂的 React 应用。&lt;/p&gt;
+
+&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
+
+&lt;h4 id=&quot;唯品会的service-mesh三年进化史&quot;&gt;&lt;a href=&quot;http://calvin1978.blogcn.com/?p=1779&quot;&gt;唯品会的Service Mesh三年进化史&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;唯品会的服务化体系OSP(Open Service Platform) 在三年前就走上了ServiceMesh的路。每种架构风格，由于各司不同的历史因果，现实状况，以及对采纳新架构的诉求和希望，都会有不同的实现路线。我们的SM在实战中一点点演化而来，与 Istio由谷歌IBM的超级架构师们画出来的架构也有不同之处。希望通过分享我们的演进过程，能给各司里同样在往SM演进中的架构师们一个参考。&lt;/p&gt;
+
+&lt;h4 id=&quot;best-practices-for-mobile-form-design&quot;&gt;&lt;a href=&quot;https://www.smashingmagazine.com/2018/08/best-practices-for-mobile-form-design/&quot;&gt;Best Practices For Mobile Form Design&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;作为设计师应该如何使填写表单的过程尽可能简单，创建快速且顺滑的交互体验，提高表单的可用性，文章列举了一系列最佳实践&lt;/p&gt;
+
+&lt;h4 id=&quot;蚂蚁金服移动端可视化解决方案-f2-32-发布-因你而动&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/43130006&quot;&gt;蚂蚁金服移动端可视化解决方案 F2 3.2 发布， 因你而动&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;F2，一个专注于移动，开箱即用的可视化解决方案，完美支持 H5 环境同时兼容多种环境（node, 小程序，weex）。完备的图形语法理论，满足你的各种可视化需求。专业的移动设计指引为你带来最佳的移动端图表体验。&lt;/p&gt;
+
+&lt;h2 id=&quot;实用工具&quot;&gt;实用工具&lt;/h2&gt;
+
+&lt;h4 id=&quot;团队协作中的-github-flow-工作流程&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/39148914&quot;&gt;团队协作中的 Github flow 工作流程&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;文章介绍一套基于 Github flow 的 Git 操作流程，可以让大家跟规范的使用 Git 操作流程，规范的 Commit Message。&lt;/p&gt;
+
+&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
+
+&lt;h4 id=&quot;独角兽的cto是怎么炼成的&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/tm4w0bTC3JpAyOWalOSkYw&quot;&gt;独角兽的CTO是怎么炼成的&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;作者以个人经历分享如何一步步成为 CTO，介绍了自己对于 CTO角色定位、使命以及技能包的理解，并针对工程师的个人成长和职业生涯规划给出了建议。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ELSE 技术周刊由 &lt;a href=&quot;https://github.com/CtripFE&quot;&gt;IFT 小组&lt;/a&gt; 出品，汇聚一周好文章， &lt;a href=&quot;&quot;&gt;周刊原文&lt;/a&gt;。本期编辑：&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CurtisCBS&quot;&gt;@Curtis&lt;/a&gt; 前端中年人&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/stoneyong&quot;&gt;@StoneZou&lt;/a&gt; 前端搬砖工，不安分于前端开发的搬砖工&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/StevenX911&quot;&gt;@Steven&lt;/a&gt; 前端老兵&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/mirreal&quot;&gt;@mirreal&lt;/a&gt; 想当设计师的程序员不是一个好攻城狮&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/Jade05&quot;&gt;@Jade&lt;/a&gt; 以前想多点后端 sense 写前端，现在想多点产品 sense 写前端&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://github.com/CtripFE/fe-weekly/issues&quot;&gt;点击这里&lt;/a&gt; 向我们推荐你读到的好文章。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 03 Sep 2018 20:23:23 +0800</pubDate>
+        <link>http://else.vip//weekly/2018/09/03/weekly.html</link>
+        <guid isPermaLink="true">http://else.vip//weekly/2018/09/03/weekly.html</guid>
+        
+        
+        <category>Weekly</category>
+        
+      </item>
     
       <item>
         <title>ELSE 技术周刊(2018.08.27期)</title>
@@ -822,81 +921,6 @@ The quick and simple answer is: to have it excel in the only area where Node has
         <pubDate>Mon, 18 Jun 2018 20:23:23 +0800</pubDate>
         <link>http://else.vip//weekly/2018/06/18/weekly.html</link>
         <guid isPermaLink="true">http://else.vip//weekly/2018/06/18/weekly.html</guid>
-        
-        
-        <category>Weekly</category>
-        
-      </item>
-    
-      <item>
-        <title>ELSE 技术周刊(2018.06.04期)</title>
-        <description>&lt;h2 id=&quot;本期推荐&quot;&gt;本期推荐&lt;/h2&gt;
-
-&lt;h4 id=&quot;workbox-源码阅读&quot;&gt;&lt;a href=&quot;http://sensai.powerpigger.cc/sensai/site/article/334&quot;&gt;workbox 源码阅读&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;记录了阅读 workbox 源码的心路历程，深入理解 workbox 的整体设计思路。&lt;/p&gt;
-
-&lt;h2 id=&quot;业界动态&quot;&gt;业界动态&lt;/h2&gt;
-
-&lt;h4 id=&quot;node之父ry发布新项目-deno下一代-node&quot;&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/1LcO3EqGV2iRlZ1aIrQeqw&quot;&gt;Node之父ry发布新项目 deno：下一代 Node&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;近日，Node 之父 Ryan Dahl 发布新的开源项目 deno，使用 Go 语言代替 C++ 重新编写跨平台底层内核驱动，上层仍然使用 V8 引擎，最终提供一个安全的 TypeScript 运行时。&lt;/p&gt;
-
-&lt;h4 id=&quot;如何评价ryryan-dahl的新项目-deno&quot;&gt;&lt;a href=&quot;https://www.zhihu.com/question/279208326/answer/408601019&quot;&gt;如何评价ry(Ryan Dahl)的新项目 deno&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;deno 是一个非常伟大的项目，但却不是“下一代 Node.js”。&lt;/p&gt;
-
-&lt;h2 id=&quot;前端开发&quot;&gt;前端开发&lt;/h2&gt;
-
-&lt;h4 id=&quot;js-linter-进化史&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/34656263&quot;&gt;JS Linter 进化史&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;据说在 C 语言刚刚开始起步的时候，有若干常见的代码问题不能被编译器捕获，因此有人开发了一款名为 Lint 的附加程序，用于扫描源代码以捕获这些问题。因此后续类似的工具都叫 Lint 或 Linter。本文主要介绍下 JS Linter 进化史中的三个里程碑式的工具：JSLint、JSHint 和 ESLint。&lt;/p&gt;
-
-&lt;h4 id=&quot;beyond-spas-alternative-architectures-for-your-pwa&quot;&gt;&lt;a href=&quot;https://developers.google.com/web/updates/2018/05/beyond-spa&quot;&gt;Beyond SPAs: Alternative Architectures for Your PWA&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;构建 PWA Web app 不一定是构建在单页应用程序之上，在此了解以 PWA 为中心的其他架构。&lt;/p&gt;
-
-&lt;h4 id=&quot;typescript-28-下的终极-react-组件模式&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5b07caf16fb9a07aa83f2977&quot;&gt;TypeScript 2.8 下的终极 React 组件模式&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;文章主要介绍了如何运用 TypeScript 的新功能，写出能够以安全类型的方式创建常见的 React 组件模式。&lt;/p&gt;
-
-&lt;h4 id=&quot;现代-javascript-框架存在的根本原因&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5b111436e51d4506d06205fd&quot;&gt;现代 JavaScript 框架存在的根本原因&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;深入思考为何前端需要框架，以及 web components 是否可以代替前端框架。&lt;/p&gt;
-
-&lt;h2 id=&quot;技术纵横&quot;&gt;技术纵横&lt;/h2&gt;
-
-&lt;h4 id=&quot;阿里七层流量入口-tengine硬件加速探索之路&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/37539359&quot;&gt;阿里七层流量入口 Tengine硬件加速探索之路&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;所有的阿里集团流量通过四层LVS，到达统一接入层，统一接入层根据不同的维度域名转发到对应的后端APP，并且提供智能的流量分发策略。因为抽象出一层，通用的安全防攻击、链路追踪等高级功能，都可以在这一层统一实现。&lt;/p&gt;
-
-&lt;h4 id=&quot;android-内存溢出-oom常见内存泄漏&quot;&gt;&lt;a href=&quot;http://www.sunnyang.com/765.html&quot;&gt;Android 内存溢出 OOM：常见内存泄漏&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;本文总结了 Android 开发者在开发中比较常见的几种内存泄漏，并给出了相对应的防止内存泄漏的解决方式。&lt;/p&gt;
-
-&lt;h4 id=&quot;w3c未来的网站注册流程&quot;&gt;&lt;a href=&quot;https://www.w3.org/TR/webauthn/&quot;&gt;W3C：未来的网站注册流程&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;目前，W3C 正在设计一个基于密钥的网站注册流程，以后，注册用户时不需要密码，也不用担心破解。&lt;/p&gt;
-
-&lt;h4 id=&quot;https-的故事&quot;&gt;&lt;a href=&quot;https://juejin.im/post/5b10aa22e51d4506c5568f1d&quot;&gt;HTTPS 的故事&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;通过故事中讲述从原始的 HTTP 到 HTTPS 的演进过程，大体上还原其中的通信原理和部分细节。&lt;/p&gt;
-
-&lt;h2 id=&quot;实用工具&quot;&gt;实用工具&lt;/h2&gt;
-
-&lt;h4 id=&quot;javascript-算法与数据结构&quot;&gt;&lt;a href=&quot;https://github.com/trekhleb/javascript-algorithms&quot;&gt;JavaScript 算法与数据结构&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;一个包含了多种基于 JavaScript 的算法与数据结构的仓库。&lt;/p&gt;
-
-&lt;h2 id=&quot;程序人生&quot;&gt;程序人生&lt;/h2&gt;
-
-&lt;h4 id=&quot;github-的用法与礼仪&quot;&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/37599617&quot;&gt;GitHub 的用法与礼仪&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;作者以一个在 GitHub 浪迹多年的人的角度，介绍应该如何参与开源社区，避免出现类似滥用 issue 等行为。&lt;/p&gt;
-</description>
-        <pubDate>Mon, 04 Jun 2018 20:23:23 +0800</pubDate>
-        <link>http://else.vip//weekly/2018/06/04/weekly.html</link>
-        <guid isPermaLink="true">http://else.vip//weekly/2018/06/04/weekly.html</guid>
         
         
         <category>Weekly</category>
